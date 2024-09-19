@@ -31,7 +31,7 @@ export default function VideoBackground() {
       </video>
       <div className="absolute inset-0 bg-black bg-opacity-50" />
       <div className="relative z-10 flex h-full items-center">
-        <div className="container mx-auto px-6 md:px-12">
+        <div className="container flex-col gap-6 mx-auto px-6 md:px-12">
           <div>
             <h1 className="text-4xl font-bold text-white md:text-8xl lg:w-2/3">
               Criando soluções para o futuro
@@ -42,7 +42,7 @@ export default function VideoBackground() {
           </div>
           <div>
             <Button asChild>
-              <a href="#">Entre em Contato</a>
+              <a href="#form">Entre em Contato</a>
             </Button>
           </div>
         </div>

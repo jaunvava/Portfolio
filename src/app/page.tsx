@@ -68,7 +68,7 @@ export default function LandingPage() {
                   Serviços
                 </a>
                 <a
-                  href="#clientes"
+                  href="#clientes-1"
                   className="text-foreground bg-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Clientes
@@ -96,7 +96,7 @@ export default function LandingPage() {
         <div>
           <VideoBackground />
         </div>
-        <div>
+        <div id="clientes-1">
           <ClientCarousel />
         </div>
       </section>
@@ -105,7 +105,7 @@ export default function LandingPage() {
       <section></section>
 
       {/* Sessão Clientes*/}
-      <section id="clientes">
+      <section id="clientes-2">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div>
             <FeedbackClients />

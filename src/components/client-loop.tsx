@@ -1,23 +1,24 @@
-'use client'
+"use client";
 
-import { useEffect, useRef } from 'react'
-import { motion, useAnimation, useInView } from 'framer-motion'
+import { useEffect, useRef } from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
 
 const clients = [
-  { name: 'SpaceX', logo: '/placeholder.svg?height=50&width=120' },
-  { name: 'NASA', logo: '/placeholder.svg?height=50&width=120' },
-  { name: 'Logitech', logo: '/placeholder.svg?height=50&width=120' },
-  { name: 'Tesla', logo: '/placeholder.svg?height=50&width=120' },
-  { name: 'Microsoft', logo: '/placeholder.svg?height=50&width=120' },
-  { name: 'Apple', logo: '/placeholder.svg?height=50&width=120' },
-  { name: 'Google', logo: '/placeholder.svg?height=50&width=120' },
-  { name: 'Amazon', logo: '/placeholder.svg?height=50&width=120' },
-]
+  { name: "SpaceX", logo: "/spacex-icon.svg?height=50&width=50" },
+  { name: "NASA", logo: "/nasa-icon.svg?height=50&width=50" },
+  { name: "Logitech", logo: "/logitech-icon.svg?height=50&width=50" },
+  { name: "Tesla", logo: "/tesla-icon.svg?height=50&width=50" },
+  { name: "Microsoft", logo: "/microsoft-icon.svg?height=50&width=50" },
+  { name: "Apple", logo: "/apple-icon.svg?height=50&width=50" },
+  { name: "Google", logo: "/google-icon.svg?height=50&width=50" },
+  { name: "Amazon", logo: "/amazon-icon.svg?height=50&width=50" },
+  { name: "Amazon", logo: "/amazon-icon.svg?height=50&width=50" },
+];
 
 export default function ClientCarousel() {
-  const carousel = useRef<HTMLDivElement>(null)
-  const controls = useAnimation()
-  const inView = useInView(carousel)
+  const carousel = useRef<HTMLDivElement>(null);
+  const controls = useAnimation();
+  const inView = useInView(carousel);
 
   useEffect(() => {
     if (inView) {
@@ -26,16 +27,16 @@ export default function ClientCarousel() {
         transition: {
           x: {
             repeat: Infinity,
-            repeatType: 'loop',
+            repeatType: "loop",
             duration: 20,
-            ease: 'linear',
+            ease: "linear",
           },
         },
-      })
+      });
     } else {
-      controls.stop()
+      controls.stop();
     }
-  }, [controls, inView])
+  }, [controls, inView]);
 
   return (
     <section className="py-12 bg-gray-100 overflow-hidden">
@@ -60,5 +61,5 @@ export default function ClientCarousel() {
         </div>
       </div>
     </section>
-  )
+  );
 }
