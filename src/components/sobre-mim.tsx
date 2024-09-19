@@ -11,7 +11,7 @@ export default function SobreMIm() {
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-4">Minha Jornada</h3>
               <p className="text-gray-600">
-                Minha paixão pela programação começou há mais de uma década, quando criei meu primeiro site. Desde então, 
+                Minha paixão pela programação começou há mais de 6 anos, quando criei meu primeiro site. Desde então, 
                 venho aprimorando minhas habilidades e explorando novas tecnologias. Trabalhei em projetos desafiadores 
                 que me permitiram crescer como desenvolvedor e como profissional.
               </p>

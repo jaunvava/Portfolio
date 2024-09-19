@@ -17,7 +17,7 @@ export default function Footer() {
             />
           </div>
           <div className="text-center max-w-md mx-auto my-6 md:my-0">
-            <p className="text-sm text-gray-600 dark:text-gray-300">
+            <p className="text-sm dark:text-gray-300">
               Estou sempre aberto a novas oportunidades e colaborações. Sinta-se
               à vontade para entrar em contato comigo através de qualquer uma
               das plataformas ao lado
@@ -67,9 +67,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="container flex justify-between items-center gap-10">
-          © {new Date().getFullYear()} João Pedro Cruz. Todos os direitos
-          reservados.
+        <div className="container flex justify-between items-center gap-8">
+          <span className="text-foreground text-xs">
+            © {new Date().getFullYear()} João Pedro Cruz. Todos os direitos
+            reservados.
+          </span>
           <span className="text-foreground text-xs">
             Designed por João Pedro
           </span>

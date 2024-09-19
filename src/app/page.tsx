@@ -29,6 +29,7 @@ import FooterContact from "@/components/footer-contact";
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white my-10	">
+
       {/* Barra de navegação */}
       <nav className="fixed top-0 left-0 right-0 bg-white opacity-6 z-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -102,10 +103,10 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Sessão de Apresentação de clientes*/}
+      {/* Sessão de Apresentação de clientes / loop */}
       <section></section>
 
-      {/* Sessão Clientes*/}
+      {/* Sessão feedback Clientes*/}
       <section id="clientes-2">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div>
@@ -204,7 +205,7 @@ export default function LandingPage() {
       </section>
 
       {/* Sessão rodapé e contato */}
-      <footer>
+      <footer id="contato">
         <FooterContact />
       </footer>
     </div>
