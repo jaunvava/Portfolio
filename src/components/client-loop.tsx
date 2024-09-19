@@ -12,7 +12,6 @@ const clients = [
   { name: "Apple", logo: "/apple-icon.svg?height=50&width=50" },
   { name: "Google", logo: "/google-icon.svg?height=50&width=50" },
   { name: "Amazon", logo: "/amazon-icon.svg?height=50&width=50" },
-  { name: "Amazon", logo: "/amazon-icon.svg?height=50&width=50" },
 ];
 
 export default function ClientCarousel() {
@@ -53,7 +52,7 @@ export default function ClientCarousel() {
                 <img
                   src={client.logo}
                   alt={`Logo da ${client.name}`}
-                  className="w-full h-auto object-contain"
+                  className="w-16 h-16 mb-4 object-contain"
                 />
               </div>
             ))}

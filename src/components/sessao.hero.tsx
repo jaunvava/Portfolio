@@ -42,7 +42,7 @@ export default function VideoBackground() {
           </div>
           <div>
             <Button asChild>
-              <a href="#form">Entre em Contato</a>
+              <a href="#contato">Siga-me</a>
             </Button>
           </div>
         </div>

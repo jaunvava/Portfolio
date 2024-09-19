@@ -23,13 +23,14 @@ import { InstagramLogoIcon } from "@radix-ui/react-icons";
 import SobreMIm from "@/components/sobre-mim";
 import TechStack from "@/components/skills";
 import VideoBackground from "@/components/sessao.hero";
+import FooterContact from "@/components/footer-contact";
 <link rel="icon" href="/favicon.ico" sizes="any" />;
 
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white my-10	">
       {/* Barra de navegação */}
-      <nav className="fixed top-0 left-0 right-0 bg-white opacity-6 z-50 rounded-md">
+      <nav className="fixed top-0 left-0 right-0 bg-white opacity-6 z-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center h-16 gap-8">
             <div className="flex-shrink-0">
@@ -202,83 +203,9 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Sessão contato */}
-      <section id="contact" className="py-10 px-4 sm:px-6 h-3/6	 lg:px-8">
-        <div className="container flex itens-center mx-auto text-center">
-          <h2 className="text-3xl font-bold text-primary mb-6">
-            Entre em Contato
-          </h2>
-          <Card>
-            <CardContent className="flex flex-col items-center p-6">
-              <div>
-                <p className="text-foreground mb-4">
-                  Estou sempre aberto a novas oportunidades e colaborações.
-                  Sinta-se à vontade para entrar em contato comigo através de
-                  qualquer uma das plataformas abaixo:
-                </p>
-              </div>
-              <div className="flex space-x-4">
-                <Button variant="outline" size="icon">
-                  <a
-                    href="https://github.com/jaunvava"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Github className="h-6 w-6" />
-                    <span className="sr-only">GitHub</span>
-                  </a>
-                </Button>
-                <Button variant="outline" size="icon">
-                  <a
-                    href="https://www.linkedin.com/in/joaopedrosouzs/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Linkedin className="h-6 w-6" />
-                    <span className="sr-only">LinkedIn</span>
-                  </a>
-                </Button>
-                <Button variant="outline" size="icon">
-                  <a
-                    href="https://www.instagram.com/jpedrosouzs?igsh=MWk0dHl1dGRhaDR4ZA=="
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Instagram className="h-6 w-6" />
-                    <span className="sr-only">Instagran</span>
-                  </a>
-                </Button>
-                <Button variant="outline" size="icon">
-                  <a
-                    href="mailto:jpdevcontato@gmail.com
-
-"
-                  >
-                    <Mail className="h-6 w-6" />
-                    <span className="sr-only">E-mail</span>
-                  </a>
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
-      {/* Rodapé */}
-      <footer className="bg-muted py-8 px-2 sm:px-2 lg:px-2 my-0">
-        <div className="container flex justify-between items-center mx-auto text-center gap-2">
-          <span className="text-foreground text-xs">
-            &copy; 2024 . Todos os direitos reservados
-          </span>
-
-          <span className="text-foreground text-xs">
-            Designed por João Pedro
-          </span>
-
-          <span className="text-foreground text-xs">
-            Política de Privacidade
-          </span>
-        </div>
+      {/* Sessão rodapé e contato */}
+      <footer>
+        <FooterContact />
       </footer>
     </div>
   );
