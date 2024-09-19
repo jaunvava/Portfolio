@@ -22,6 +22,7 @@ import ProgrammerServices from "@/components/services";
 import { InstagramLogoIcon } from "@radix-ui/react-icons";
 import SobreMIm from "@/components/sobre-mim";
 import TechStack from "@/components/skills";
+import VideoBackground from "@/components/sessao.hero";
 <link rel="icon" href="/favicon.ico" sizes="any" />;
 
 export default function LandingPage() {
@@ -90,33 +91,18 @@ export default function LandingPage() {
         </div>
       </nav>
 
-      {/* Sessão de Apresentação com video */}
-      <section className="pt-20 pb-10 px-4 sm:px-6 lg:px-8">
-        <div className="container mx-auto text-center">
-          <h1 className="text-4xl font-bold text-primary mb-4">
-            Building solutions for the future
-          </h1>
-          <p className="text-xl text-foreground mb-8">
-            João Pedro Cruz | Desenvolvedor FullStack
-          </p>
-          <div className="flex items-center gap-2 justify-center">
-            <Button asChild>
-              <a href="#contact">Entre em contato</a>
-            </Button>
-
-            <Button asChild>
-              <a href="#">Ver Video</a>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Sessão de Apresentação de clientes*/}
+      {/* Sessão de Apresentação com video / sessão hero*/}
       <section>
+        <div>
+          <VideoBackground />
+        </div>
         <div>
           <ClientCarousel />
         </div>
       </section>
+
+      {/* Sessão de Apresentação de clientes*/}
+      <section></section>
 
       {/* Sessão Clientes*/}
       <section id="clientes">
@@ -193,7 +179,7 @@ export default function LandingPage() {
       {/* Sessão habilidades */}
       <section id="skills" className="py-10 px-4 sm:px-6 lg:px-8">
         <div className="">
-        <TechStack/>
+          <TechStack />
         </div>
       </section>
 
