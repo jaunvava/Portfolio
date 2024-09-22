@@ -24,14 +24,19 @@ import SobreMIm from "@/components/sobre-mim";
 import TechStack from "@/components/skills";
 import VideoBackground from "@/components/sessao.hero";
 import FooterContact from "@/components/footer-contact";
+import NavbarComponent from "@/components/navbar";
+import ConquerCarousel from "@/components/conquistas";
 <link rel="icon" href="/favicon.ico" sizes="any" />;
 
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white my-10	">
-
       {/* Barra de navegação */}
-      <nav className="fixed top-0 left-0 right-0 bg-white opacity-6 z-50">
+      <nav>
+        <NavbarComponent />
+      </nav>
+
+      {/* <nav className="fixed top-0 left-0 right-0 bg-white opacity-6 z-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center h-16 gap-8">
             <div className="flex-shrink-0">
@@ -91,7 +96,7 @@ export default function LandingPage() {
             </div>
           </div>
         </div>
-      </nav>
+      </nav> */}
 
       {/* Sessão de Apresentação com video / sessão hero*/}
       <section>
@@ -183,6 +188,11 @@ export default function LandingPage() {
         <div className="">
           <TechStack />
         </div>
+      </section>
+
+      {/* Sessão habilidades */}
+      <section>
+        <ConquerCarousel />
       </section>
 
       {/* Sessão sobre mim */}
