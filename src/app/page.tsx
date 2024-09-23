@@ -6,20 +6,12 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Github, Linkedin, Mail, Instagram } from "lucide-react";
 import Image from "next/image";
 import EmailForm from "@/components/email-form";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import FeedbackClients from "@/components/feedback-cliente";
 import ClientCarousel from "@/components/client-loop";
 import Differentiators from "@/components/retencao-cliente";
 import ProgrammerServices from "@/components/services";
-import { InstagramLogoIcon } from "@radix-ui/react-icons";
 import SobreMIm from "@/components/sobre-mim";
 import TechStack from "@/components/skills";
 import VideoBackground from "@/components/sessao.hero";
@@ -30,73 +22,11 @@ import ConquerCarousel from "@/components/conquistas";
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-white my-10	">
+    <main>
       {/* Barra de navegação */}
       <nav>
         <NavbarComponent />
       </nav>
-
-      {/* <nav className="fixed top-0 left-0 right-0 bg-white opacity-6 z-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-center h-16 gap-8">
-            <div className="flex-shrink-0">
-              <Image
-                src="/terminal.svg"
-                alt="João"
-                width={30}
-                height={30}
-                className="rounded-full"
-              />
-            </div>
-            <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-4 gap-10">
-                <a
-                  href="#about"
-                  className="text-foreground bg-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Sobre
-                </a>
-                <a
-                  href="#skills"
-                  className="text-foreground bg-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Habilidades
-                </a>
-                <a
-                  href="#projects"
-                  className="text-foreground bg-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Projetos
-                </a>
-                <a
-                  href="#servicos"
-                  className="text-foreground bg-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Serviços
-                </a>
-                <a
-                  href="#clientes-1"
-                  className="text-foreground bg-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Clientes
-                </a>
-
-                <a
-                  href="#form"
-                  className="text-foreground bg-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Contato
-                </a>
-                <div className="flex gap-10">
-                  <Button asChild>
-                    <a href="#">Curriculo</a>
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav> */}
 
       {/* Sessão de Apresentação com video / sessão hero*/}
       <section>
@@ -107,9 +37,6 @@ export default function LandingPage() {
           <ClientCarousel />
         </div>
       </section>
-
-      {/* Sessão de Apresentação de clientes / loop */}
-      <section></section>
 
       {/* Sessão feedback Clientes*/}
       <section id="clientes-2">
@@ -218,6 +145,6 @@ export default function LandingPage() {
       <footer id="contato">
         <FooterContact />
       </footer>
-    </div>
+    </main>
   );
 }

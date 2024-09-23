@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { Epilogue, Montserrat } from "next/font/google";
-import { Inter as FontSans } from "next/font/google";
-import localFont from "next/font/local";
-import { cn } from "@/lib/utils";
-
 import "./globals.css";
+import { ThemeProvider } from "@/providers/theme-provider";
+import { cn } from "@/lib/utils";
+import LocalFont from "next/font/local";
 
 const epilogue = Epilogue({
   subsets: ["latin"],
@@ -32,7 +31,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={epilogue.className}>{children}</body>
+      <body className={epilogue.className}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
