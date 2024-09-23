@@ -31,7 +31,7 @@ const projects: Project[] = [
       { name: "React", icon: "/java-icon.svg?height=32&width=32" },
       { name: "Node.js", icon: "/placeholder.svg?height=32&width=32" },
       { name: "MongoDB", icon: "/placeholder.svg?height=32&width=32" },
-      { name: "Stripe", icon: "/nodejs-icon.svg?height=32&width=32" },
+      { name: "Stripe", icon: "/placeholder.svg?height=32&width=32" },
     ],
     link: "https://github.com/yourusername/ecommerce-platform",
   },
@@ -113,7 +113,7 @@ export default function SectionProjects() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Ver Projeto <ExternalLinkIcon className="ml-2 h-4 w-4" />
+                    Ver Projetos <ExternalLinkIcon className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
               </CardFooter>

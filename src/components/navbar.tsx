@@ -6,6 +6,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { ModeToggle } from "@/providers/toggle-mode";
 
 export default function NavbarComponent() {
   const [isOpen, setIsOpen] = useState(false);
@@ -79,6 +80,9 @@ export default function NavbarComponent() {
           <div className="hidden md:block">
             <Button variant="outline">Currículo</Button>
           </div>
+          <div>
+            <ModeToggle />
+          </div>
 
           {/* Botão de menu móvel */}
           <div className="md:hidden bg-white">
@@ -100,7 +104,7 @@ export default function NavbarComponent() {
               <SheetContent side="right" className="w-[240px] sm:w-[300px]">
                 <nav className="flex flex-col space-y-4 mt-4">
                   <NavItems />
-                  <Button variant="outline" className="w-full">
+                  <Button variant="outline" className="w-full transition-all duration-300 ease-in-out hover:bg-primary-dark hover:scale-105 border-black">
                     Currículo
                   </Button>
                 </nav>
