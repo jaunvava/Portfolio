@@ -3,12 +3,25 @@ import { Epilogue, Montserrat } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { cn } from "@/lib/utils";
+import { Inter as FontSans } from "next/font/google";
 import LocalFont from "next/font/local";
+import { Variable } from "lucide-react";
+import localFont from "next/dist/compiled/@next/font/dist/local";
 
 const epilogue = Epilogue({
   subsets: ["latin"],
   weight: ["500", "600", "700"],
 });
+
+const fontSans = FontSans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
+
+// const fontHeading = localFont({
+//   src: "../assets/fonts/CalSans-SemiBold.wolff2",
+//   variable: "--font-heading",
+// });
 
 export const metadata: Metadata = {
   title: "Portfólio | João Pedro",

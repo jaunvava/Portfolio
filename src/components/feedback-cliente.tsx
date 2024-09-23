@@ -39,7 +39,7 @@ export default function FeedbackClients() {
 
   return (
     <section className="py-12 bg-gray-50 ">
-      <div className="container mx-auto px-4 ">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
         <h2 className="text-3xl font-bold text-center mb-8">
           O que meus clientes dizem
         </h2>
