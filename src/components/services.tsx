@@ -64,27 +64,27 @@ const services = [
 
 export default function ProgrammerServices() {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 dark:bg-secondary">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8">Meus Serviços</h2>
-        <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+        <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
           Ofereço uma ampla gama de serviços de programação para atender às suas
           necessidades de desenvolvimento de software. Desde aplicações web até
           soluções móveis e muito mais, estou aqui para transformar suas ideias
           em realidade.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {services.map((service, index) => (
             <Card
               key={index}
-              className="hover:shadow-lg transition-shadow duration-300"
+              className="hover:shadow-lg hover:bg-gray-900 text-white transition-all duration-300 ease-in-out dark:text-primary hover:scale-105"
             >
-              <CardHeader className="flex flex-row items-center space-x-4 pb-2">
+              <CardHeader className="flex flex-row items-center space-x-4 pb-2 ">
                 {service.icon}
                 <CardTitle>{service.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">{service.description}</p>
+                <p className="text-gray-400">{service.description}</p>
               </CardContent>
             </Card>
           ))}
@@ -92,7 +92,7 @@ export default function ProgrammerServices() {
         <div className="text-center mt-12">
           <Button
             size="lg"
-            className="bg-blue-600 hover:bg-blue-700 text-white"
+            className="bg-blue-600 text-white transition-all duration-300 ease-in-out hover:bg-primary-dark dark:text-primary hover:scale-105"
           >
             <a href="#form">Solicite um Orçamento</a>
           </Button>

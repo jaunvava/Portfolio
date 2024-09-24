@@ -36,18 +36,18 @@ const differentiators = [
 
 export default function Differentiators() {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 dark:bg-secondary">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">Por que me contratar para o seu projeto?</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {differentiators.map((item, index) => (
-            <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
+            <Card key={index} className="hover:shadow-lg hover:bg-gray-900 text-white transition-all duration-300 ease-in-out dark:text-primary hover:scale-105">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   {item.icon}
                   <h3 className="text-xl font-semibold ml-4">{item.title}</h3>
                 </div>
-                <p className="text-gray-600">{item.description}</p>
+                <p className="text-gray-400">{item.description}</p>
               </CardContent>
             </Card>
           ))}

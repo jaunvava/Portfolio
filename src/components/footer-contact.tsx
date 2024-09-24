@@ -1,20 +1,14 @@
-import { Instagram, Github, Linkedin, Mail } from "lucide-react";
+import { Instagram, Github, Linkedin, Mail, Terminal } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-100 dark:bg-gray-800">
+    <footer className="dark:bg-secondary">
       <div className="container mx-auto px-4 md:px-6 h-[400px] flex flex-col justify-between ">
         <div className="flex flex-col md:flex-row justify-between items-center py-8">
           <div className="mb-6 md:mb-0">
-            <Image
-              src="/terminal.svg"
-              alt="Logo"
-              width={120}
-              height={40}
-              className="h-10 w-auto"
-            />
+            <Terminal className="h-10 w-10" />
           </div>
           <div className="text-center max-w-md mx-auto my-6 md:my-0">
             <p className="text-sm dark:text-gray-300">
@@ -24,7 +18,7 @@ export default function Footer() {
             </p>
           </div>
           <div className="flex flex-col items-center md:items-end gap-20">
-            <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-4">
+            <h2 className="text-xl font-semibold text-secondary dark:text-gray-100 mb-4">
               Siga-me
             </h2>
             <div className="flex space-x-4">

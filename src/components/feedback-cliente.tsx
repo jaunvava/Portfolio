@@ -38,7 +38,7 @@ export default function FeedbackClients() {
   ];
 
   return (
-    <section className="py-12 bg-gray-50 ">
+    <section className="py-12 dark:bg-secondary ">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
         <h2 className="text-3xl font-bold text-center mb-8">
           O que meus clientes dizem
@@ -47,7 +47,7 @@ export default function FeedbackClients() {
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}
-              className="hover:shadow-lg transition-shadow duration-300"
+              className="hover:shadow-lg hover:bg-gray-900 text-white transition-all duration-300 ease-in-out dark:text-primary hover:scale-105"
             >
               <CardContent className="p-6">
                 <div className="flex items-start mb-4">

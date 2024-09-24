@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import EmailForm from "@/components/email-form";
 import FeedbackClients from "@/components/feedback-cliente";
 import ClientCarousel from "@/components/client-loop";
 import Differentiators from "@/components/retencao-cliente";
@@ -12,11 +11,12 @@ import FooterContact from "@/components/footer-contact";
 import NavbarComponent from "@/components/navbar";
 import ConquerCarousel from "@/components/conquistas";
 import SectionProjects from "@/components/sessao-projetos";
-<link rel="icon" href="/favicon.ico" sizes="any" />;
+
+// a cor secundaria e o preto (slate) e a primaria e o branco
 
 export default function LandingPage() {
   return (
-    <main>
+    <div>
       {/* Barra de navegação */}
       <nav>
         <NavbarComponent />
@@ -59,7 +59,7 @@ export default function LandingPage() {
       </section>
 
       {/* Sessão habilidades e minhas conquistas*/}
-      <section id="skills" className="py-10 px-4 sm:px-6 lg:px-8">
+      <section id="skills">
         <div className="">
           <TechStack />
         </div>
@@ -70,27 +70,18 @@ export default function LandingPage() {
 
       {/* Sessão sobre mim */}
       <section id="about">
-        <div className="">
+        <div>
           <SobreMIm />
         </div>
       </section>
 
       {/* Sessão Formulario de email */}
-      <section id="form">
-        <div className="container mx-auto text-center my-10 ">
-          <span className="text-4xl font-bold text-primary mb-4">
-            Fale Comigo
-          </span>
-        </div>
-        <div>
-          <EmailForm />
-        </div>
-      </section>
+      <section id="form"></section>
 
       {/* Sessão rodapé e contato */}
       <footer id="contato">
         <FooterContact />
       </footer>
-    </main>
+    </div>
   );
 }

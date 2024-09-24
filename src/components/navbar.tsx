@@ -7,6 +7,7 @@ import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { ModeToggle } from "@/providers/toggle-mode";
+import { Terminal } from "lucide-react";
 
 export default function NavbarComponent() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,37 +18,37 @@ export default function NavbarComponent() {
     <>
       <Link
         href="#about"
-        className="text-sm font-medium transition-colors hover:text-primary"
+        className="text-sm font-medium  hover:text-blue-500 dark:text-primary"
       >
         Sobre
       </Link>
       <Link
         href="#skills"
-        className="text-sm font-medium transition-colors hover:text-primary"
+        className="text-sm font-medium  hover:text-blue-500 dark:text-primary"
       >
         Habilidades
       </Link>
       <Link
         href="#projects"
-        className="text-sm font-medium transition-colors hover:text-primary"
+        className="text-sm font-medium  hover:text-blue-500 dark:text-primary"
       >
         Projetos
       </Link>
       <Link
         href="#servicos"
-        className="text-sm font-medium transition-colors hover:text-primary"
+        className="text-sm font-medium  dark:text-primary hover:text-blue-500"
       >
         Serviços
       </Link>
       <Link
         href="#clientes-1"
-        className="text-sm font-medium transition-colors hover:text-primary"
+        className="text-sm font-medium  hover:text-blue-500 dark:text-primary"
       >
         Clientes
       </Link>
       <Link
         href="#form"
-        className="text-sm font-medium transition-colors hover:text-primary"
+        className="text-sm font-medium  hover:text-blue-700 dark:text-primary"
       >
         Contato
       </Link>
@@ -55,56 +56,62 @@ export default function NavbarComponent() {
   );
 
   return (
-    <nav className="dark:text-primary border-b">
+    <nav className="dark:text-white dark:bg-secondary border-b">
       <div className="max-w-7xl mx-auto px-4 sm:px-6  lg:px-7">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <Image
-              src="/terminal.svg"
-              alt="João"
-              width={30}
-              height={30}
-              className="rounded-full"
-            />
+          <div className="flex-start ">
+            <Terminal className="h-10 w-10" />
           </div>
 
           {/* Links de navegação centralizados */}
           <div className="hidden md:flex md:items-center md:justify-center md:flex-1">
-            <div className="flex items-baseline space-x-4">
+            <div className="flex gap-8 items-baseline space-x-4">
               <NavItems />
             </div>
           </div>
 
-          {/* Botão Currículo (hidden on mobile) */}
-          <div className="hidden md:block">
-            <Button variant="outline">Currículo</Button>
-          </div>
-          <div>
+          {/* Botão Currículo (WEB) */}
+          <div className="hidden md:block items-center">
+            <Button
+              variant="outline"
+              className="dark:bg-secondary border-black	dark:border-white hover:text-blue-500 transition-all duration-300 ease-in-out hover:scale-105 "
+            >
+              Currículo
+            </Button>
             <ModeToggle />
           </div>
 
           {/* Botão de menu móvel */}
-          <div className="md:hidden bg-white">
+          <div className="md:hidden">
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
                 <Button
                   variant="ghost"
-                  className="px-2"
+                  className="px-2 dark:bg-secondary"
                   onClick={toggleSidebar}
                 >
                   <span className="sr-only">Open menu</span>
                   {isOpen ? (
-                    <X className="h-6 w-6" />
+                    <X className="h-8 w-8" />
                   ) : (
-                    <Menu className="h-6 w-6" />
+                    <Menu className="h-7 w-7" />
                   )}
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[240px] sm:w-[300px]">
-                <nav className="flex flex-col space-y-4 mt-4">
+
+              <SheetContent
+                side="right"
+                className="w-[17.5rem] sm:w-[18.75rem] dark:bg-secondary"
+              >
+                <nav className="flex flex-col space-y-6 mt-7">
                   <NavItems />
-                  <Button variant="outline" className="w-full transition-all duration-300 ease-in-out hover:bg-primary-dark hover:scale-105 border-black">
+                  <ModeToggle />
+                  {/* botao curriculo mobile */}
+                  <Button
+                    variant="outline"
+                    className="w-full transition-all duration-300 ease-in-out dark:bg-secondary hover:text-blue-500 hover:scale-105 dark:text-white dark:border-white border-black"
+                  >
                     Currículo
                   </Button>
                 </nav>

@@ -33,18 +33,18 @@ export default function VideoBackground() {
       <div className="relative z-10 flex h-full items-center gap-4 grid-cols-1">
         <div className="container flex-col gap-6 mx-auto px-6 md:px-12">
           <div>
-            <h1 className="text-6xl font-bold dark:text-primary md:text-8xl lg:w-2/3">
+            <h1 className="text-6xl font-bold text-white md:text-8xl lg:w-2/3">
               Criando soluções para o futuro
-            </h1>
-          </div>
-          <div>
-            <p className="text-4xl font-bold text-white md:text-22 lg:w-2/3">
+            </h1> 
+            <span className="text-4xl font-bold text-white md:text-22 lg:w-2/3">
               João Pedro Cruz | Desenvolvedor FullStack
-            </p>
+            </span>
           </div>
           <div>
-            <Button asChild className="dark:bg-secondary dark: text-secondary">
-              <a href="#contato" className="dark:text-primary">Siga-me</a>
+            <Button asChild className="dark:bg-secondary">
+              <a href="#contato" className="text-white">
+                Siga-me
+              </a>
             </Button>
           </div>
         </div>
