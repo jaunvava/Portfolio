@@ -7,12 +7,10 @@ import ProgrammerServices from "@/components/services";
 import SobreMIm from "@/components/sobre-mim";
 import TechStack from "@/components/skills";
 import VideoBackground from "@/components/sessao.hero";
-import FooterContact from "@/components/footer-contact";
 import NavbarComponent from "@/components/navbar";
-import ConquerCarousel from "@/components/conquistas";
+import ConquerCarousel from "@/components/section-conquistas";
 import SectionProjects from "@/components/sessao-projetos";
-
-// a cor secundaria e o preto (slate) e a primaria e o branco
+import NewFooter from "@/components/section-footer";
 
 export default function LandingPage() {
   return (
@@ -70,17 +68,15 @@ export default function LandingPage() {
 
       {/* Sessão sobre mim */}
       <section id="about">
-        <div>
-          <SobreMIm />
-        </div>
+        <SobreMIm />
       </section>
 
       {/* Sessão Formulario de email */}
       <section id="form"></section>
 
-      {/* Sessão rodapé e contato */}
-      <footer id="contato">
-        <FooterContact />
+      {/* Sessão rodapé e contato  */}
+      <footer>
+        <NewFooter />
       </footer>
     </div>
   );

@@ -67,7 +67,7 @@ export default function ProgrammerServices() {
     <section className="py-16 dark:bg-secondary">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8">Meus Serviços</h2>
-        <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
+        <p className="text-center text-gray-500 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
           Ofereço uma ampla gama de serviços de programação para atender às suas
           necessidades de desenvolvimento de software. Desde aplicações web até
           soluções móveis e muito mais, estou aqui para transformar suas ideias
@@ -77,14 +77,14 @@ export default function ProgrammerServices() {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="hover:shadow-lg hover:bg-gray-900 text-white transition-all duration-300 ease-in-out dark:text-primary hover:scale-105"
+              className="hover:shadow-lg dark:bg-gray-700 dark:hover:bg-gray-900 text-white transition-all duration-300 ease-in-out dark:text-primary hover:scale-105"
             >
-              <CardHeader className="flex flex-row items-center space-x-4 pb-2 ">
+              <CardHeader className="flex flex-row items-center space-x-4 pb-2 text-black dark:text-white ">
                 {service.icon}
                 <CardTitle>{service.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-400">{service.description}</p>
+                <p className=" text-gray-500 dark:text-gray-400 ">{service.description}</p>
               </CardContent>
             </Card>
           ))}

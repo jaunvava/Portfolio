@@ -55,9 +55,9 @@ const achievements = [
 export default function ConquerCarousel() {
   return (
     <section className="py-12 max-h-[600px] overflow-hidden dark:bg-secondary">
-      <div className="container mx-auto px-4 h-full flex flex-col">
+      <div className="container mx-auto px-4 h-full flex flex-col ">
         <div className="flex-grow overflow-y-auto">
-          <Carousel className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto">
+          <Carousel className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto ">
             <CarouselContent>
               {achievements.map((achievement, index) => (
                 <CarouselItem key={index}>

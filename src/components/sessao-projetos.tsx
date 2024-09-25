@@ -27,7 +27,7 @@ const projects: Project[] = [
     description:
       "A full-stack e-commerce solution with user authentication, product management, and payment integration.",
     technologies: [
-      { name: "React", icon: "/placeholder.svg?height=32&width=32" },
+      { name: "React", icon: "/?height=32&width=32" },
       { name: "Node.js", icon: "/placeholder.svg?height=32&width=32" },
       { name: "MongoDB", icon: "/placeholder.svg?height=32&width=32" },
       { name: "Stripe", icon: "/placeholder.svg?height=32&width=32" },

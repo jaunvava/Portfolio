@@ -40,14 +40,14 @@ export default function FeedbackClients() {
   return (
     <section className="py-12 dark:bg-secondary ">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
-        <h2 className="text-3xl font-bold text-center mb-8">
+        <h2 className="text-3xl font-bold text-center mb-8 dark:text-primary ">
           O que meus clientes dizem
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}
-              className="hover:shadow-lg hover:bg-gray-900 text-white transition-all duration-300 ease-in-out dark:text-primary hover:scale-105"
+              className="hover:shadow-lg dark:bg-gray-700 hover:bg-gray-900-dark text-white transition-all duration-300 ease-in-out dark:text-primary hover:scale-105"
             >
               <CardContent className="p-6">
                 <div className="flex items-start mb-4">
@@ -64,16 +64,16 @@ export default function FeedbackClients() {
                     </AvatarFallback>
                   </Avatar>
                   <div>
-                    <h3 className="font-semibold">{testimonial.name}</h3>
-                    <p className="text-sm text-gray-500">
+                    <h3 className="font-semibold text-black dark:text-white" >{testimonial.name}</h3>
+                    <p className="text-sm text-gray-600 dark:text-gray-300">
                       {testimonial.position}
                     </p>
-                    <p className="text-sm text-gray-500">
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
                       {testimonial.company}
                     </p>
                   </div>
                 </div>
-                <p className="text-gray-600">{testimonial.content}</p>
+                <p className="text-gray-500 dark:text-gray-300">{testimonial.content}</p>
               </CardContent>
             </Card>
           ))}

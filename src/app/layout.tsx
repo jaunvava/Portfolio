@@ -18,11 +18,6 @@ const fontSans = FontSans({
   variable: "--font-sans",
 });
 
-// const fontHeading = localFont({
-//   src: "../assets/fonts/CalSans-SemiBold.wolff2",
-//   variable: "--font-heading",
-// });
-
 export const metadata: Metadata = {
   title: "Portfólio | João Pedro",
   description: "Meu Portfólio Pessoal",

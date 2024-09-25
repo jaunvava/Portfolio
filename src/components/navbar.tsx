@@ -18,31 +18,31 @@ export default function NavbarComponent() {
     <>
       <Link
         href="#about"
-        className="text-sm font-medium  hover:text-blue-500 dark:text-primary"
+        className="text-sm font-medium  hover:text-blue-700 dark:text-primary"
       >
         Sobre
       </Link>
       <Link
         href="#skills"
-        className="text-sm font-medium  hover:text-blue-500 dark:text-primary"
+        className="text-sm font-medium  hover:text-blue-700 dark:text-primary"
       >
         Habilidades
       </Link>
       <Link
         href="#projects"
-        className="text-sm font-medium  hover:text-blue-500 dark:text-primary"
+        className="text-sm font-medium  hover:text-blue-700 dark:text-primary"
       >
         Projetos
       </Link>
       <Link
         href="#servicos"
-        className="text-sm font-medium  dark:text-primary hover:text-blue-500"
+        className="text-sm font-medium  hover:text-blue-700 dark:text-primary "
       >
         Serviços
       </Link>
       <Link
         href="#clientes-1"
-        className="text-sm font-medium  hover:text-blue-500 dark:text-primary"
+        className="text-sm font-medium  hover:text-blue-700 dark:text-primary"
       >
         Clientes
       </Link>
@@ -75,7 +75,7 @@ export default function NavbarComponent() {
           <div className="hidden md:block items-center">
             <Button
               variant="outline"
-              className="dark:bg-secondary border-black	dark:border-white hover:text-blue-500 transition-all duration-300 ease-in-out hover:scale-105 "
+              className="dark:bg-secondary border-black	dark:border-white hover:text-blue-700 transition-all duration-300 ease-in-out hover:scale-105 "
             >
               Currículo
             </Button>
@@ -86,12 +86,13 @@ export default function NavbarComponent() {
           <div className="md:hidden">
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
+                {/* botão de abrir sidebar */}
                 <Button
                   variant="ghost"
                   className="px-2 dark:bg-secondary"
                   onClick={toggleSidebar}
                 >
-                  <span className="sr-only">Open menu</span>
+                  <span className="sr-only">abrir menu</span>
                   {isOpen ? (
                     <X className="h-8 w-8" />
                   ) : (
@@ -100,6 +101,7 @@ export default function NavbarComponent() {
                 </Button>
               </SheetTrigger>
 
+              {/* sidebar */}
               <SheetContent
                 side="right"
                 className="w-[17.5rem] sm:w-[18.75rem] dark:bg-secondary"

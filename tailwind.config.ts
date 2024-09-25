@@ -10,8 +10,8 @@ const config: Config = {
   theme: {
   	extend: {
   		colors: {
-  			'green-primary': '#fff',
-  			'green-actived': '#fff',
+  			'green-primary': '',
+  			'green-actived': '',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
