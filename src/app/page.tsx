@@ -16,7 +16,7 @@ export default function LandingPage() {
   return (
     <div>
       {/* Barra de navegação */}
-      <nav>
+      <nav id="home">
         <NavbarComponent />
       </nav>
 
@@ -25,16 +25,14 @@ export default function LandingPage() {
         <div>
           <VideoBackground />
         </div>
-        <div id="clientes-1">
+        <div id="client-1">
           <ClientCarousel />
         </div>
       </section>
 
       {/* Sessão feedback Clientes*/}
-      <section id="clientes-2">
-        <div>
-          <FeedbackClients />
-        </div>
+      <section id="client-2">
+        <FeedbackClients />
       </section>
 
       {/* Sessão Projetos */}
@@ -43,22 +41,18 @@ export default function LandingPage() {
       </section>
 
       {/* Sessão Serviços */}
-      <section id="servicos">
-        <div className="">
-          <ProgrammerServices />
-        </div>
+      <section id="services">
+        <ProgrammerServices />
       </section>
 
       {/* Sessão Retenção de Clientes */}
       <section>
-        <div>
-          <Differentiators />
-        </div>
+        <Differentiators />
       </section>
 
       {/* Sessão habilidades e minhas conquistas*/}
       <section id="skills">
-        <div className="">
+        <div>
           <TechStack />
         </div>
         <div>
@@ -75,7 +69,7 @@ export default function LandingPage() {
       <section id="form"></section>
 
       {/* Sessão rodapé e contato  */}
-      <footer>
+      <footer id="contact">
         <NewFooter />
       </footer>
     </div>

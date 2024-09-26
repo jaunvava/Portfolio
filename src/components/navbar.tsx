@@ -35,13 +35,13 @@ export default function NavbarComponent() {
         Projetos
       </Link>
       <Link
-        href="#servicos"
+        href="#services"
         className="text-sm font-medium  hover:text-blue-700 dark:text-primary "
       >
         Serviços
       </Link>
       <Link
-        href="#clientes-1"
+        href="#client-1"
         className="text-sm font-medium  hover:text-blue-700 dark:text-primary"
       >
         Clientes

@@ -44,7 +44,7 @@ export default function NewFooter() {
               </li>
               <li>
                 <Link
-                  href="#servicos"
+                  href="#services"
                   className="hover:text-gray-300 transition-colors"
                 >
                   Serviços
@@ -52,7 +52,7 @@ export default function NewFooter() {
               </li>
               <li>
                 <Link
-                  href="#contato"
+                  href="#contact"
                   className="hover:text-gray-300 transition-colors"
                 >
                   Contato
