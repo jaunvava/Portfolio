@@ -9,7 +9,6 @@ import TechStack from "@/components/skills";
 import VideoBackground from "@/components/sessao.hero";
 import NavbarComponent from "@/components/navbar";
 import ConquerCarousel from "@/components/section-conquistas";
-import SectionProjects from "@/components/sessao-projetos";
 import NewFooter from "@/components/section-footer";
 import ProjectShowcase from "@/components/section-projects";
 
