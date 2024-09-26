@@ -42,7 +42,7 @@ export default function VideoBackground() {
           </div>
           <div>
             <Button asChild className="dark:bg-secondary">
-              <a href="#contato" className="text-white">
+              <a href="#contact" className="text-white">
                 Siga-me
               </a>
             </Button>

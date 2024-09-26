@@ -5,13 +5,13 @@ import { motion, useAnimation, useInView } from "framer-motion";
 
 const clients = [
   { name: "SpaceX", logo: "/spacex-icon.svg?height=50&width=50" },
-  { name: "NASA", logo: "/nasa-icon.svg?height=50&width=50" },
-  { name: "Logitech", logo: "/logitech-icon.svg?height=50&width=50" },
-  { name: "Tesla", logo: "/tesla-icon.svg?height=50&width=50" },
-  { name: "Microsoft", logo: "/microsoft-icon.svg?height=50&width=50" },
-  { name: "Apple", logo: "/apple-icon.svg?height=50&width=50" },
-  { name: "Google", logo: "/google-icon.svg?height=50&width=50" },
-  { name: "Amazon", logo: "/amazon-icon.svg?height=50&width=50" },
+  { name: "NASA", logo: "/icons8-nasa.svg?height=50&width=50" },
+  { name: "Logitech", logo: "/icons8-logitech.svg?height=50&width=50" },
+  { name: "Tesla", logo: "/icons8-tesla.svg?height=50&width=50" },
+  { name: "Microsoft", logo: "/icons8-microsoft.svg?height=50&width=50" },
+  { name: "Apple", logo: "/icons8-apple.svg?height=50&width=50" },
+  { name: "Google", logo: "/icons8-google.svg?height=50&width=50" },
+  { name: "Amazon", logo: "/icons8-amazon.svg?height=50&width=50" },
 ];
 
 export default function ClientCarousel() {

@@ -5,7 +5,7 @@ export default function FeedbackClients() {
   const testimonials = [
     {
       name: "Maria Silva",
-      avatar: "/pessoa-1.jpeg?height=40&width=40",
+      avatar: "/pessoa-2.png?height=40&width=40",
       company: "TechInova Ltda.",
       position: "Gerente de Projetos",
       content:
@@ -13,7 +13,7 @@ export default function FeedbackClients() {
     },
     {
       name: "João Santos",
-      avatar: "/pessoa-3.jpg?height=40&width=40",
+      avatar: "/pessoa-3.jpeg?height=40&width=40",
       company: "Construções Rápidas S.A.",
       position: "Diretor de Operações",
       content:
@@ -21,7 +21,7 @@ export default function FeedbackClients() {
     },
     {
       name: "Ana Oliveira",
-      avatar: "/pessoa-1.jpeg?height=40&width=40",
+      avatar: "/pessoa-4.jpg?height=40&width=40",
       company: "EcoVerde Soluções",
       position: "CEO",
       content:
@@ -29,7 +29,7 @@ export default function FeedbackClients() {
     },
     {
       name: "Carlos Ferreira",
-      avatar: "/pessoa-3.jpg?height=40&width=40",
+      avatar: "/pessoa-1.png?height=40&width=40",
       company: "LogisTech Express",
       position: "Coordenador de Logística",
       content:
@@ -64,7 +64,9 @@ export default function FeedbackClients() {
                     </AvatarFallback>
                   </Avatar>
                   <div>
-                    <h3 className="font-semibold text-black dark:text-white" >{testimonial.name}</h3>
+                    <h3 className="font-semibold text-black dark:text-white">
+                      {testimonial.name}
+                    </h3>
                     <p className="text-sm text-gray-600 dark:text-gray-300">
                       {testimonial.position}
                     </p>
@@ -73,7 +75,9 @@ export default function FeedbackClients() {
                     </p>
                   </div>
                 </div>
-                <p className="text-gray-500 dark:text-gray-300">{testimonial.content}</p>
+                <p className="text-gray-500 dark:text-gray-300">
+                  {testimonial.content}
+                </p>
               </CardContent>
             </Card>
           ))}

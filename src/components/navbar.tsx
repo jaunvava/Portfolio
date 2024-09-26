@@ -6,7 +6,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import { ModeToggle } from "@/providers/toggle-mode";
+import { ModeToggle } from "@/app/providers/toggle-mode";
 import { Terminal } from "lucide-react";
 
 export default function NavbarComponent() {
@@ -18,37 +18,37 @@ export default function NavbarComponent() {
     <>
       <Link
         href="#about"
-        className="text-sm font-medium  hover:text-blue-700 dark:text-primary"
+        className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary"
       >
         Sobre
       </Link>
       <Link
         href="#skills"
-        className="text-sm font-medium  hover:text-blue-700 dark:text-primary"
+        className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary"
       >
         Habilidades
       </Link>
       <Link
         href="#projects"
-        className="text-sm font-medium  hover:text-blue-700 dark:text-primary"
+        className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary"
       >
         Projetos
       </Link>
       <Link
         href="#services"
-        className="text-sm font-medium  hover:text-blue-700 dark:text-primary "
+        className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary "
       >
         Serviços
       </Link>
       <Link
         href="#client-1"
-        className="text-sm font-medium  hover:text-blue-700 dark:text-primary"
+        className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary"
       >
         Clientes
       </Link>
       <Link
         href="#form"
-        className="text-sm font-medium  hover:text-blue-700 dark:text-primary"
+        className="text-sm font-medium  hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary"
       >
         Contato
       </Link>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Epilogue, Montserrat } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/providers/theme-provider";
+import { ThemeProvider } from "@/app/providers/theme-provider";
 import { cn } from "@/lib/utils";
 import { Inter as FontSans } from "next/font/google";
 import LocalFont from "next/font/local";
