@@ -37,31 +37,30 @@ const projects: Project[] = [
     title: "E-commerce App",
     company: "Reserva Teu Corte Aí.",
     description:
-      "Uma aplicação de comércio eletrônico completa construída com React e Node.js",
+      "App voltado a conectar cabeleleiros a seus clientes que buscam o melhor corte.",
     date: "2023-05-15",
     projectUrl: "https://github.com/jaunvava/Reserva-teu-corte-ai",
     deployUrl: "https://ecommerce-app.vercel.app",
     previewContent:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Em um mundo onde a aparência e o estilo pessoal ganham cada vez mais importância, encontrar o cabeleireiro perfeito pode ser um desafio. Pensando nisso, desenvolvemos um aplicativo inovador que conecta cabeleireiros talentosos a clientes em busca do corte ideal.",
   },
   {
     id: 2,
     title: "System Manager Desktop App",
     company: "Panda Info Cz.",
     description:
-      "Um aplicativo de gerenciamento de tarefas com autenticação de usuário e armazenamento em banco de dados",
+      "Entendemos que um gerenciamento eficiente é fundamental para o sucesso de qualquer negócio. Por isso, desenvolvemos um sistema de gestão voltado ao controle interno de Ordens de Serviço (OS) e gerenciamento de produtos.",
     date: "2023-07-22",
     projectUrl: "https://github.com/seuusuario/task-manager",
     deployUrl: "https://task-manager-app.vercel.app",
     previewContent:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "O sistema de gestão da Panda Informática é a solução ideal para empresas que buscam eficiência e controle em suas operações. Ao integrar o gerenciamento de Ordens de Serviço e produtos, proporcionamos uma ferramenta que não apenas organiza, mas também potencializa o crescimento do seu negócio..",
   },
   {
     id: 3,
     title: "Weather Dashboard",
     company: "MeteoData Systems.",
-    description:
-      "Dashboard de previsão do tempo utilizando uma API de clima e visualização de dados",
+    description: "Em desenvolvimento...",
     date: "2023-09-10",
     projectUrl: "https://github.com/seuusuario/weather-dashboard",
     deployUrl: "https://weather-dashboard.vercel.app",
@@ -72,8 +71,7 @@ const projects: Project[] = [
     id: 4,
     title: "Weather Dashboard",
     company: "MeteoData Systems.",
-    description:
-      "Dashboard de previsão do tempo utilizando uma API de clima e visualização de dados",
+    description: "Em desenvolvimento...",
     date: "2023-09-10",
     projectUrl: "https://github.com/seuusuario/weather-dashboard",
     deployUrl: "https://weather-dashboard.vercel.app",
@@ -101,7 +99,7 @@ export default function ProjectSectionDeploy() {
           {projects.map((project) => (
             <Card
               key={project.id}
-              className="flex flex-col h-80 w-90 border-gray-300 dark:border-gray-700 shadow-2xl dark:bg-gray-800 "
+              className="flex flex-col h-[80] w-[90] white-space border-gray-300 dark:border-gray-700 shadow-2xl dark:bg-gray-800 "
             >
               <CardHeader>
                 <div className="flex justify-between items-start">
@@ -115,10 +113,11 @@ export default function ProjectSectionDeploy() {
                     {new Date(project.date).toLocaleDateString()}
                   </Badge>
                 </div>
-                <CardDescription className="mt-3">
+                <CardDescription className="mt-1">
                   {project.description}
                 </CardDescription>
               </CardHeader>
+
               <CardFooter className="mt-auto">
                 <div className="flex flex-col sm:flex-row gap-2 w-full justify-between">
                   {/* botao ver projeto */}

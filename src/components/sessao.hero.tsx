@@ -30,12 +30,16 @@ export default function VideoBackground() {
         Seu navegador não suporta a tag de vídeo.
       </video>
       <div className="absolute inset-0 bg-opacity-50" />
-      <div className="relative z-10 flex h-full items-center gap-4 grid-cols-1">
-        <div className="container flex-col gap-6 mx-auto px-6 md:px-12">
+      <div className="relative z-10 flex h-full items-center gap-y-4 grid-cols-1">
+        <div className="container flex-col flex gap-6 mx-auto px-6 md:px-12">
           <div>
             <h1 className="text-6xl font-bold text-white md:text-8xl lg:w-2/3">
-              Criando soluções para o futuro
-            </h1> 
+              Criando soluções para o 
+                <span className="text-6xl font-bold text-blue-700 md:text-8xl lg:w-2/3">
+                futuro
+              </span>
+            </h1>
+
             <span className="text-4xl font-bold text-white md:text-22 lg:w-2/3">
               João Pedro Cruz | Desenvolvedor FullStack
             </span>

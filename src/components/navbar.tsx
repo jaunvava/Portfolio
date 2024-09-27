@@ -18,37 +18,37 @@ export default function NavbarComponent() {
     <>
       <Link
         href="#about"
-        className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary"
+        className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out"
       >
         Sobre
       </Link>
       <Link
         href="#skills"
-        className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary"
+        className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out"
       >
         Habilidades
       </Link>
       <Link
         href="#projects"
-        className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary"
+        className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out"
       >
         Projetos
       </Link>
       <Link
         href="#services"
-        className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary "
+        className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out "
       >
         Serviços
       </Link>
       <Link
         href="#client-1"
-        className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary"
+        className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out"
       >
         Clientes
       </Link>
       <Link
         href="#form"
-        className="text-sm font-medium  hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary"
+        className="text-sm font-medium  hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out"
       >
         Contato
       </Link>
@@ -71,8 +71,8 @@ export default function NavbarComponent() {
             </div>
           </div>
 
-          {/* Botão Currículo (WEB) */}
-          <div className="hidden md:block items-center">
+          {/* Botão Currículo e toggle (WEB) */}
+          <div className="hidden md:block items-baseline ">
             <Button
               variant="outline"
               className="dark:bg-secondary border-black	dark:border-white hover:text-blue-700 transition-all duration-300 ease-in-out hover:scale-105 "
