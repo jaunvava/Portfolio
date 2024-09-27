@@ -1,16 +1,14 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import FeedbackClients from "@/components/feedback-cliente";
 import ClientCarousel from "@/components/client-loop";
 import Differentiators from "@/components/retencao-cliente";
-import ProgrammerServices from "@/components/services";
+import ProgrammerServices from "@/components/my-services";
 import SobreMIm from "@/components/sobre-mim";
 import TechStack from "@/components/skills";
 import VideoBackground from "@/components/sessao.hero";
 import NavbarComponent from "@/components/navbar";
 import ConquerCarousel from "@/components/section-conquistas";
 import NewFooter from "@/components/section-footer";
-import ProjectShowcase from "@/components/section-projects";
+import ProjectSectionDeploy from "@/components/project-section";
 
 export default function LandingPage() {
   return (
@@ -37,9 +35,9 @@ export default function LandingPage() {
 
       {/* Sessão Projetos */}
       <section id="projects">
-        <ProjectShowcase />
+        <ProjectSectionDeploy />
       </section>
-      
+
       {/* Sessão Serviços */}
       <section id="services">
         <ProgrammerServices />
