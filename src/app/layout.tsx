@@ -1,12 +1,8 @@
 import type { Metadata } from "next";
-import { Epilogue, Montserrat } from "next/font/google";
+import { Epilogue } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/app/providers/theme-provider";
-import { cn } from "@/lib/utils";
 import { Inter as FontSans } from "next/font/google";
-import LocalFont from "next/font/local";
-import { Variable } from "lucide-react";
-import localFont from "next/dist/compiled/@next/font/dist/local";
 
 const epilogue = Epilogue({
   subsets: ["latin"],

@@ -9,7 +9,7 @@ import Image from "next/image";
 import { ModeToggle } from "@/app/providers/toggle-mode";
 import { Terminal } from "lucide-react";
 
-export default function NavbarComponent() {
+export default function Navbarlayout() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleSidebar = () => setIsOpen(!isOpen);
@@ -17,23 +17,18 @@ export default function NavbarComponent() {
   const NavItems = () => (
     <>
       <Link
-        href="/sobremim"
+        href="/"
         className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out"
       >
-        Sobre
+        Home
       </Link>
       <Link
-        href="#skills"
+        href="#feedbackclientes"
         className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out"
       >
-        Habilidades
+        FeedBack
       </Link>
-      <Link
-        href="#projects"
-        className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out"
-      >
-        Projetos
-      </Link>
+
       <Link
         href="/services"
         className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out "
@@ -41,10 +36,16 @@ export default function NavbarComponent() {
         Serviços
       </Link>
       <Link
-        href="#form"
+        href="#carroselclientes"
+        className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out"
+      >
+        Clientes
+      </Link>
+      <Link
+        href="#duvidas"
         className="text-sm font-medium  hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out"
       >
-        Contato
+        Dúvidas
       </Link>
     </>
   );
@@ -67,12 +68,6 @@ export default function NavbarComponent() {
 
           {/* Botão Currículo e toggle (WEB) */}
           <div className="hidden md:block items-baseline ">
-            <Button
-              variant="outline"
-              className="dark:bg-secondary border-black	dark:border-white hover:text-blue-700 transition-all duration-300 ease-in-out hover:scale-105 "
-            >
-              Currículo
-            </Button>
             <ModeToggle />
           </div>
 

@@ -1,55 +1,25 @@
-"use client";
+import React from "react";
+import { ArrowRight } from "lucide-react";
 
-import { useState, useEffect } from "react";
-import { Button } from "./ui/button";
-
-export default function VideoBackground() {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
-  if (!isClient) {
-    return null;
-  }
-
+export default function HeroSection() {
   return (
-    <div className="relative h-screen w-full overflow-hidden">
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute top-0 left-0 min-h-full min-w-full object-cover"
-      >
-        <source
-          src="https://videos.pexels.com/video-files/8720760/8720760-uhd_2732_1440_25fps.mp4"
-          type="video/mp4"
-        />
-        Seu navegador não suporta a tag de vídeo.
-      </video>
-      <div className="absolute inset-0 bg-opacity-50" />
-      <div className="relative z-10 flex h-full items-center gap-y-4 grid-cols-1">
-        <div className="container flex-col flex gap-6 mx-auto px-6 md:px-12">
-          <div>
-            <h1 className="text-6xl font-bold text-white md:text-8xl lg:w-2/3">
-              Criando soluções para o futuro
-            </h1>
-
-            <span className="text-4xl font-bold text-white md:text-22 lg:w-2/3">
-              João Pedro Cruz | Desenvolvedor FullStack
-            </span>
-          </div>
-          <div>
-            <Button asChild className="dark:bg-secondary">
-              <a href="#contact" className="text-white">
-                Siga-me
-              </a>
-            </Button>
-          </div>
-        </div>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white dark:bg-secondary">
+      {/* Fundo com degradê radial */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-600 via-blue-900 to-black opacity-70"></div>
       </div>
-    </div>
+
+      {/* Conteúdo */}
+      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight mb-8">
+          <span className="block">João Pedro Cruz</span>
+          <span className="block text-blue-300">Programador</span>
+        </h1>
+        <button className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-black bg-blue-300 hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400 transition duration-150 ease-in-out">
+          Saiba Mais
+          <ArrowRight className="ml-2 -mr-1 h-5 w-5" aria-hidden="true" />
+        </button>
+      </div>
+    </section>
   );
 }

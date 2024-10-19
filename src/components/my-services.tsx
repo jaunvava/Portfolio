@@ -94,7 +94,7 @@ export default function ProgrammerServices() {
             size="lg"
             className="bg-blue-600 text-white transition-all duration-300 ease-in-out hover:bg-primary-dark dark:text-primary hover:scale-105"
           >
-            <a href="#form">Solicite um Orçamento</a>
+            <a href="/">Solicite um Orçamento</a>
           </Button>
         </div>
       </div>

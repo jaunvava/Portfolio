@@ -8,14 +8,13 @@ import {
   Github,
   Mails,
 } from "lucide-react";
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 export default function NewFooter() {
   return (
     <footer className=" bg-gray-700 dark:bg-gray-900 text-white">
       <div className="max-w-6xl mx-auto px-4 py-10 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="mb-8 md:mb-0">
+          <div className="mb-8 md:mb-0 flex flex-col gap-4">
             <Terminal className="h-10 w-10" />
             <p className="text-gray-400">
               Estou sempre aberto a novas oportunidades e colaborações. Sinta-se
@@ -50,18 +49,10 @@ export default function NewFooter() {
                   Serviços
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="#contact"
-                  className="hover:text-gray-300 transition-colors"
-                >
-                  Contato
-                </Link>
-              </li>
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+            <h3 className="text-lg font-semibold mb-4">Contato</h3>
             <p className="text-gray-400">PB Brasil</p>
             <p className="text-gray-400">City, State 12345</p>
             <p className="text-gray-400">Email: jpdevcontato@gmail.com</p>
@@ -103,7 +94,8 @@ export default function NewFooter() {
         </div>
         <div className="border-t border-gray-800 mt-10 pt-8 text-center text-gray-400">
           <p>
-            &copy; {new Date().getFullYear()} João Pedro Cruz. Todos os direitos reservados.
+            &copy; {new Date().getFullYear()} João Pedro Cruz. Todos os direitos
+            reservados.
           </p>
         </div>
       </div>

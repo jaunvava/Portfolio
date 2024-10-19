@@ -1,36 +1,22 @@
-import FeedbackClients from "@/components/feedback-cliente";
-import ClientCarousel from "@/components/client-loop";
-import Differentiators from "@/components/retencao-cliente";
-import ProgrammerServices from "@/components/my-services";
 import SobreMIm from "@/components/sobre-mim";
 import TechStack from "@/components/skills";
 import VideoBackground from "@/components/sessao.hero";
-import NavbarComponent from "@/components/navbar";
 import ConquerCarousel from "@/components/section-conquistas";
 import NewFooter from "@/components/section-footer";
 import ProjectSectionDeploy from "@/components/project-section";
+import FreelanceServices from "@/components/freela-servicos";
+import NavbarComponent from "@/components/navbar";
 
 export default function LandingPage() {
   return (
     <div>
-      {/* Barra de navegação */}
-      <nav id="home">
+      <header>
         <NavbarComponent />
-      </nav>
+      </header>
 
       {/* Sessão de Apresentação com video / sessão hero*/}
       <section>
-        <div>
-          <VideoBackground />
-        </div>
-        <div id="client-1">
-          <ClientCarousel />
-        </div>
-      </section>
-
-      {/* Sessão feedback Clientes*/}
-      <section id="client-2">
-        <FeedbackClients />
+        <VideoBackground />
       </section>
 
       {/* Sessão Projetos */}
@@ -38,29 +24,14 @@ export default function LandingPage() {
         <ProjectSectionDeploy />
       </section>
 
-      {/* Sessão Serviços */}
-      <section id="services">
-        <ProgrammerServices />
-      </section>
-
-      {/* Sessão Retenção de Clientes */}
-      <section>
-        <Differentiators />
-      </section>
-
       {/* Sessão habilidades e minhas conquistas*/}
       <section id="skills">
-        <div>
-          <TechStack />
-        </div>
-        <div>
-          <ConquerCarousel />
-        </div>
+        <TechStack />
       </section>
 
-      {/* Sessão sobre mim */}
-      <section id="about">
-        <SobreMIm />
+      {/* Sessão Serviços */}
+      <section id="services">
+        <FreelanceServices />
       </section>
 
       {/* Sessão Formulario de email */}

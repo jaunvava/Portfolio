@@ -4,14 +4,17 @@ import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 
 const clients = [
-  { name: "SpaceX", logo: "/spacex-icon.svg?height=50&width=50" },
-  { name: "NASA", logo: "/icons8-nasa.svg?height=50&width=50" },
-  { name: "Logitech", logo: "/icons8-logitech.svg?height=50&width=50" },
-  { name: "Tesla", logo: "/icons8-tesla.svg?height=50&width=50" },
-  { name: "Microsoft", logo: "/icons8-microsoft.svg?height=50&width=50" },
-  { name: "Apple", logo: "/icons8-apple.svg?height=50&width=50" },
-  { name: "Google", logo: "/icons8-google.svg?height=50&width=50" },
-  { name: "Amazon", logo: "/icons8-amazon.svg?height=50&width=50" },
+  { name: "SpaceX", logo: "/logoipsum-214.svg?height=50&width=50" },
+  { name: "NASA", logo: "/logoipsum-215.svg?height=50&width=50" },
+  { name: "Logitech", logo: "/logoipsum-219.svg?height=50&width=50" },
+  { name: "Tesla", logo: "/logoipsum-263.svg?height=50&width=50" },
+  { name: "Microsoft", logo: "/logoipsum-284.svg?height=50&width=50" },
+  { name: "Apple", logo: "/logoipsum-285.svg?height=50&width=50" },
+  { name: "Google", logo: "/logoipsum-286.svg?height=50&width=50" },
+  { name: "Amazon", logo: "/logoipsum-311.svg?height=50&width=50" },
+  { name: "Amazon", logo: "/logoipsum-317.svg?height=50&width=50" },
+  { name: "Amazon", logo: "/logoipsum-325.svg?height=50&width=50" },
+  { name: "Amazon", logo: "/logoipsum-329.svg?height=50&width=50" },
 ];
 
 export default function ClientCarousel() {
