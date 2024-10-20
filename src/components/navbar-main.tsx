@@ -18,31 +18,31 @@ export default function NavbarComponent() {
     <>
       <Link
         href="/sobremim"
-        className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out"
+        className="text-sm font-medium hover:text-orange-600 hover:dark:text-orange-500 dark:text-primary transition-all duration-600 ease-in-out"
       >
         Sobre
       </Link>
       <Link
         href="#skills"
-        className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out"
+        className="text-sm font-medium hover:text-orange-600 hover:dark:text-orange-500 dark:text-primary transition-all duration-600 ease-in-out"
       >
         Habilidades
       </Link>
       <Link
         href="#projects"
-        className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out"
+        className="text-sm font-medium hover:text-orange-600 hover:dark:text-orange-500 dark:text-primary transition-all duration-600 ease-in-out"
       >
         Projetos
       </Link>
       <Link
         href="/services"
-        className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out "
+        className="text-sm font-medium hover:text-orange-600 hover:dark:text-orange-500 dark:text-primary transition-all duration-600 ease-in-out "
       >
         Serviços
       </Link>
       <Link
         href="#form"
-        className="text-sm font-medium  hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out"
+        className="text-sm font-medium  hover:text-orange-600 hover:dark:text-orange-500 dark:text-primary transition-all duration-600 ease-in-out"
       >
         Contato
       </Link>

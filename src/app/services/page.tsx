@@ -39,6 +39,9 @@ export default function Pageservice() {
         <FAQSection />
       </section>
 
+      {/* Sessão Formulario de email */}
+      <section id="form"></section>
+
       {/* Rodapé */}
       <footer>
         <FooterLayout />

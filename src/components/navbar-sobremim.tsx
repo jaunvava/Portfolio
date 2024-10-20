@@ -17,32 +17,32 @@ export default function NavbarSobremim() {
     <>
       <Link
         href="/"
-        className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out"
+        className="text-sm font-medium hover:text-orange-600 hover:dark:text-orange-500 dark:text-primary transition-all duration-600 ease-in-out"
       >
         Home
       </Link>
       <Link
         href=""
-        className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out"
+        className="text-sm font-medium hover:text-orange-600 hover:dark:text-orange-500 dark:text-primary transition-all duration-600 ease-in-out"
       >
         FeedBack
       </Link>
 
       <Link
-        href=""
-        className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out "
+        href="/services"
+        className="text-sm font-medium hover:text-orange-600 hover:dark:text-orange-500 dark:text-primary transition-all duration-600 ease-in-out "
       >
         Serviços
       </Link>
       <Link
         href=""
-        className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out"
+        className="text-sm font-medium hover:text-orange-600 hover:dark:text-orange-500 dark:text-primary transition-all duration-600 ease-in-out"
       >
         Clientes
       </Link>
       <Link
         href=""
-        className="text-sm font-medium  hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out"
+        className="text-sm font-medium  hover:text-orange-600 hover:dark:text-orange-500 dark:text-primary transition-all duration-600 ease-in-out"
       >
         Dúvidas
       </Link>
