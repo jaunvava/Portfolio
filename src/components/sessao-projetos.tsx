@@ -40,7 +40,7 @@ const projects: Project[] = [
       "App voltado a conectar cabeleleiros a seus clientes que buscam o melhor corte.",
     date: "2023-05-15",
     projectUrl: "https://github.com/jaunvava/Reserva-teu-corte-ai",
-    deployUrl: "https://ecommerce-app.vercel.app",
+    deployUrl: "",
     previewContent:
       "Em um mundo onde a aparência e o estilo pessoal ganham cada vez mais importância, encontrar o cabeleireiro perfeito pode ser um desafio. Pensando nisso, desenvolvemos um aplicativo inovador que conecta cabeleireiros talentosos a clientes em busca do corte ideal.",
   },
@@ -51,8 +51,8 @@ const projects: Project[] = [
     description:
       "Entendemos que um gerenciamento eficiente é fundamental para o sucesso de qualquer negócio. Por isso, desenvolvemos um sistema de gestão voltado ao controle interno de Ordens de Serviço (OS) e gerenciamento de produtos.",
     date: "2023-07-22",
-    projectUrl: "https://github.com/seuusuario/task-manager",
-    deployUrl: "https://task-manager-app.vercel.app",
+    projectUrl: "",
+    deployUrl: "",
     previewContent:
       "O sistema de gestão da Panda Informática é a solução ideal para empresas que buscam eficiência e controle em suas operações. Ao integrar o gerenciamento de Ordens de Serviço e produtos, proporcionamos uma ferramenta que não apenas organiza, mas também potencializa o crescimento do seu negócio..",
   },
@@ -62,8 +62,8 @@ const projects: Project[] = [
     company: "MeteoData Systems.",
     description: "Em desenvolvimento...",
     date: "2023-09-10",
-    projectUrl: "https://github.com/seuusuario/weather-dashboard",
-    deployUrl: "https://weather-dashboard.vercel.app",
+    projectUrl: "",
+    deployUrl: "",
     previewContent:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
@@ -73,8 +73,8 @@ const projects: Project[] = [
     company: "MeteoData Systems.",
     description: "Em desenvolvimento...",
     date: "2023-09-10",
-    projectUrl: "https://github.com/seuusuario/weather-dashboard",
-    deployUrl: "https://weather-dashboard.vercel.app",
+    projectUrl: "",
+    deployUrl: "",
     previewContent:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },

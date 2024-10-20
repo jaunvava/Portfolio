@@ -3,15 +3,15 @@ import FAQSection from "@/components/faq";
 import FeedbackClients from "@/components/feedback-cliente";
 import FooterLayout from "@/components/footer-layout";
 import ProgrammerServices from "@/components/my-services";
-import Navbarlayout from "@/components/navbar-layout";
+import NavbarServices from "@/components/navbar-services";
 import Differentiators from "@/components/retencao-cliente";
 
 export default function Pageservice() {
   return (
-    <div>
+    <>
       {/* Cabeçalho */}
       <header id="inicio">
-        <Navbarlayout />
+        <NavbarServices />
       </header>
 
       {/* Meus serviços */}
@@ -28,12 +28,13 @@ export default function Pageservice() {
       <section id="feedbackclientes">
         <FeedbackClients />
       </section>
+
       {/* Meus Diferenciais */}
       <section>
         <Differentiators />
       </section>
 
-      {/* Sessão Faq */}
+      {/* Sessão FAQ */}
       <section id="duvidas">
         <FAQSection />
       </section>
@@ -42,6 +43,6 @@ export default function Pageservice() {
       <footer>
         <FooterLayout />
       </footer>
-    </div>
+    </>
   );
 }

@@ -5,11 +5,10 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
 import { ModeToggle } from "@/app/providers/toggle-mode";
 import { Terminal } from "lucide-react";
 
-export default function Navbarlayout() {
+export default function NavbarSobremim() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleSidebar = () => setIsOpen(!isOpen);
@@ -23,26 +22,26 @@ export default function Navbarlayout() {
         Home
       </Link>
       <Link
-        href="#feedbackclientes"
+        href=""
         className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out"
       >
         FeedBack
       </Link>
 
       <Link
-        href="/services"
+        href=""
         className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out "
       >
         Serviços
       </Link>
       <Link
-        href="#carroselclientes"
+        href=""
         className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out"
       >
         Clientes
       </Link>
       <Link
-        href="#duvidas"
+        href=""
         className="text-sm font-medium  hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out"
       >
         Dúvidas
@@ -67,9 +66,7 @@ export default function Navbarlayout() {
           </div>
 
           {/* Botão Currículo e toggle (WEB) */}
-          <div className="hidden md:block items-baseline ">
-            <ModeToggle />
-          </div>
+          <div className="hidden md:block items-baseline "></div>
 
           {/* Botão de menu móvel */}
           <div className="md:hidden">

@@ -1,7 +1,5 @@
 import React from "react";
 import {
-  Facebook,
-  Twitter,
   Instagram,
   Linkedin,
   Mail,
@@ -9,6 +7,7 @@ import {
   Github,
 } from "lucide-react";
 import { Button } from "./ui/button";
+import { ModeToggle } from "@/app/providers/toggle-mode";
 
 export default function FooterLayout() {
   return (
@@ -33,7 +32,7 @@ export default function FooterLayout() {
               </svg>
               <span className="ml-3 text-xl font-bold">Logo</span>
             </div>
-            <Button className="bg-orange-600 hover:bg-orange-500 text-white rounded-lg font-bold py-2 gap-2 px-4 transition hover:scale-105 duration-300">
+            <Button className="bg-orange-600 hover:bg-orange-600 text-white rounded-lg font-bold py-2 gap-2 px-4 transition hover:scale-105 duration-500 text-lg shadow-lg shadow-orange-500/50">
               Curriculo
               <SquareArrowOutUpRight size="h-[120]" />
             </Button>
@@ -43,22 +42,23 @@ export default function FooterLayout() {
             <h1 className="text-xl font-bold">Links Rápidos</h1>
             <a
               href="/"
-              className="flex items-center hover:text-orange-600 transition duration-300"
+              className="flex items-center hover:text-orange-600 transition duration-400"
             >
               Home
             </a>
             <a
               href="#inicio"
-              className="flex items-center hover:text-orange-600 transition duration-300"
+              className="flex items-center hover:text-orange-600 transition duration-400"
             >
               Inicio
             </a>
             <a
-              href="#"
-              className="flex items-center hover:text-orange-600 transition duration-300"
+              href="/services"
+              className="flex items-center hover:text-orange-600 transition duration-400"
             >
               Serviços
             </a>
+            <ModeToggle />
           </div>
 
           {/* Links da direita*/}
@@ -66,7 +66,7 @@ export default function FooterLayout() {
             <h1 className="text-xl font-bold">Contato</h1>
             <a
               href="maito:jpdevcontato@gmail.com"
-              className="flex items-center hover:text-orange-600 transition duration-300"
+              className="flex items-center hover:text-orange-600 transition duration-400"
             >
               <Mail className="h-5 w-5 mr-2" />
               jpdevcontato@gmail.com
@@ -74,21 +74,14 @@ export default function FooterLayout() {
 
             <a
               href="#"
-              className="flex items-center hover:text-orange-600 transition duration-300"
+              className="flex items-center hover:text-orange-600 transition duration-400"
             >
               <Github className="h-5 w-5 mr-2" />
               GitHub
             </a>
             <a
               href="#"
-              className="flex items-center hover:text-orange-600 transition duration-300"
-            >
-              <Instagram className="h-5 w-5 mr-2" />
-              Instagram
-            </a>
-            <a
-              href="#"
-              className="flex items-center hover:text-orange-600 transition duration-300"
+              className="flex items-center hover:text-orange-600 transition duration-400"
             >
               <Linkedin className="h-5 w-5 mr-2" />
               LinkedIn
@@ -98,8 +91,8 @@ export default function FooterLayout() {
 
         {/* Copyright */}
         <div className="mt-8 border-t border-gray-700 pt-8 text-center text-sm">
-          © {new Date().getFullYear()} João Pedro Cruz.{" "}
-          <p className="hover:text-orange-600">Todos os direitos reservados.</p>
+          © {new Date().getFullYear()} João Pedro Cruz. Todos os direitos
+          reservados.
         </div>
       </div>
     </footer>

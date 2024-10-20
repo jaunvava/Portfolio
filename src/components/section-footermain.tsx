@@ -9,7 +9,7 @@ import {
   Mails,
 } from "lucide-react";
 
-export default function NewFooter() {
+export default function FooterMain() {
   return (
     <footer className=" bg-gray-700 dark:bg-gray-900 text-white">
       <div className="max-w-6xl mx-auto px-4 py-10 md:py-16">
@@ -35,7 +35,7 @@ export default function NewFooter() {
               </li>
               <li>
                 <Link
-                  href="#about"
+                  href="/sobremim"
                   className="hover:text-gray-300 transition-colors"
                 >
                   Sobre
@@ -43,7 +43,7 @@ export default function NewFooter() {
               </li>
               <li>
                 <Link
-                  href="#services"
+                  href="/services"
                   className="hover:text-gray-300 transition-colors"
                 >
                   Serviços

@@ -1,22 +1,21 @@
-import SobreMIm from "@/components/sobre-mim";
-import TechStack from "@/components/skills";
-import VideoBackground from "@/components/sessao.hero";
-import ConquerCarousel from "@/components/section-conquistas";
-import NewFooter from "@/components/section-footer";
-import ProjectSectionDeploy from "@/components/project-section";
+import TechStack from "@/components/sessao-habilidades";
+import ProjectSectionDeploy from "@/components/sessao-projetos";
 import FreelanceServices from "@/components/freela-servicos";
 import NavbarComponent from "@/components/navbar";
+import HeroSection from "@/components/sessao.hero";
+import FooterMain from "@/components/section-footermain";
 
 export default function LandingPage() {
   return (
     <div>
-      <header>
+      {/* Cabeçalho */}
+      <header id="">
         <NavbarComponent />
       </header>
 
-      {/* Sessão de Apresentação com video / sessão hero*/}
-      <section>
-        <VideoBackground />
+      {/* Sessão de Apresentação */}
+      <section id="">
+        <HeroSection />
       </section>
 
       {/* Sessão Projetos */}
@@ -24,12 +23,12 @@ export default function LandingPage() {
         <ProjectSectionDeploy />
       </section>
 
-      {/* Sessão habilidades e minhas conquistas*/}
+      {/* Sessão habilidades Stack*/}
       <section id="skills">
         <TechStack />
       </section>
 
-      {/* Sessão Serviços */}
+      {/* Sessão redirecionando para a página de serviços*/}
       <section id="services">
         <FreelanceServices />
       </section>
@@ -37,9 +36,9 @@ export default function LandingPage() {
       {/* Sessão Formulario de email */}
       <section id="form"></section>
 
-      {/* Sessão rodapé e contato  */}
+      {/* Sessão rodapé e contato */}
       <footer id="contact">
-        <NewFooter />
+        <FooterMain />
       </footer>
     </div>
   );
