@@ -2,15 +2,16 @@ import TechStack from "@/components/sessao-habilidades";
 import ProjectSectionDeploy from "@/components/sessao-projetos";
 import FreelanceServices from "@/components/sessao-freela-servicos";
 import HeroSection from "@/components/sessao-hero-teste";
-import NavbarMini from "@/app/_template/navbar-mini-main";
 import FooterMain from "@/app/_template/rodape-main";
+import NavbarMinimain from "@/app/_template/navbar-mini-main";
+import ConquerCarousel from "@/components/sessao-conquistas";
 
 export default function LandingPage() {
   return (
     <div>
       {/* Cabeçalho */}
       <header id="">
-        <NavbarMini />
+        <NavbarMinimain />
       </header>
 
       {/* Sessão de Apresentação */}
@@ -27,6 +28,14 @@ export default function LandingPage() {
       <section id="skills">
         <TechStack />
       </section>
+
+      {/* Sessão Consquitas */}
+      <section>
+        <ConquerCarousel />
+      </section>
+
+      {/* Sessão Linha do Tempo */}
+      <section></section>
 
       {/* Sessão redirecionando para a página de serviços*/}
       <section id="services">

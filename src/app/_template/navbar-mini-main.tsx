@@ -7,7 +7,7 @@ import { Menu, TerminalIcon, Terminal, Link2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
-export default function NavbarMini() {
+export default function NavbarMinimain() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);

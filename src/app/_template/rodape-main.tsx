@@ -14,7 +14,7 @@ import { AvatarDemo } from "../../components/avatar-image";
 
 export default function FooterMain() {
   return (
-    <footer className="bg-gray-600 dark:bg-gray-700 text-gray-300 dark:text-gray-300 ">
+    <footer className="bg-gray-600 dark:bg-gray-900 text-gray-300 dark:text-gray-300 ">
       <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Parte do sobre mim breve */}
@@ -36,7 +36,7 @@ export default function FooterMain() {
                   href="/"
                   className="text-sm hover:underline hover:text-orange-600 duration-300"
                 >
-                  Home
+                  Inicio
                 </a>
               </li>
               <li>
@@ -131,7 +131,7 @@ export default function FooterMain() {
         </div>
 
         {/* Footer do Rodapé */}
-        <Separator className="my-8 bg-black" />
+        <Separator className="my-8 bg-gray-500" />
 
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 ">
           <div className="flex space-x-4">
