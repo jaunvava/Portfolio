@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, TerminalIcon, Terminal } from "lucide-react";
+import { Menu, TerminalIcon, Terminal, Link2 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -15,29 +15,36 @@ export default function NavbarMini() {
   const NavLinks = () => (
     <>
       <Link
-        href="/"
-        className="text-sm font-medium text-black transition-colors hover:text-primary/80"
-        onClick={toggleMenu}
-      >
-        Início
-      </Link>
-      <Link
         href="/sobremim"
-        className="text-sm font-medium text-black transition-colors hover:text-primary/80"
+        className="text-lg font-medium text-white dark:text-black transition-colors hover:text-orange-600 duration-300"
         onClick={toggleMenu}
       >
         Sobre
       </Link>
       <Link
+        href="#skills"
+        className="text-lg font-medium text-white dark:text-black transition-colors hover:text-orange-600 duration-300"
+        onClick={toggleMenu}
+      >
+        Habilidades
+      </Link>
+      <Link
+        href="#projects"
+        className="text-lg font-medium text-white dark:text-black transition-colors hover:text-orange-600 duration-300"
+        onClick={toggleMenu}
+      >
+        Projetos
+      </Link>
+      <Link
         href="/services"
-        className="text-sm font-medium text-black transition-colors hover:text-primary/80"
+        className="text-lg font-medium text-white dark:text-black transition-colors hover:text-orange-600 duration-300"
         onClick={toggleMenu}
       >
         Serviços
       </Link>
       <Link
         href="#contact"
-        className="text-sm font-medium text-black transition-colors hover:text-primary/80"
+        className="text-lg font-medium text-white dark:text-black transition-colors hover:text-orange-600 duration-300"
         onClick={toggleMenu}
       >
         Contato
@@ -47,14 +54,16 @@ export default function NavbarMini() {
 
   return (
     <div className="fixed w-full flex justify-center mt-4">
-      <div className="fixed top-4 w-11/12 md:w-4/5 lg:w-3/4 xl:w-1/3 backdrop-blur-sm bg-white/10 dark:bg-gray-800/30 rounded-full shadow-lg p-2">
+      <div className="fixed top-4 w-11/12 md:w-4/5 lg:w-3/4 xl:w-1/2 backdrop-blur-sm bg-black/30 dark:bg-gray-600/90 rounded-full shadow-lg p-2">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <TerminalIcon className="h-7 w-7 ml-3" />
+            <Link href="/">
+              <TerminalIcon className="h-8 w-8 ml-3" />
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-4">
+          <nav className="hidden md:flex items-center space-x-10">
             <NavLinks />
           </nav>
 

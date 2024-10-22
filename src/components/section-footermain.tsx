@@ -1,16 +1,8 @@
 import Link from "next/link";
-import {
-  Facebook,
-  Twitter,
-  Instagram,
-  Linkedin,
-  Terminal,
-  Github,
-  Mails,
-} from "lucide-react";
-import { Switch } from "./ui/switch";
+import { Instagram, Linkedin, Terminal, Github, Mails } from "lucide-react";
+import { ModeToggle } from "@/app/providers/toggle-mode";
 
-export default function FooterMain() {
+export default function FooterSobre() {
   return (
     <footer className=" bg-gray-700 dark:bg-gray-900 text-white">
       <div className="max-w-6xl mx-auto px-4 py-10 md:py-16">
@@ -51,7 +43,7 @@ export default function FooterMain() {
                 </Link>
               </li>
               <li>
-                <Switch />
+                <ModeToggle />
               </li>
             </ul>
           </div>

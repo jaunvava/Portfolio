@@ -1,10 +1,9 @@
 import TechStack from "@/components/sessao-habilidades";
 import ProjectSectionDeploy from "@/components/sessao-projetos";
 import FreelanceServices from "@/components/freela-servicos";
-import NavbarComponent from "@/components/navbar-main";
 import HeroSection from "@/components/sessao.hero";
-import FooterMain from "@/components/section-footermain";
 import NavbarMini from "@/components/navbar-mini";
+import FooterMain from "@/components/sessao-rodape-main";
 
 export default function LandingPage() {
   return (
