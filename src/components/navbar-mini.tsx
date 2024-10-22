@@ -1,115 +1,90 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
+import { Menu, TerminalIcon, Terminal } from "lucide-react";
+
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, X } from "lucide-react";
-import Link from "next/link";
-import { ModeToggle } from "@/app/providers/toggle-mode";
-import { Terminal } from "lucide-react";
 
-export default function NavbarServices() {
+export default function NavbarMini() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleSidebar = () => setIsOpen(!isOpen);
+  const toggleMenu = () => setIsOpen(!isOpen);
 
-  const NavItems = () => (
+  const NavLinks = () => (
     <>
       <Link
         href="/"
-        className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out"
+        className="text-sm font-medium text-black transition-colors hover:text-primary/80"
+        onClick={toggleMenu}
       >
-        Home
+        Início
       </Link>
       <Link
-        href="#feedbackclientes"
-        className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out"
+        href="/sobremim"
+        className="text-sm font-medium text-black transition-colors hover:text-primary/80"
+        onClick={toggleMenu}
       >
-        FeedBack
+        Sobre
       </Link>
-
       <Link
         href="/services"
-        className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out "
+        className="text-sm font-medium text-black transition-colors hover:text-primary/80"
+        onClick={toggleMenu}
       >
         Serviços
       </Link>
       <Link
-        href="#carroselclientes"
-        className="text-sm font-medium hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out"
+        href="#contact"
+        className="text-sm font-medium text-black transition-colors hover:text-primary/80"
+        onClick={toggleMenu}
       >
-        Clientes
-      </Link>
-      <Link
-        href="#duvidas"
-        className="text-sm font-medium  hover:text-blue-600 hover:dark:text-blue-500 dark:text-primary transition-all duration-400 ease-in-out"
-      >
-        Dúvidas
+        Contato
       </Link>
     </>
   );
 
   return (
-    <nav className="dark:text-white backdrop-blur-sm bg-slate-600 rounded-xl">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6  lg:px-7">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <div className="flex-start ">
-            <Terminal className="h-10 w-10" />
+    <div className="fixed w-full flex justify-center mt-4">
+      <div className="fixed top-4 w-11/12 md:w-4/5 lg:w-3/4 xl:w-1/3 backdrop-blur-sm bg-white/10 dark:bg-gray-800/30 rounded-full shadow-lg p-2">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center">
+            <TerminalIcon className="h-7 w-7 ml-3" />
           </div>
 
-          {/* Links de navegação centralizados */}
-          <div className="hidden md:flex md:items-center md:justify-center md:flex-1">
-            <div className="flex gap-8 items-baseline space-x-4">
-              <NavItems />
-            </div>
-          </div>
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-4">
+            <NavLinks />
+          </nav>
 
-          {/* Botão Currículo e toggle (WEB) */}
-          <div className="hidden md:block items-baseline ">
-            <ModeToggle />
-          </div>
-
-          {/* Botão de menu móvel */}
-          <div className="md:hidden">
-            <Sheet open={isOpen} onOpenChange={setIsOpen}>
-              <SheetTrigger asChild>
-                {/* botão de abrir sidebar */}
-                <Button
-                  variant="ghost"
-                  className="px-2 dark:bg-secondary"
-                  onClick={toggleSidebar}
-                >
-                  <span className="sr-only">abrir menu</span>
-                  {isOpen ? (
-                    <X className="h-8 w-8" />
-                  ) : (
-                    <Menu className="h-7 w-7" />
-                  )}
+          {/* Mobile Navigation */}
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon" className="md:hidden mr-2">
+                <Menu className="h-8 w-8" />
+                <span className="sr-only">Toggle menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent
+              side="right"
+              className="bg-backdrop-blur-sm bg-white/100"
+            >
+              <nav className="flex flex-col space-y-6 mt-4 text-white">
+                <NavLinks />
+                <Terminal />
+                <Button className=" md:inline-flex bg-orange-600  hover:bg-orange-500 hover:scale-105 transition duration-600 rounded-full">
+                  Currículo
                 </Button>
-              </SheetTrigger>
+              </nav>
+            </SheetContent>
+          </Sheet>
 
-              {/* sidebar */}
-              <SheetContent
-                side="right"
-                className="w-[17.5rem] sm:w-[18.75rem] dark:bg-secondary"
-              >
-                <nav className="flex flex-col space-y-6 mt-7">
-                  <NavItems />
-                  <ModeToggle />
-                  {/* botao curriculo mobile */}
-                  <Button
-                    variant="outline"
-                    className="w-full transition-all duration-300 ease-in-out dark:bg-secondary hover:text-blue-500 hover:scale-105 dark:text-white dark:border-white border-black"
-                  >
-                    Currículo
-                  </Button>
-                </nav>
-              </SheetContent>
-            </Sheet>
-          </div>
+          <Button className="hidden md:inline-flex bg-orange-600  hover:bg-orange-500 hover:scale-105 transition duration-600 rounded-full">
+            Currículo
+          </Button>
         </div>
       </div>
-    </nav>
+    </div>
   );
 }

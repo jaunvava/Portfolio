@@ -4,13 +4,14 @@ import FreelanceServices from "@/components/freela-servicos";
 import NavbarComponent from "@/components/navbar-main";
 import HeroSection from "@/components/sessao.hero";
 import FooterMain from "@/components/section-footermain";
+import NavbarMini from "@/components/navbar-mini";
 
 export default function LandingPage() {
   return (
     <div>
       {/* Cabeçalho */}
       <header id="">
-        <NavbarComponent />
+        <NavbarMini />
       </header>
 
       {/* Sessão de Apresentação */}

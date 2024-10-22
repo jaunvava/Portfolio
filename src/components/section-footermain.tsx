@@ -8,6 +8,7 @@ import {
   Github,
   Mails,
 } from "lucide-react";
+import { Switch } from "./ui/switch";
 
 export default function FooterMain() {
   return (
@@ -48,6 +49,9 @@ export default function FooterMain() {
                 >
                   Serviços
                 </Link>
+              </li>
+              <li>
+                <Switch />
               </li>
             </ul>
           </div>
