@@ -1,6 +1,6 @@
-import NavbarSobremim from "@/components/navbar-sobremim";
+import NavbarSobremim from "@/app/_template/navbar-sobremim";
 import SobreMIm from "@/components/sessao-sobre-mim";
-import FooterSobre from "@/components/section-footermain";
+import Footerlayout from "@/app/_template/rodape-layout-paginas";
 
 export default function SobreMin() {
   return (
@@ -20,7 +20,7 @@ export default function SobreMin() {
 
       {/* Rodapé */}
       <section>
-        <FooterSobre />
+        <Footerlayout />
       </section>
     </>
   );

@@ -1,10 +1,10 @@
-import ClientCarousel from "@/components/client-loop";
-import FAQSection from "@/components/faq";
-import FeedbackClients from "@/components/feedback-cliente";
-import FooterLayout from "@/components/sessao-footer-layout";
-import ProgrammerServices from "@/components/my-services";
-import NavbarServices from "@/components/navbar-services";
-import Differentiators from "@/components/retencao-cliente";
+import ClientCarousel from "@/components/sessao-client-loop";
+import FAQSection from "@/components/sessao-faq";
+import FeedbackClients from "@/components/sessao-feedback-cliente";
+import ProgrammerServices from "@/components/sessao-meus-servicos";
+import NavbarServices from "@/app/_template/navbar-services";
+import Differentiators from "@/components/sessao-retencao-cliente";
+import Footerlayout from "../_template/rodape-layout-paginas";
 
 export default function Pageservice() {
   return (
@@ -44,7 +44,7 @@ export default function Pageservice() {
 
       {/* Rodapé */}
       <footer>
-        <FooterLayout />
+        <Footerlayout />
       </footer>
     </>
   );

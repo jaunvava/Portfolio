@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import { ModeToggle } from "@/app/providers/toggle-mode";
-import { AvatarDemo } from "./avatar-image";
+import { AvatarDemo } from "../../components/avatar-image";
 
 export default function FooterMain() {
   return (

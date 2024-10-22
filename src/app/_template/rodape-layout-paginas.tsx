@@ -1,19 +1,26 @@
 import Link from "next/link";
-import { Instagram, Linkedin, Terminal, Github, Mails } from "lucide-react";
+import {
+  Instagram,
+  Linkedin,
+  Terminal,
+  Github,
+  Mails,
+  SquareArrowOutUpRight,
+} from "lucide-react";
 import { ModeToggle } from "@/app/providers/toggle-mode";
+import { Button } from "../../components/ui/button";
 
-export default function FooterSobre() {
+export default function Footerlayout() {
   return (
     <footer className=" bg-gray-700 dark:bg-gray-900 text-white">
       <div className="max-w-6xl mx-auto px-4 py-10 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="mb-8 md:mb-0 flex flex-col gap-4">
             <Terminal className="h-10 w-10" />
-            <p className="text-gray-400">
-              Estou sempre aberto a novas oportunidades e colaborações. Sinta-se
-              à vontade para entrar em contato comigo através de qualquer uma
-              das plataformas ao lado.
-            </p>
+            <Button className="bg-orange-600 hover:bg-orange-600 text-white rounded-lg font-bold py-2 gap-2 px-4 transition hover:scale-105 duration-500 text-lg shadow-lg shadow-orange-500/50">
+              Curriculo
+              <SquareArrowOutUpRight size="h-[10]" />
+            </Button>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">Links Rapidos</h3>

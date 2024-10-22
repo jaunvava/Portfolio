@@ -50,7 +50,7 @@ export default function NavbarServices() {
   );
 
   return (
-    <nav className="dark:text-white dark:bg-secondary">
+    <nav className="dark:text-white dark:bg-blue-500">
       <div className="max-w-7xl mx-auto px-4 sm:px-6  lg:px-7">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
