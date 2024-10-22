@@ -16,35 +16,35 @@ export default function NavbarMinimain() {
     <>
       <Link
         href="/sobremim"
-        className="text-lg font-medium text-white dark:text-black transition-colors hover:text-orange-600 duration-300"
+        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600 duration-300  "
         onClick={toggleMenu}
       >
         Sobre
       </Link>
       <Link
         href="#skills"
-        className="text-lg font-medium text-white dark:text-black transition-colors hover:text-orange-600 duration-300"
+        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600  duration-300"
         onClick={toggleMenu}
       >
         Habilidades
       </Link>
       <Link
         href="#projects"
-        className="text-lg font-medium text-white dark:text-black transition-colors hover:text-orange-600 duration-300"
+        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600  duration-300"
         onClick={toggleMenu}
       >
         Projetos
       </Link>
       <Link
         href="/services"
-        className="text-lg font-medium text-white dark:text-black transition-colors hover:text-orange-600 duration-300"
+        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600  duration-300"
         onClick={toggleMenu}
       >
         Serviços
       </Link>
       <Link
         href="#contact"
-        className="text-lg font-medium text-white dark:text-black transition-colors hover:text-orange-600 duration-300"
+        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600  duration-300"
         onClick={toggleMenu}
       >
         Contato
@@ -54,7 +54,7 @@ export default function NavbarMinimain() {
 
   return (
     <div className="fixed w-full flex justify-center mt-4">
-      <div className="fixed top-4 w-11/12 md:w-4/5 lg:w-3/4 xl:w-1/2 backdrop-blur-sm bg-black/30 dark:bg-gray-600/90 rounded-full shadow-lg p-2">
+      <div className="fixed top-4 w-11/12 md:w-4/5 lg:w-3/4 xl:w-1/2 backdrop-blur-sm bg-black/20 dark:bg-gray-600/90 rounded-full shadow-lg p-2">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <Link href="/">
@@ -79,7 +79,7 @@ export default function NavbarMinimain() {
               side="right"
               className="bg-backdrop-blur-sm bg-white/100"
             >
-              <nav className="flex flex-col space-y-6 mt-4 text-white">
+              <nav className="flex flex-col space-y-6 mt-4 text-black dark:text-white ">
                 <NavLinks />
                 <Terminal />
                 <Button className=" md:inline-flex bg-orange-600  hover:bg-orange-500 hover:scale-105 transition duration-600 rounded-full">
@@ -89,7 +89,7 @@ export default function NavbarMinimain() {
             </SheetContent>
           </Sheet>
 
-          <Button className="hidden md:inline-flex bg-orange-600  hover:bg-orange-500 hover:scale-105 transition duration-600 rounded-full">
+          <Button className="hidden md:inline-flex bg-orange-600 dark:text-white hover:bg-orange-500 hover:scale-105 transition duration-600 rounded-full">
             Currículo
           </Button>
         </div>
