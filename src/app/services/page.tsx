@@ -2,16 +2,16 @@ import ClientCarousel from "@/components/sessao-client-loop";
 import FAQSection from "@/components/sessao-faq";
 import FeedbackClients from "@/components/sessao-feedback-cliente";
 import ProgrammerServices from "@/components/sessao-meus-servicos";
-import NavbarServices from "@/app/_template/navbar-services";
 import Differentiators from "@/components/sessao-retencao-cliente";
 import Footerlayout from "../_template/rodape-layout-paginas";
+import NavbarMiniservices from "@/app/_template/navbar-mini-services";
 
 export default function Pageservice() {
   return (
     <>
       {/* Cabeçalho */}
       <header id="inicio">
-        <NavbarServices />
+        <NavbarMiniservices />
       </header>
 
       {/* Meus serviços */}
@@ -30,7 +30,7 @@ export default function Pageservice() {
       </section>
 
       {/* Meus Diferenciais */}
-      <section>
+      <section id="cta">
         <Differentiators />
       </section>
 
@@ -43,7 +43,7 @@ export default function Pageservice() {
       <section id="form"></section>
 
       {/* Rodapé */}
-      <footer>
+      <footer id="contatorodapeservicos">
         <Footerlayout />
       </footer>
     </>
