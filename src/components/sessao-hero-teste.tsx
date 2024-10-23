@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { MouseIcon, MousePointer } from "lucide-react";
+import { MouseIcon } from "lucide-react";
 
 export default function Introduction() {
   return (

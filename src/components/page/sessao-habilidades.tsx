@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import Image from "next/image";
 
 const technologies = [
   { name: "React", icon: "/icons8-react.svg" },
@@ -20,7 +21,7 @@ export default function TechStack() {
     <section className="py-16 dark:bg-secondary">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">
-          Tecnologias e Conquistas{" "}
+          Tecnologias e Conquistas
         </h2>
         <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
           {technologies.map((tech) => (
@@ -29,10 +30,12 @@ export default function TechStack() {
               className="hover:shadow-lg transition-all duration-300 transform hover:scale-105 dark:bg-gray-700"
             >
               <CardContent className="p-6 flex flex-col items-center justify-center">
-                <img
+                <Image
                   src={tech.icon}
                   alt={`${tech.name} icon`}
                   className="w-16 h-16 mb-4"
+                  width={10}
+                  height={10}
                 />
                 <span className="text-sm font-medium text-center">
                   {tech.name}

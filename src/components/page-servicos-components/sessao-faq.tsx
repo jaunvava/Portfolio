@@ -20,7 +20,9 @@ const FAQItem = ({
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
       >
-        <span className="text-lg font-medium text-gray-900 dark:text-white">{question}</span>
+        <span className="text-lg font-medium text-gray-900 dark:text-white">
+          {question}
+        </span>
         {isOpen ? (
           <ChevronUp className="h-5 w-5 text-orange-500 dark:text-orange-500" />
         ) : (

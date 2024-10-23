@@ -39,10 +39,14 @@ export default function FeedbackClients() {
 
   return (
     <section className="py-12 dark:bg-secondary ">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
-        <h2 className="text-3xl font-bold text-center mb-8 dark:text-primary ">
-          O que meus clientes dizem
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-bold text-center mb-8 dark:text-primary">
+          Meus resultados
         </h2>
+        <p className="text-lg font-semibold text-center mb-8 text-gray-500 dark:text-gray-400">
+          Ouça o que nossos clientes têm a dizer sobre nossa equipe e nossos
+          serviços.
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {testimonials.map((testimonial, index) => (
             <Card
