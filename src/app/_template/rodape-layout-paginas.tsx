@@ -57,15 +57,6 @@ export default function Footerlayout() {
             </ul>
           </div>
 
-          {/* Parte do contato */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Contato</h3>
-            <p className="text-gray-400">PB Brasil</p>
-            <p className="text-gray-400">City, State 12345</p>
-            <p className="text-gray-400">Email: jpdevcontato@gmail.com</p>
-            <p className="text-gray-400">Telefone: (83) 9 9345-0000</p>
-          </div>
-
           {/* Parte das Páginas */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Páginas</h3>
@@ -74,7 +65,7 @@ export default function Footerlayout() {
                 <li>
                   <a
                     href="#"
-                    className="text-sm hover:text-orange-500 duration-300 transition-colors"
+                    className="text-sm hover:text-orange-500 duration-300 transition-colors hover:underline"
                   >
                     Política de Privacidade
                   </a>
@@ -82,7 +73,7 @@ export default function Footerlayout() {
                 <li>
                   <a
                     href="#"
-                    className="text-sm hover:text-orange-500 duration-300 transition-colors"
+                    className="text-sm hover:text-orange-500 duration-300 transition-colors hover:underline"
                   >
                     Meu Propósito
                   </a>
@@ -90,7 +81,7 @@ export default function Footerlayout() {
                 <li>
                   <a
                     href="#"
-                    className="text-sm hover:text-orange-500 duration-300 transition-colors"
+                    className="text-sm hover:text-orange-500 duration-300 transition-colors hover:underline "
                   >
                     Linha do Tempo
                   </a>
@@ -98,13 +89,22 @@ export default function Footerlayout() {
                 <li>
                   <a
                     href="404@gmail.com"
-                    className="text-sm hover:text-orange-500 duration-300 transition-colors"
+                    className="text-sm hover:text-orange-500 duration-300 transition-colors hover:underline"
                   >
                     404
                   </a>
                 </li>
               </ul>
             </div>
+          </div>
+
+          {/* Parte do contato */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Contato</h3>
+            <p className="text-gray-400">PB Brasil</p>
+            <p className="text-gray-400">City, State 12345</p>
+            <p className="text-gray-400">Email: jpdevcontato@gmail.com</p>
+            <p className="text-gray-400">Telefone: (83) 9 9345-0000</p>
           </div>
         </div>
 

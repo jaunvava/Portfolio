@@ -37,6 +37,13 @@ export default function NavbarMiniservices() {
         CTA
       </Link>
       <Link
+        href="#duvidas"
+        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600  duration-300"
+        onClick={toggleMenu}
+      >
+        Dúvidas
+      </Link>
+      <Link
         href="#contatorodapeservicos"
         className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600  duration-300"
         onClick={toggleMenu}
