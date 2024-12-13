@@ -40,37 +40,18 @@ const feedbackData: FeedbackItem[] = [
     clientImage: "/placeholder.svg?height=40&width=40",
     clientCompany: "Startup Crescente",
   },
-  {
-    id: 4,
-    rating: 5,
-    comment:
-      "Impressionante atenção aos detalhes. O desenvolvedor foi além das expectativas.",
-    clientName: "Mariana Santos",
-    clientImage: "/placeholder.svg?height=40&width=40",
-    clientCompany: "Startup Crescente",
-  },
-  {
-    id: 5,
-    rating: 5,
-    comment:
-      "Impressionante atenção aos detalhes. O desenvolvedor foi além das expectativas.",
-    clientName: "Mariana Santos",
-    clientImage: "/placeholder.svg?height=40&width=40",
-    clientCompany: "Startup Crescente",
-  },
 ];
 
 export default function FeedbackCards() {
   return (
-    <div className="container mx-auto px-4 py-8 sm:px-6 lg:px-8 dark:bg-secondary">
+    <div className="mx-auto  px-4 py-8 sm:px-6 lg:px-8 dark:bg-secondary">
       <h2 className="text-3xl font-bold text-center mb-8 dark:text-primary">
-        Meus resultados
+        Meus clientes
       </h2>
       <p className="text-lg font-semibold text-center mb-8 text-gray-500 dark:text-gray-400">
-        Ouça o que nossos clientes têm a dizer sobre nossa equipe e nossos
-        serviços.
+        Ouça o que meus clientes têm a dizer sobre meus serviços.
       </p>
-      <div className="flex flex-wrap -mx-4 justify-center">
+      <div className="-z-10 flex flex-wrap -mx-4 justify-center">
         {feedbackData.map((item) => (
           <div key={item.id} className="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8 ">
             <Card className="h-full flex flex-col dark:bg-gray-600 rounded-b-lg">

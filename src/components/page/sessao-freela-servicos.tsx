@@ -7,6 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Link } from "lucide-react";
+import { buttonVariants } from "@/components/ui/button";
 
 export default function FreelanceServices() {
   return (
@@ -50,11 +51,8 @@ export default function FreelanceServices() {
           </ul>
         </CardContent>
         <CardFooter className="flex justify-center">
-          <Button asChild></Button>
-
           <Button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105">
-            <Link href="/services">Servicos</Link>
-            Entre em Contato
+            <a href="/services#servicos">Meus Serviços</a>
           </Button>
         </CardFooter>
       </Card>

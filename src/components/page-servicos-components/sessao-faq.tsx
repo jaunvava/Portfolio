@@ -69,7 +69,7 @@ export default function FAQSection() {
   ];
 
   return (
-    <section className="bg-white dark:bg-secondary py-12 px-4 mb-16 sm:px-6 lg:px-8">
+    <section className="dark:bg-secondary py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-3xl font-extrabold text-black dark:text-white text-center mb-8">
           Perguntas Frequentes

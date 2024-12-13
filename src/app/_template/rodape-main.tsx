@@ -137,20 +137,24 @@ export default function FooterMain() {
           <div className="flex space-x-4">
             <a
               href="#"
+              target=" 
+              _blank"
               className="text-gray-300 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-600"
             >
               <Instagram className="h-6 w-6 hover:scale-105 transition-all duration-300 ease-in-out" />
               <span className="sr-only">Instagram</span>
             </a>
             <a
-              href="#"
+              href="www.linkedin.com/in/joaopedrosouzs" target="_blank"
               className="text-gray-300 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-600 "
             >
               <Linkedin className="h-6 w-6 hover:scale-105 transition-all duration-300 ease-in-out" />
               <span className="sr-only">LinkedIn</span>
             </a>
             <a
-              href="#"
+              href="https://github.com/jaunvava"
+              target="
+              _blank"
               className="text-gray-300 dark:text-gray-300 hover:text-orange-600  dark:hover:text-orange-600"
             >
               <Github className="h-6 w-6 hover:scale-105 transition-all duration-300 ease-in-out" />

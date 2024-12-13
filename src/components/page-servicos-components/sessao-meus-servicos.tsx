@@ -48,18 +48,6 @@ const services = [
     description:
       "Criação de scripts e ferramentas de automação para otimizar processos e aumentar a produtividade.",
   },
-  {
-    icon: <Cpu className="h-8 w-8 text-pink-500" />,
-    title: "Consultoria Técnica",
-    description:
-      "Fornecimento de orientação especializada em arquitetura de software, escolha de tecnologia e melhores práticas de desenvolvimento.",
-  },
-  {
-    icon: <Shield className="h-8 w-8 text-gray-500" />,
-    title: "Segurança e Manutenção",
-    description:
-      "Implementação de medidas de segurança, manutenção contínua e atualizações para manter seus sistemas protegidos e atualizados.",
-  },
 ];
 
 export default function ProgrammerServices() {
@@ -84,7 +72,9 @@ export default function ProgrammerServices() {
                 <CardTitle>{service.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className=" text-gray-500 dark:text-gray-400 ">{service.description}</p>
+                <p className=" text-gray-500 dark:text-gray-400 ">
+                  {service.description}
+                </p>
               </CardContent>
             </Card>
           ))}

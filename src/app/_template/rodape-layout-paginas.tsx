@@ -102,7 +102,6 @@ export default function Footerlayout() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contato</h3>
             <p className="text-gray-400">PB Brasil</p>
-            <p className="text-gray-400">City, State 12345</p>
             <p className="text-gray-400">Email: jpdevcontato@gmail.com</p>
             <p className="text-gray-400">Telefone: (83) 9 9345-0000</p>
           </div>

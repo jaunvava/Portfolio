@@ -9,7 +9,7 @@ export default function Pagina404() {
       <h1 className="text-3xl sm:text-center font-bold text-orange-500 ">
         Página não Encontrada
       </h1>
-      <Image src="/error404.svg" alt="404" width={300} height={300} />
+      <Image src="/erro404.png" alt="404" width={300} height={300} />
       <p className="font-semibold sm:text-center">
         Você parece ter perdido o caminho... Mas não se preocupe,
       </p>

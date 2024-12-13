@@ -54,7 +54,7 @@ export default function NavbarMinimain() {
   );
 
   return (
-    <div className="fixed w-full flex justify-center mt-4">
+    <nav className="z-20 fixed w-full flex justify-center mt-4">
       <div className="fixed top-4 w-11/12 md:w-4/5 lg:w-3/4 xl:w-1/2 backdrop-blur-sm bg-black/20 dark:bg-gray-600/90 rounded-full shadow-lg p-2">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
@@ -76,7 +76,7 @@ export default function NavbarMinimain() {
                 <span className="sr-only">Toggle menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="bg-gray-100 dark:bg-gray-600">
+            <SheetContent side="top" className="bg-gray-100 dark:bg-gray-600">
               <nav className="flex flex-col space-y-6 mt-4 text-black dark:text-white ">
                 <NavLinks />
                 <ModeToggle />
@@ -92,6 +92,6 @@ export default function NavbarMinimain() {
           </Button>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }

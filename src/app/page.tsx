@@ -1,10 +1,9 @@
 import TechStack from "@/components/page/sessao-habilidades";
 import ProjectSectionDeploy from "@/components/page/sessao-projetos";
 import FreelanceServices from "@/components/page/sessao-freela-servicos";
-import HeroSection from "@/components/sessao-hero-teste";
 import FooterMain from "@/app/_template/rodape-main";
 import NavbarMinimain from "@/app/_template/navbar-mini-main";
-import ConquerCarousel from "@/components/page/sessao-conquistas";
+import { EmailForm } from "@/components/form-email/EmailForm";
 
 export default function LandingPage() {
   return (
@@ -16,7 +15,6 @@ export default function LandingPage() {
 
       {/* Sessão de Apresentação */}
       <section id="">
-        <HeroSection />
         {/* essa sessão vai ter a foto e um breve relato sobre mim */}
       </section>
 
@@ -30,18 +28,13 @@ export default function LandingPage() {
         <TechStack />
       </section>
 
-      {/* Sessão Consquitas */}
-      <section>
-        <ConquerCarousel />
-      </section>
-
       {/* Sessão redirecionando para a página de serviços*/}
       <section id="services">
         <FreelanceServices />
       </section>
 
       {/* Sessão Formulario de email */}
-      <section id="form"></section>
+      <section id="form">{/* <EmailForm /> */}</section>
 
       {/* Sessão rodapé e contato */}
       <footer id="contact">

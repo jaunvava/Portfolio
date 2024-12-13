@@ -4,7 +4,6 @@ import ProgrammerServices from "@/components/page-servicos-components/sessao-meu
 import Differentiators from "@/components/page-servicos-components/sessao-retencao-cliente";
 import Footerlayout from "../_template/rodape-layout-paginas";
 import NavbarMiniservices from "@/app/_template/navbar-mini-services";
-import SessaoHeroservices from "@/components/page-servicos-components/sessao-apresentacao-services";
 import FeedbackCards from "@/components/page-servicos-components/sessao-feedback-services";
 
 export default function Pageservice() {
@@ -16,9 +15,7 @@ export default function Pageservice() {
       </header>
 
       {/* Sessão de apresentação */}
-      <section>
-        <SessaoHeroservices />
-      </section>
+      <section></section>
 
       {/* Carrosel de Clientes */}
       <section id="carroselclienteservices">
@@ -26,12 +23,9 @@ export default function Pageservice() {
       </section>
 
       {/* Meus serviços */}
-      <section id="services">
+      <section id="servicos">
         <ProgrammerServices />
       </section>
-
-      {/* Sessão Preços */}
-      <section></section>
 
       {/* Feedback Clientes */}
       <section id="feedbackclientes">
@@ -39,9 +33,12 @@ export default function Pageservice() {
       </section>
 
       {/* Meus Diferenciais */}
-      <section id="cta">
+      <section id="diferenciais">
         <Differentiators />
       </section>
+
+      {/* Sessão Preços */}
+      <section id="precos"></section>
 
       {/* Sessão FAQ */}
       <section id="duvidas">

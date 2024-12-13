@@ -41,7 +41,7 @@ export default function ClientCarousel() {
   }, [controls, inView]);
 
   return (
-    <section className="py-12 dark:bg-secondary overflow-hidden">
+    <section className="-z-10 relative py-12 dark:bg-secondary overflow-hidden">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8"></h2>
         <div ref={carousel} className="relative w-full">
