@@ -4,6 +4,7 @@ import FreelanceServices from "@/components/page/sessao-freela-servicos";
 import FooterMain from "@/app/_template/rodape-main";
 import NavbarMinimain from "@/app/_template/navbar-mini-main";
 import { EmailForm } from "@/components/form-email/EmailForm";
+import Projectamost from "@/components/projects/page";
 
 export default function LandingPage() {
   return (
@@ -20,7 +21,7 @@ export default function LandingPage() {
 
       {/* Sessão Projetos */}
       <section id="projects">
-        <ProjectSectionDeploy />
+        <Projectamost />
       </section>
 
       {/* Sessão habilidades Tech Stack*/}
