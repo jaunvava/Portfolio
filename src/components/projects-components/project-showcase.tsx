@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/button";
 import { Code, Rocket } from "lucide-react";
 import Image from "next/image";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 interface Project {
   id: string;
@@ -48,6 +49,12 @@ export default function ProjectShowcaseAmost({
               <CardContent className="flex-grow">
                 <CardTitle className="text-xl mb-2">{project.title}</CardTitle>
                 <CardDescription>{project.description}</CardDescription>
+                <Link
+                  href={``}
+                  className="text-sm font-light hover:border-b hover:text-blue-500 duration-300"
+                >
+                  Leia mais
+                </Link>
               </CardContent>
               <CardFooter className="flex justify-between">
                 {/* Botão do código */}

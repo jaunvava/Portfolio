@@ -61,6 +61,7 @@ export default function NavbarMinimain() {
   );
 
   return (
+    // navegação
     <nav className="z-20 fixed w-full flex justify-center mt-4">
       <div className="fixed top-4 w-11/12 md:w-4/5 lg:w-3/4 xl:w-1/2 backdrop-blur-sm bg-black/20 dark:bg-gray-600/90 rounded-full shadow-lg p-2">
         <div className="flex items-center justify-between">
