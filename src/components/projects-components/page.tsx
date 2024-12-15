@@ -1,4 +1,4 @@
-import ProjectShowcase from ".././projects/project-showcase";
+import ProjectShowcase from "./project-showcase";
 
 const projects = [
   {

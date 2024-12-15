@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Epilogue } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/app/providers/theme-provider";
+import { ThemeProvider } from "@/app/_providers/theme-provider";
 import { Inter as FontSans } from "next/font/google";
 
 const epilogue = Epilogue({

@@ -7,7 +7,7 @@ import {
   Mails,
   SquareArrowOutUpRight,
 } from "lucide-react";
-import { ModeToggle } from "@/app/providers/toggle-mode";
+import { ModeToggle } from "@/app/_providers/toggle-mode";
 import { Button } from "../../components/ui/button";
 
 export default function Footerlayout() {

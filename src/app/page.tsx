@@ -1,10 +1,9 @@
-import TechStack from "@/components/page/sessao-habilidades";
-import ProjectSectionDeploy from "@/components/page/sessao-projetos";
-import FreelanceServices from "@/components/page/sessao-freela-servicos";
+import TechStack from "@/components/main-page-components/sessao-habilidades";
+import FreelanceServices from "@/components/main-page-components/sessao-freela-servicos";
 import FooterMain from "@/app/_template/rodape-main";
 import NavbarMinimain from "@/app/_template/navbar-mini-main";
-import { EmailForm } from "@/components/form-email/EmailForm";
-import Projectamost from "@/components/projects/page";
+import { EmailForm } from "@/components/email-compontents/EmailForm";
+import Projectamost from "@/components/projects-components/page";
 
 export default function LandingPage() {
   return (
@@ -15,9 +14,7 @@ export default function LandingPage() {
       </header>
 
       {/* Sessão de Apresentação */}
-      <section id="">
-        {/* essa sessão vai ter a foto e um breve relato sobre mim */}
-      </section>
+      <section id=""></section>
 
       {/* Sessão Projetos */}
       <section id="projects">
@@ -35,9 +32,9 @@ export default function LandingPage() {
       </section>
 
       {/* Sessão Formulario de email */}
-      <section id="form">{/* <EmailForm /> */}</section>
+      <section id="form"></section>
 
-      {/* Sessão rodapé e contato */}
+      {/* Sessão rodapé é contato */}
       <footer id="contact">
         <FooterMain />
       </footer>

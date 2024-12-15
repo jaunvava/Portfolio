@@ -6,7 +6,7 @@ import { Menu, TerminalIcon } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { ModeToggle } from "../providers/toggle-mode";
+import { ModeToggle } from "../_providers/toggle-mode";
 
 export default function NavbarMinisobremim() {
   const [isOpen, setIsOpen] = useState(false);

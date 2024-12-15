@@ -6,10 +6,10 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import { ModeToggle } from "@/app/providers/toggle-mode";
+import { ModeToggle } from "@/app/_providers/toggle-mode";
 import { Terminal } from "lucide-react";
 
-export default function NavbarComponent() {
+export default function NavbarComponentTeste() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleSidebar = () => setIsOpen(!isOpen);

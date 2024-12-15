@@ -1,10 +1,10 @@
-import ClientCarousel from "@/components/page-servicos-components/sessao-client-loop";
-import FAQSection from "@/components/page-servicos-components/sessao-faq";
-import ProgrammerServices from "@/components/page-servicos-components/sessao-meus-servicos";
-import Differentiators from "@/components/page-servicos-components/sessao-retencao-cliente";
+import ClientCarousel from "@/components/servicos-components/sessao-client-loop";
+import ProgrammerServices from "@/components/servicos-components/sessao-meus-servicos";
+import Differentiators from "@/components/servicos-components/sessao-retencao-cliente";
 import Footerlayout from "../_template/rodape-layout-paginas";
 import NavbarMiniservices from "@/app/_template/navbar-mini-services";
-import FeedbackCards from "@/components/page-servicos-components/sessao-feedback-services";
+import FeedbackCards from "@/components/servicos-components/sessao-feedback-services";
+import FAQ from "@/components/servicos-components/faq";
 
 export default function Pageservice() {
   return (
@@ -42,7 +42,7 @@ export default function Pageservice() {
 
       {/* Sessão FAQ */}
       <section id="duvidas">
-        <FAQSection />
+        <FAQ />
       </section>
 
       {/* Rodapé */}

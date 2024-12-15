@@ -1,4 +1,4 @@
-import SobreMIm from "@/components/page-sobremim-components/sessao-sobre-mim";
+import SobreMIm from "@/components/sobremim-components/sessao-sobre-mim";
 import Footerlayout from "@/app/_template/rodape-layout-paginas";
 import NavbarMinisobremim from "@/app/_template/navbar-mini-sobremim";
 

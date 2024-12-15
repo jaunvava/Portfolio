@@ -9,8 +9,8 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
-import { ModeToggle } from "@/app/providers/toggle-mode";
-import { AvatarDemo } from "../../components/page-sobremim-components/avatar-image";
+import { ModeToggle } from "@/app/_providers/toggle-mode";
+import { AvatarDemo } from "../../components/sobremim-components/avatar-image";
 
 export default function FooterMain() {
   return (
@@ -145,7 +145,8 @@ export default function FooterMain() {
               <span className="sr-only">Instagram</span>
             </a>
             <a
-              href="www.linkedin.com/in/joaopedrosouzs" target="_blank"
+              href="www.linkedin.com/in/joaopedrosouzs"
+              target="_blank"
               className="text-gray-300 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-600 "
             >
               <Linkedin className="h-6 w-6 hover:scale-105 transition-all duration-300 ease-in-out" />
