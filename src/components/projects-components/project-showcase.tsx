@@ -11,6 +11,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Code, Rocket } from "lucide-react";
 import Image from "next/image";
+import { motion } from "motion/react";
 
 interface Project {
   id: string;
@@ -29,12 +30,12 @@ export default function ProjectShowcaseAmost({
   projects,
 }: ProjectShowcaseProps) {
   return (
-    <section className="py-12 bg-gray-50">
+    <section className="dark:bg-secondary py-12 bg-gray-50">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8">Meus Projetos</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project) => (
-            <Card key={project.id} className="flex flex-col">
+            <Card key={project.id} className="flex flex-col dark:bg-gray-700">
               <CardHeader>
                 <Image
                   src={project.image}
@@ -49,13 +50,16 @@ export default function ProjectShowcaseAmost({
                 <CardDescription>{project.description}</CardDescription>
               </CardContent>
               <CardFooter className="flex justify-between">
+                {/* Botão do código */}
                 <Button
+                  className="dark:bg-gray-800"
                   variant="outline"
                   onClick={() => window.open(project.codeUrl, "_blank")}
                 >
                   <Code className="w-4 h-4 mr-2" />
                   Código
                 </Button>
+                {/* Botão do deploy */}
                 <Button
                   onClick={() => window.open(project.deployUrl, "_blank")}
                 >

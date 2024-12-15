@@ -1,3 +1,5 @@
+// ! esse componente está sem uso no momento!!!
+
 import React from "react";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -42,7 +44,7 @@ const feedbackData: FeedbackItem[] = [
   },
 ];
 
-export default function FeedbackCards() {
+export default function FeedbackCardsClientes() {
   return (
     <div className="mx-auto  px-4 py-8 sm:px-6 lg:px-8 dark:bg-secondary">
       <h2 className="text-3xl font-bold text-center mb-8 dark:text-primary">

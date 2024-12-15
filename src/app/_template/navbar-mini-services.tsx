@@ -44,7 +44,7 @@ export default function NavbarMiniservices() {
         Dúvidas
       </Link>
       <Link
-        href="#contatorodapeservicos"
+        href="/contact"
         className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600  duration-300"
         onClick={toggleMenu}
       >
@@ -77,7 +77,7 @@ export default function NavbarMiniservices() {
               </Button>
             </SheetTrigger>
             <SheetContent
-              side="right"
+              side="top"
               className="bg-gray-100 dark:bg-gray-600 text-white"
             >
               <nav className="flex flex-col space-y-6 mt-4  dark:text-white ">

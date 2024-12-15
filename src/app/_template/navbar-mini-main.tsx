@@ -16,18 +16,18 @@ export default function NavbarMinimain() {
   const NavLinks = () => (
     <>
       <Link
-        href="/sobremim"
+        href="/"
         className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600 duration-300  "
         onClick={toggleMenu}
       >
-        Sobre
+        Home
       </Link>
       <Link
-        href="#skills"
-        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600  duration-300"
+        href="/services"
+        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600 duration-300  "
         onClick={toggleMenu}
       >
-        Habilidades
+        Serviços
       </Link>
       <Link
         href="#projects"
@@ -37,14 +37,21 @@ export default function NavbarMinimain() {
         Projetos
       </Link>
       <Link
-        href="/services"
+        href="#skills"
         className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600  duration-300"
         onClick={toggleMenu}
       >
-        Serviços
+        Habilidades
       </Link>
       <Link
-        href="#contact"
+        href="/resumo"
+        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600  duration-300"
+        onClick={toggleMenu}
+      >
+        Resumo
+      </Link>
+      <Link
+        href="/contact"
         className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600  duration-300"
         onClick={toggleMenu}
       >

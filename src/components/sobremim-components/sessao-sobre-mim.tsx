@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
+import { motion } from "motion/react";
 
 export default function SobreMIm() {
   return (

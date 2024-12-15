@@ -37,7 +37,7 @@ export default function NavbarMinisobremim() {
         Teste
       </Link>
       <Link
-        href="#contatorodape"
+        href="/contact"
         className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600  duration-300"
         onClick={toggleMenu}
       >
@@ -69,7 +69,7 @@ export default function NavbarMinisobremim() {
                 <span className="sr-only">Toggle menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="bg-gray-100 dark:bg-gray-600">
+            <SheetContent side="top" className="bg-gray-100 dark:bg-gray-600">
               <nav className="flex flex-col space-y-6 mt-4 text-black dark:text-white ">
                 <NavLinks />
                 <ModeToggle />

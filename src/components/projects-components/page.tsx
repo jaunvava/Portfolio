@@ -6,20 +6,25 @@ const projects = [
     title: "Projeto A",
     description: "Uma breve descrição do Projeto A.",
     image: "/teste.png?height=200&width=300",
-    deployUrl:
-      "https://vercel.com/new/clone?repository-url=https://github.com/yourusername/project-a",
-    codeUrl: "https://github.com/yourusername/project-a",
+    deployUrl: "#",
+    codeUrl: "#",
   },
   {
     id: "2",
     title: "Projeto B",
     description: "Uma breve descrição do Projeto B.",
     image: "/teste.png?height=200&width=300",
-    deployUrl:
-      "https://vercel.com/new/clone?repository-url=https://github.com/yourusername/project-b",
-    codeUrl: "https://github.com/yourusername/project-b",
+    deployUrl: "#",
+    codeUrl: "#",
   },
-  // Adicione mais projetos conforme necessário
+  {
+    id: "3",
+    title: "Projeto C",
+    description: "Uma breve descrição do Projeto C.",
+    image: "/teste.png?height=200&width=300",
+    deployUrl: "#",
+    codeUrl: "#",
+  },
 ];
 
 export default function Projectamost() {

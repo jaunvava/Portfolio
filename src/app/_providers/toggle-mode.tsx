@@ -1,7 +1,14 @@
 "use client";
 
 import * as React from "react";
-import { Moon, MoonIcon, MoonStarIcon, Sun } from "lucide-react";
+import {
+  MonitorCog,
+  Moon,
+  MoonIcon,
+  MoonStar,
+  MoonStarIcon,
+  Sun,
+} from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import {
@@ -25,13 +32,16 @@ export function ModeToggle() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => setTheme("light")}>
+        <DropdownMenuItem onClick={() => setTheme("light")} className="gap-2">
+          <Sun className="h-4 w-4" />
           Light
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")}>
+        <DropdownMenuItem onClick={() => setTheme("dark")} className="gap-2">
+          <MoonStar className="h-4 w-4" />
           Dark
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")}>
+        <DropdownMenuItem onClick={() => setTheme("system")} className="gap-2">
+          <MonitorCog className="h-4 w-4" />
           System
         </DropdownMenuItem>
       </DropdownMenuContent>

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Undo2 } from "lucide-react";
+import { ArrowUpLeft, Undo2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -17,8 +17,10 @@ export default function Pagina404() {
         basta precionar o botão abaixo🧭.
       </p>
       <Button className="bg-orange-600 text-xl font-semibold rounded-full flex gap-1">
-        <Link href="/">Voltar</Link>
-        <Undo2 className="h-5 w-5" />
+        <ArrowUpLeft />
+        <Link href="/" className="py-2">
+          Voltar
+        </Link>
       </Button>
     </div>
   );

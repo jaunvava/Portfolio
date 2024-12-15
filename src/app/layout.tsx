@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "Next",
     "Typescrypt",
     "Javascrypt",
-    "Eeact",
+    "React",
     "Web develope",
     "TaylwindCSS",
   ],
