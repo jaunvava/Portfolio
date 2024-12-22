@@ -70,7 +70,7 @@ export default function FooterMain() {
                   href="/services#duvidas"
                   className="text-sm hover:underline hover:text-orange-600 duration-300"
                 >
-                  FAQ
+                  Dúvidas
                 </a>
               </li>
               <li>

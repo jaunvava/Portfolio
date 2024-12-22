@@ -28,8 +28,8 @@ export default function ProfileSection() {
 
             {/* Informações do perfil */}
             <div className="md:w-2/3 p-8">
-              <h1 className="text-3xl font-bold mb-2 text-gray-800">
-                João Programador
+              <h1 className="text-3xl font-bold mb-2 text-black dark:text-white">
+                João Pedro Cruz
               </h1>
               <h2 className="text-xl mb-4 text-gray-600">
                 Desenvolvedor Full Stack
@@ -44,8 +44,8 @@ export default function ProfileSection() {
                 <Badge variant="secondary">JavaScript</Badge>
                 <Badge variant="secondary">React</Badge>
                 <Badge variant="secondary">Node.js</Badge>
-                <Badge variant="secondary">Python</Badge>
-                <Badge variant="secondary">SQL</Badge>
+                <Badge variant="secondary">Java</Badge>
+                <Badge variant="secondary"></Badge>
               </div>
               <div className="flex gap-4">
                 <Button variant="outline" size="icon">
