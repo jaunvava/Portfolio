@@ -3,8 +3,7 @@ import FreelanceServices from "@/components/main-page-components/sessao-freela-s
 import FooterMain from "@/app/_template/rodape-main";
 import NavbarMinimain from "@/app/_template/navbar-mini-main";
 import Projectamost from "@/components/projects-components/page";
-import Navbarteste from "./_template/nav-mini-teste";
-import ProfileSection from "@/components/main-page-components/sessao-apresentacao";
+import PresentationSection from "@/components/main-page-components/sessao-apresentacao";
 
 export default function LandingPage() {
   return (
@@ -16,13 +15,19 @@ export default function LandingPage() {
 
       {/* Sessão de Apresentação */}
       <section id="presentation">
-        <ProfileSection />
+        <PresentationSection />
       </section>
+
+      {/* Sessão de Informações */}
+      <section></section>
 
       {/* Sessão Projetos */}
       <section id="projects">
         <Projectamost />
       </section>
+
+      {/* Sessão de Tragetória */}
+      <section></section>
 
       {/* Sessão habilidades Tech Stack*/}
       <section id="skills">
@@ -33,6 +38,12 @@ export default function LandingPage() {
       <section id="services">
         <FreelanceServices />
       </section>
+
+      {/* Sessão mensagem filosófica */}
+      <section></section>
+
+      {/* Sessão de Email */}
+      <section></section>
 
       {/* Sessão rodapé é contato */}
       <footer id="contact">

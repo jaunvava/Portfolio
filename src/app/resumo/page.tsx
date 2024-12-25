@@ -1,6 +1,6 @@
 import SobreMIm from "@/components/sobremim-components/sessao-sobre-mim";
 import Footerlayout from "@/app/_template/rodape-layout-paginas";
-import NavbarMinisobremim from "@/app/_template/navbar-mini-sobremim";
+import NavbarMinisobremim from "@/app/_template/navbar-mini-resumo";
 
 export default function SobreMin() {
   return (

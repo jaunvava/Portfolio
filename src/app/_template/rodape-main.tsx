@@ -20,7 +20,7 @@ import Link from "next/link";
 export default function FooterMain() {
   return (
     <footer className="bg-gray-600 dark:bg-gray-900 text-gray-300 dark:text-gray-300 ">
-      <div className="container mx-auto px-6 py-12 md:py-16 max-w-6xl">
+      <div className="container mx-auto px-6 py-12 md:py-16 max-w-7xl">
         {/* div englobando o conteudo */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           {/* Parte do sobre mim breve */}

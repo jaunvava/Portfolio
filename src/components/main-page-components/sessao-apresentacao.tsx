@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function PresentationSection() {
   return (
@@ -13,7 +14,9 @@ export default function PresentationSection() {
             Desenvolvedor web apaixonado por criar experiências digitais
             incríveis. Especializado em React, Next.js e design responsivo.
           </p>
-          <Button className="w-40">Saiba Mais</Button>
+          <Button asChild className="w-40 md:w-auto">
+            <Link href="/resumo">Saiba Mais</Link>
+          </Button>
         </div>
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="relative w-64 h-64 md:w-80 md:h-80">
