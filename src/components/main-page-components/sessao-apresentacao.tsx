@@ -1,80 +1,29 @@
-import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail } from "lucide-react";
 
-export default function ProfileSection() {
+export default function PresentationSection() {
   return (
-    <section className="min-h-screen flex items-center justify-center dark:bg-secondary">
-      <div className="container mx-auto px-4 py-16">
-        <div className="dark:bg-gray-600 rounded-lg shadow-xl overflow-hidden max-w-4xl mx-auto">
-          <div className="flex flex-col md:flex-row">
-            {/* Foto de perfil */}
-            <div className="md:w-1/3 bg-gray-400 dark:bg-gray-500 flex items-center justify-center p-8">
-              <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-lg">
-                {/* <Image
-                  src="/placeholder.svg?height=192&width=192"
-                  alt="João Programador"
-                  height={192}
-                  width={192}
-                /> */}
-
-                <img
-                  src="/perfil.jpg?height=192&width=192"
-                  alt="João Programador"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-
-            {/* Informações do perfil */}
-            <div className="md:w-2/3 p-8">
-              <h1 className="text-3xl font-bold mb-2 text-black dark:text-white">
-                João Pedro Cruz
-              </h1>
-              <h2 className="text-xl mb-4 text-gray-600">
-                Desenvolvedor Full Stack
-              </h2>
-              <p className="mb-6 text-gray-600 dark:text-gray-400">
-                Apaixonado por criar soluções inovadoras e eficientes. Com 5
-                anos de experiência em desenvolvimento web e mobile,
-                especializado em React, Node.js e Python. Sempre em busca de
-                novos desafios e aprendizados na área de tecnologia.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-6 ">
-                <Badge variant="secondary">JavaScript</Badge>
-                <Badge variant="secondary">React</Badge>
-                <Badge variant="secondary">Node.js</Badge>
-                <Badge variant="secondary">Java</Badge>
-                <Badge variant="secondary"></Badge>
-              </div>
-              <div className="flex gap-4">
-                <Button variant="outline" size="icon">
-                  <a
-                    href="https://github.com/joaoprogramador"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="GitHub"
-                  >
-                    <Github className="h-5 w-5" />
-                  </a>
-                </Button>
-                <Button variant="outline" size="icon">
-                  <a
-                    href="https://linkedin.com/in/joaoprogramador"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="LinkedIn"
-                  >
-                    <Linkedin className="h-5 w-5" />
-                  </a>
-                </Button>
-                <Button variant="outline" size="icon">
-                  <a href="mailto:joao@example.com" aria-label="Email">
-                    <Mail className="h-5 w-5" />
-                  </a>
-                </Button>
-              </div>
-            </div>
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br dark:bg-from-gray-700 dark:to-gray-900 from-blue-100 to-purple-100 p-8">
+      <div className="max-w-6xl w-full mx-auto flex flex-col md:flex-row items-center justify-center gap-12">
+        <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-gray-800">
+            João Pedro Cruz
+          </h1>
+          <p className="text-lg md:text-xl mb-6 text-gray-600 dark:text-white max-w-md">
+            Desenvolvedor web apaixonado por criar experiências digitais
+            incríveis. Especializado em React, Next.js e design responsivo.
+          </p>
+          <Button className="w-40">Saiba Mais</Button>
+        </div>
+        <div className="w-full md:w-1/2 flex justify-center">
+          <div className="relative w-64 h-64 md:w-80 md:h-80">
+            <Image
+              src="/perfil.jpg?height=600&width=600"
+              alt="João Silva"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-full"
+            />
           </div>
         </div>
       </div>

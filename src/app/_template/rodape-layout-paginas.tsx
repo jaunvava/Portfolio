@@ -17,7 +17,6 @@ export default function Footerlayout() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Parte do curriculo */}
           <div className="mb-8 md:mb-0 flex flex-col gap-3">
-            <Terminal className="h-10 w-10" />
             <p className="text-2xl font-semibold">Engenheiro de Software</p>
             <Button className="w-40 h-10 bg-orange-600 hover:bg-orange-600 text-white rounded-full font-bold py-2 px-4 transition hover:scale-105 duration-500 text-lg shadow-lg shadow-orange-500/50">
               Curriculo
