@@ -4,6 +4,7 @@ import FooterMain from "@/app/_template/rodape-main";
 import NavbarMinimain from "@/app/_template/navbar-mini-main";
 import Projectamost from "@/components/projects-components/page";
 import PresentationSection from "@/components/main-page-components/sessao-apresentacao";
+import ScrollArrowSectionApresentation from "@/components/main-page-components/sessao-arrow-apresentacao";
 
 export default function LandingPage() {
   return (
@@ -15,7 +16,8 @@ export default function LandingPage() {
 
       {/* Sessão de Apresentação */}
       <section id="presentation">
-        <PresentationSection />
+        <ScrollArrowSectionApresentation />
+        {/* <PresentationSection /> */}
       </section>
 
       {/* Sessão de Informações */}

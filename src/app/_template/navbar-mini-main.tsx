@@ -16,35 +16,35 @@ export default function NavbarMinimain() {
     <>
       <Link
         href="/services"
-        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600 duration-300  "
+        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600 hover:scale-105 duration-300"
         onClick={toggleMenu}
       >
         Serviços
       </Link>
       <Link
         href="#projects"
-        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600  duration-300"
+        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600 hover:scale-105 duration-300"
         onClick={toggleMenu}
       >
         Projetos
       </Link>
       <Link
         href="#skills"
-        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600  duration-300"
+        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600 hover:scale-105 duration-300"
         onClick={toggleMenu}
       >
         Habilidades
       </Link>
       <Link
         href="/resumo"
-        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600  duration-300"
+        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600 hover:scale-105 duration-300"
         onClick={toggleMenu}
       >
         Resumo
       </Link>
       <Link
         href="/contact"
-        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600  duration-300"
+        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600 hover:scale-105 duration-300"
         onClick={toggleMenu}
       >
         Contato
@@ -59,7 +59,7 @@ export default function NavbarMinimain() {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <Link href="/">
-              <TerminalIcon className="h-8 w-8 ml-3" />
+              <TerminalIcon className="h-10 w-10 ml-3" />
             </Link>
           </div>
 
