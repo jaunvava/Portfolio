@@ -1,6 +1,5 @@
+// ! esse componente não está mais sendo utilizado !!!
 "use client";
-
-// ! esse componente está sem uso no momento!!!
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";

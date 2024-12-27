@@ -6,8 +6,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Link } from "lucide-react";
-import { buttonVariants } from "@/components/ui/button";
 
 export default function FreelanceServices() {
   return (

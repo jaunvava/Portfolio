@@ -3,7 +3,7 @@ import FreelanceServices from "@/components/main-page-components/sessao-freela-s
 import FooterMain from "@/app/_template/rodape-main";
 import NavbarMinimain from "@/app/_template/navbar-mini-main";
 import Projectamost from "@/components/projects-components/page";
-import PresentationSection from "@/components/main-page-components/sessao-apresentacao";
+import PresentationSection from "@/components/sessao-apresentacao";
 import ScrollArrowSectionApresentation from "@/components/main-page-components/sessao-arrow-apresentacao";
 
 export default function LandingPage() {
@@ -27,9 +27,6 @@ export default function LandingPage() {
       <section id="projects">
         <Projectamost />
       </section>
-
-      {/* Sessão de Tragetória */}
-      <section></section>
 
       {/* Sessão habilidades Tech Stack*/}
       <section id="skills">

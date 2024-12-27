@@ -52,27 +52,25 @@ const TimelineItem = ({
 export default function Timeline() {
   const timelineItems = [
     {
-      year: "2020",
+      year: "2025",
       title: "Faculdade",
       description:
-        "Iniciando minha graduação em análise e desenvolvimento de sistemas através do Instituto Federal de Educação, Ciência e Tecnologia da Paraíba.",
+        "Iniciando minha graduação em Ciencia da Computação na Universidade Católica da Paraíba.",
     },
     {
-      year: "2021",
-      title: "Loopis Soluções Tecnológicas",
-      description:
-        "Começando minha jornada na área de desenvolvimento de sistemas como consultor júnior na empresa de tecnologia, onde posteriormente passaria ao cargo de Diretor de Projetos.",
+      year: "20XX",
+      title: "Em desenvolvimento",
+      description: "Em desenvolvimento",
     },
     {
-      year: "2023",
-      title: "Conceito Máximo Enade",
-      description:
-        "Tive a oportunidade atuar como desenvolvedor full stack na empresa, onde desenvolvi uma plataforma para criar e analisar resultados de simulados de uma instituição de nível superior.",
+      year: "20XX",
+      title: "Em desenvolvimento",
+      description: "Em desenvolvimento",
     },
     {
-      year: "2024",
-      title: "Até o momento",
-      description: "Atuando como freelancer em desenvolvimento full-stack.",
+      year: "20XX",
+      title: "Em desenvolvimento",
+      description: "Em desenvolvimento",
     },
   ];
 
@@ -82,10 +80,10 @@ export default function Timeline() {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="text-2xl font-bold mb-8"
+        className="text-3xl font-bold mb-8 pt-20 text-center"
       >
         Conheça um pouco da{" "}
-        <span className="text-indigo-600">minha trajetória</span>!
+        <span className="text-blue-600 ">minha trajetória</span>!
       </motion.h1>
 
       <div className="relative">

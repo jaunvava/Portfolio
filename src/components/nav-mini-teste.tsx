@@ -1,4 +1,4 @@
-// !	 esse componente está sem uso soemnete para teste no momento !!!
+// ! esse componente não está mais sendo utilizado !!!
 "use client";
 import { useState } from "react";
 import Link from "next/link";
