@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SquareArrowOutUpRight, Phone, Mail, MapPin, Info } from "lucide-react";
+import { SquareArrowOutUpRight, MapPin, Info, Copy } from "lucide-react";
 import { Button } from "../../components/ui/button";
 
 export default function Footerlayout() {
@@ -10,9 +10,7 @@ export default function Footerlayout() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Parte do curriculo */}
             <div className="mb-8 md:mb-0 flex flex-col gap-3">
-              <p className="text-2xl font-semibold">
-                Desenvolvedor de Software
-              </p>
+              <p className="text-2xl font-semibold">Desenvolvedor FullStack</p>
               <Button className="w-40 h-10 bg-orange-600 hover:bg-orange-600 text-white rounded-full font-bold py-2 px-4 transition hover:scale-105 duration-500 text-lg shadow-lg shadow-orange-500/50">
                 Curriculo
                 <SquareArrowOutUpRight size="h-[5]" />
@@ -116,16 +114,16 @@ export default function Footerlayout() {
                   </a>
                 </li>
                 <li className="flex gap-2">
-                  <Mail className="h-4 w-4" />
+                  <Copy className="h-4 w-4" />
                   <a
                     href="jpdevcontato@gmail.com"
                     className="text-sm hover:underline hover:text-orange-600 duration-300 "
                   >
-                    jpdevteste@gmail.com
+                    jpdevcontato@gmail.com
                   </a>
                 </li>
                 <li className="flex gap-2">
-                  <Phone className="h-4 w-4" />
+                  <Copy className="h-4 w-4" />
                   <a
                     href="#"
                     className="text-sm hover:underline hover:text-orange-600 duration-300"
