@@ -31,7 +31,6 @@ export default function Projectamost() {
   return (
     <main>
       <ProjectShowcase projects={projects} />
-      {/* Outros componentes da sua página */}
     </main>
   );
 }

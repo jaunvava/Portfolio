@@ -1,15 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import {
-  Code,
-  Globe,
-  Server,
-  Smartphone,
-  Database,
-  Cog,
-  Cpu,
-  Shield,
-} from "lucide-react";
+import { Code, Globe, Server, Smartphone, Database, Cog } from "lucide-react";
+import Link from "next/link";
 
 const services = [
   {
@@ -52,7 +44,7 @@ const services = [
 
 export default function ProgrammerServices() {
   return (
-    <section className="py-16 dark:bg-secondary">
+    <section className="py-16 bg-zinc-500 dark:bg-zinc-800">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8">Meus Serviços</h2>
         <p className="text-center text-gray-500 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
@@ -65,7 +57,7 @@ export default function ProgrammerServices() {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="hover:shadow-lg dark:bg-gray-700 dark:hover:bg-gray-900 text-white transition-all duration-300 ease-in-out dark:text-primary hover:scale-105"
+              className="hover:shadow-lg dark:bg-zinc-700 dark:hover:bg-zinc-600 text-white transition-all duration-300 ease-in-out dark:text-primary hover:scale-105"
             >
               <CardHeader className="flex flex-row items-center space-x-4 pb-2 text-black dark:text-white ">
                 {service.icon}
@@ -84,7 +76,7 @@ export default function ProgrammerServices() {
             size="lg"
             className="bg-orange-600 text-white transition-all duration-300 ease-in-out hover:bg-primary-dark dark:text-primary hover:scale-105"
           >
-            <a href="#form">Solicite um Orçamento</a>
+            <Link href="/contact">Entre em Contato</Link>
           </Button>
         </div>
       </div>

@@ -2,10 +2,11 @@ import { Code, Zap, Users } from "lucide-react";
 
 export default function ServicePresentation() {
   return (
-    <section className="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-16">
+    <section className="bg-zinc-500 dark:bg-zinc-800 py-16">
       <div className="container mx-auto px-4 mt-20">
         <h1 className="text-4xl font-bold text-center mb-8">
-          Serviços de Programação Profissional
+          Serviços de Programação
+          <p className="text-orange-500">Profissional</p>
         </h1>
 
         <p className="text-xl text-center mb-12 max-w-2xl mx-auto">

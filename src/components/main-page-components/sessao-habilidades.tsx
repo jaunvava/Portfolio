@@ -18,14 +18,14 @@ const technologies = [
 
 export default function TechStack() {
   return (
-    <section className="py-16 dark:bg-secondary">
+    <section className="py-16 bg-zinc-500 dark:bg-zinc-800">
       <div className="-z-10 container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">Tecnologias</h2>
         <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
           {technologies.map((tech) => (
             <Card
               key={tech.name}
-              className="hover:shadow-lg transition-all duration-300 transform hover:scale-105 dark:bg-gray-700"
+              className="hover:shadow-lg transition-all duration-300 transform hover:scale-105 dark:bg-zinc-700"
             >
               <CardContent className="p-6 flex flex-col items-center justify-center">
                 <Image

@@ -4,11 +4,11 @@ import { motion } from "motion/react";
 
 export default function SobreMIm() {
   return (
-    <section className="py-16 dark:bg-secondary bg-white">
+    <section className="py-16 dark:bg-zinc-800 bg-zinc-500">
       <div className="container mx-auto py-10 px-4 sm:px-6 lg:px-8 ">
         <h2 className="text-3xl font-bold text-center mb-12">Sobre Mim</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-          <Card className="hover:shadow-lg hover:dark:hover:bg-gray-500 hover:bg-white  transition-all duration-300 ease-in-out dark:text-primary hover:scale-105">
+          <Card className="hover:shadow-lg hover:dark:hover:bg-zinc-500 hover:bg-zinc-700  transition-all duration-300 ease-in-out dark:text-primary hover:scale-105">
             <CardContent className="p-6 dark:bg-gray-900 rounded-lg">
               <h3 className="text-xl font-semibold mb-4 text-black dark:text-white">
                 Minha Jornada
@@ -35,7 +35,7 @@ export default function SobreMIm() {
             </div>
           </div>
 
-          <Card className="hover:shadow-lg hover:dark:bg-gray-500 hover:bg-white transition-all duration-300 ease-in-out dark:text-primary hover:scale-105">
+          <Card className="hover:shadow-lg hover:bg-zinc-700 dark:bg-zinc-700 transition-all duration-300 ease-in-out dark:text-primary hover:scale-105">
             <CardContent className="p-6 dark:bg-gray-900 rounded-lg">
               <h3 className="text-xl font-semibold mb-4 text-black dark:text-white">
                 Minha Abordagem

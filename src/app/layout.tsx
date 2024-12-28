@@ -3,6 +3,7 @@ import { Epilogue } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/app/_providers/theme-provider";
 import { Inter as FontSans } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const epilogue = Epilogue({
   subsets: ["latin"],
@@ -39,6 +40,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           {children}
         </ThemeProvider>
+        <SpeedInsights />
       </body>
     </html>
   );

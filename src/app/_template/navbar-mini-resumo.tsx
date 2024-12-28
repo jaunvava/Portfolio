@@ -17,28 +17,28 @@ export default function NavbarMinisobremim() {
     <>
       <Link
         href="/"
-        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600 duration-300  "
+        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600 hover:scale-105 duration-300  "
         onClick={toggleMenu}
       >
         Home
       </Link>
       <Link
         href="#"
-        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600  duration-300"
+        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600 hover:scale-105 duration-300"
         onClick={toggleMenu}
       >
         Meu Propósito
       </Link>
       <Link
         href="#"
-        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600  duration-300"
+        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600 hover:scale-105 duration-300"
         onClick={toggleMenu}
       >
         Teste
       </Link>
       <Link
         href="/contact"
-        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600  duration-300"
+        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600 hover:scale-105 duration-300"
         onClick={toggleMenu}
       >
         Contato

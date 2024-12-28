@@ -4,7 +4,6 @@ import Differentiators from "@/components/servicos-components/sessao-retencao-cl
 import Footerlayout from "../_template/rodape-layout-paginas";
 import NavbarMiniservices from "@/app/_template/navbar-mini-services";
 import FAQ from "@/components/servicos-components/faq";
-import FeedbackCardsClientes from "@/components/servicos-components/sessao-feedback-services";
 import ServicePresentation from "@/components/servicos-components/sessao-apresentacao";
 
 export default function Pageservice() {

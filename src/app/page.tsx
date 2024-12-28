@@ -3,25 +3,26 @@ import FreelanceServices from "@/components/main-page-components/sessao-freela-s
 import FooterMain from "@/app/_template/rodape-main";
 import NavbarMinimain from "@/app/_template/navbar-mini-main";
 import Projectamost from "@/components/projects-components/page";
-import PresentationSection from "@/components/sessao-apresentacao";
 import ScrollArrowSectionApresentation from "@/components/main-page-components/sessao-arrow-apresentacao";
+import FeaturesSection from "@/components/main-page-components/sessao-info";
 
 export default function LandingPage() {
   return (
     <>
-      {/* Cabeçalho */}
+      {/* Barra de navegação */}
       <header>
         <NavbarMinimain />
       </header>
 
-      {/* Sessão de Apresentação */}
+      {/* Sessão de Apresentação e trajetoria */}
       <section id="presentation">
         <ScrollArrowSectionApresentation />
-        {/* <PresentationSection /> */}
       </section>
 
       {/* Sessão de Informações */}
-      <section></section>
+      <section>
+        <FeaturesSection />
+      </section>
 
       {/* Sessão Projetos */}
       <section id="projects">

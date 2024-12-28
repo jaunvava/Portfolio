@@ -25,7 +25,7 @@ const TimelineItem = ({
       transition={{ duration: 0.5, ease: "easeOut" }}
       className="relative"
     >
-      <Card>
+      <Card className="bg-zinc-600 dark:bg-zinc-700 shadow-md hover:shadow-lg transition-shadow duration-300">
         <CardContent className="p-6">
           <div className="flex items-start gap-4">
             <motion.div
@@ -34,7 +34,7 @@ const TimelineItem = ({
               transition={{ delay: 0.2, duration: 0.5, ease: "easeOut" }}
               className="flex-shrink-0 w-16 h-16 rounded-full bg-indigo-100 flex items-center justify-center"
             >
-              <span className="text-sm text-indigo-600 font-medium">
+              <span className="text-sm text-orange-600 font-medium">
                 {year}
               </span>
             </motion.div>
@@ -83,7 +83,7 @@ export default function Timeline() {
         className="text-3xl font-bold mb-8 pt-20 text-center"
       >
         Conheça um pouco da{" "}
-        <span className="text-blue-600 ">minha trajetória</span>!
+        <span className="text-orange-500 ">minha trajetória</span>!
       </motion.h1>
 
       <div className="relative">

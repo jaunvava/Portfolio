@@ -1,3 +1,4 @@
+// ! esse componente não está mais sendo utilizado !!!
 "use client";
 
 import React, { useState } from "react";
@@ -14,7 +15,7 @@ const FAQItem = ({
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b border-orange-400 dark:bg-secondary py-4">
+    <div className="border-b border-orange-400 py-4">
       <button
         className="flex w-full justify-between items-center text-left"
         onClick={() => setIsOpen(!isOpen)}
@@ -69,7 +70,7 @@ export default function FAQSection() {
   ];
 
   return (
-    <section className="dark:bg-secondary py-12 px-4 sm:px-6 lg:px-8">
+    <section className="bg-zinc-500 dark:bg-zinc-800 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-3xl font-extrabold text-black dark:text-white text-center mb-8">
           Perguntas Frequentes

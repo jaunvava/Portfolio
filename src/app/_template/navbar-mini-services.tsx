@@ -3,14 +3,9 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, TerminalIcon } from "lucide-react";
-
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { ModeToggle } from "../_providers/toggle-mode";
-import {
-  NavigationMenuLink,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
 
 export default function NavbarMiniservices() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,35 +16,35 @@ export default function NavbarMiniservices() {
     <>
       <Link
         href="/"
-        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600 duration-300  "
+        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600 hover:scale-105 duration-300"
         onClick={toggleMenu}
       >
         Home
       </Link>
       <Link
         href="#feedbackclientes"
-        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600  duration-300"
+        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600 hover:scale-105 duration-300"
         onClick={toggleMenu}
       >
         FeedBack
       </Link>
       <Link
         href="#cta"
-        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600  duration-300"
+        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600 hover:scale-105 duration-300"
         onClick={toggleMenu}
       >
         Clientes
       </Link>
       <Link
         href="#duvidas"
-        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600  duration-300"
+        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600 hover:scale-105 duration-300"
         onClick={toggleMenu}
       >
         Dúvidas
       </Link>
       <Link
         href="/contact"
-        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600  duration-300"
+        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600 hover:scale-105 duration-300"
         onClick={toggleMenu}
       >
         Contato

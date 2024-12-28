@@ -11,7 +11,7 @@ export default function FAQ() {
     {
       titulo: "Quais linguagens de programação você trabalha?",
       assunto:
-        "Trabalho com várias linguagens, incluindo JavaScript, Python, Java, e C++. Também tenho experiência com frameworks populares como React, Angular, e Vue.js para desenvolvimento front-end, e Node.js, Django, e Spring para back-end.",
+        "Trabalho com várias linguagens, incluindo JavaScript, TypeScript, Python, Java, Go. Também tenho experiência com frameworks populares como React, Angular, para desenvolvimento front-end, e Node.js, SpringBoot para back-end.",
     },
     {
       titulo: "Quanto tempo leva para desenvolver um site ou aplicativo?",
@@ -37,22 +37,28 @@ export default function FAQ() {
 
   // * Parte do acordeon
   return (
-    <div className="dark:bg-secondary container mx-auto px-4 py-8 sm:px-6 lg:px-8">
-      <h1 className="text-3xl font-bold mb-8 text-center">
-        Perguntas Frequentes
-      </h1>
-      <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto">
-        {faqs.map((faq, index) => (
-          <AccordionItem
-            value={`item-${index}`}
-            key={index}
-            className="shadow-lg"
-          >
-            <AccordionTrigger>{faq.titulo}</AccordionTrigger>
-            <AccordionContent>{faq.assunto}</AccordionContent>
-          </AccordionItem>
-        ))}
-      </Accordion>
-    </div>
+    <section className="dark:bg-zinc-800 w-full px-4 py-8 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 py-8 sm:px-6 lg:px-8">
+        <h1 className="text-3xl font-bold mb-8 text-center">
+          Perguntas Frequentes
+        </h1>
+        <Accordion
+          type="single"
+          collapsible
+          className="w-full max-w-3xl mx-auto"
+        >
+          {faqs.map((faq, index) => (
+            <AccordionItem
+              value={`item-${index}`}
+              key={index}
+              className="shadow-lg"
+            >
+              <AccordionTrigger>{faq.titulo}</AccordionTrigger>
+              <AccordionContent>{faq.assunto}</AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </div>
+    </section>
   );
 }

@@ -9,6 +9,7 @@ import {
   Hand,
   Info,
   MapPin,
+  Copy,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -26,7 +27,7 @@ export default function FooterMain() {
           {/* Parte do sobre mim breve */}
           <div className="flex flex-col gap-4">
             <Link href="/">
-              <Terminal className="w-10 h-10 text-blue-500" />
+              <Terminal className="w-10 h-10 text-orange-500" />
             </Link>
             <p className="text-sm">
               Estou sempre aberto a novas oportunidades e colaborações. Sinta-se
@@ -133,16 +134,16 @@ export default function FooterMain() {
                 </a>
               </li>
               <li className="flex gap-2">
-                <Mail className="h-4 w-4" />
+                <Copy className="h-4 w-4" />
                 <a
                   href="jpdevcontato@gmail.com"
                   className="text-sm hover:underline hover:text-orange-600 duration-300 "
                 >
-                  jpdevteste@gmail.com
+                  jpdevcontato@gmail.com
                 </a>
               </li>
               <li className="flex gap-2">
-                <Phone className="h-4 w-4" />
+                <Copy className="h-4 w-4" />
                 <a
                   href="#"
                   className="text-sm hover:underline hover:text-orange-600 duration-300"
@@ -168,7 +169,7 @@ export default function FooterMain() {
               <span className="sr-only">Instagram</span>
             </a>
             <a
-              href="www.linkedin.com/in/joaopedrosouzs"
+              href="https://www.linkedin.com/in/joaopedrosouzs/"
               target="_blank"
               className="text-gray-300 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-600 "
             >
