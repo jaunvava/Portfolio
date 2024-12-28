@@ -37,7 +37,13 @@ export default function ServicePresentation() {
   );
 }
 
-function FeatureCard({ icon, title, description }) {
+interface FeatureCardProps {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}
+
+function FeatureCard({ icon, title, description }: FeatureCardProps) {
   return (
     <div className="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-lg">
       <div className="flex justify-center mb-4">{icon}</div>
