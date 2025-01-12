@@ -5,13 +5,15 @@ import NavbarMinimain from "@/app/_template/navbar-mini-main";
 import Projectamost from "@/components/projects-components/page";
 import ScrollArrowSectionApresentation from "@/components/main-page-components/sessao-arrow-apresentacao";
 import FeaturesSection from "@/components/main-page-components/sessao-info";
+import NavbarMainTeste from "@/components/nav-mini-teste";
 
 export default function LandingPage() {
   return (
     <>
       {/* Barra de navegação */}
       <header>
-        <NavbarMinimain />
+        <NavbarMainTeste />
+        {/* <NavbarMinimain /> */}
       </header>
 
       {/* Sessão de Apresentação e trajetoria */}

@@ -52,31 +52,32 @@ export default function PortfolioLanding() {
             <Button
               asChild
               size="lg"
-              className="bg-[#FF6B00] hover:bg-[#e29d6c]/90 text-white"
+              className="bg-orange-500 hover:bg-orange-600 text-white"
             >
               <Link href="/resumo">Saiba Mais</Link>
             </Button>
             <Button
               asChild
               size="lg"
-              variant="outline"
-              className="text-gray-400 border-gray-400 hover:text-white hover:border-white"
+              className="text-gray-800 border-gray-400 hover:text-gray-800 hover:border-white"
             >
-              <Link href="/">Download CV</Link>
+              <Link target="_blank" href="/curriculojoaopedro.pdf">
+                Visualizar CV
+              </Link>
             </Button>
           </div>
 
           <div className="flex gap-8 mt-12">
             <div className="space-y-2">
-              <p className="text-[#FF6B00] text-3xl font-bold">+3</p>
+              <p className="text-orange-600 text-3xl font-bold">+3</p>
               <p className="text-sm text-gray-400">Experiencia</p>
             </div>
             <div className="space-y-2">
-              <p className="text-[#FF6B00] text-3xl font-bold">+10</p>
+              <p className="text-orange-600 text-3xl font-bold">+10</p>
               <p className="text-sm text-gray-400">Projetos</p>
             </div>
             <div className="space-y-2">
-              <p className="text-[#FF6B00] text-3xl font-bold">+5</p>
+              <p className="text-orange-600 text-3xl font-bold">+5</p>
               <p className="text-sm text-gray-400">Clientes Satisfeitos</p>
             </div>
           </div>

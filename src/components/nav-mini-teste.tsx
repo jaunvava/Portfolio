@@ -1,10 +1,13 @@
-// ! esse componente não está mais sendo utilizado !!!
+// * esse componente está sendo utilizado apenas para teste !!!
+
 "use client";
+
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu, Terminal, X } from "lucide-react";
+import { Button } from "./ui/button";
 
-const Navbarteste = () => {
+const NavbarMainTeste = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -12,105 +15,115 @@ const Navbarteste = () => {
   };
 
   return (
-    <nav className="fixed z-20 bg-gray-400 rounded-lg px-4 sm:px-6 lg:px-8 mt-4">
-      <div className="px-4 sm:px-6 lg:px-8 ">
-        <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
-            <Link href="/" className="text-3xl font-bold text-indigo-600">
-              Logo
+    <nav className="z-20 fixed top-4 left-4 right-4">
+      {/* Barra layout desktop */}
+      <div className="max-w-5xl mx-auto rounded-lg shadow-lg p-3 backdrop-blur-sm bg-black/20 dark:bg-gray-600/90">
+        <div className="container mx-auto flex justify-between items-center">
+          <Link href="/" className="text-xl font-bold">
+            <Terminal className="h-9 w-9" />
+          </Link>
+          <div className="hidden md:flex space-x-4 absolute left-1/2 transform -translate-x-1/2 gap-4">
+            <Link
+              href="/services"
+              className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300"
+            >
+              Serviços
             </Link>
-          </div>
-          <div className="hidden md:flex flex-grow justify-center">
-            <div className="flex items-baseline space-x-4">
-              <Link
-                href="/"
-                className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-lg font-medium"
-              >
-                Home
-              </Link>
-              <Link
-                href="/"
-                className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-lg font-medium"
-              >
-                About
-              </Link>
-              <Link
-                href="/"
-                className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-lg font-medium"
-              >
-                Services
-              </Link>
-              <Link
-                href="/"
-                className="text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-lg font-medium"
-              >
-                Contact
-              </Link>
-            </div>
+            <Link
+              href="#projects"
+              className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300"
+            >
+              Projetos
+            </Link>
+            <Link
+              href="#skills"
+              className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300"
+            >
+              Habilidades
+            </Link>
+            <Link
+              href="/resumo"
+              className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300"
+            >
+              Resumo
+            </Link>
+            <Link
+              href="/contact"
+              className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300"
+            >
+              Contato
+            </Link>
           </div>
           <div className="hidden md:block">
-            <Link
-              href="/"
-              className="bg-indigo-600 text-white hover:bg-indigo-700 px-4 py-2 rounded-md text-sm font-medium"
+            <Button
+              asChild
+              className="text-lg text-white rounded-lg bg-orange-500 hover:bg-orange-600"
             >
-              Currículo
-            </Link>
+              <Link target="_blank" href="/curriculojoaopedro.pdf">
+                Curriculo
+              </Link>
+            </Button>
           </div>
-
           <div className="md:hidden">
-            <button
-              onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-indigo-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-            >
-              <span className="sr-only">Open main menu</span>
+            <button onClick={toggleMenu} className="focus:outline-none">
               {isOpen ? (
-                <X className="block h-6 w-6" />
+                <X className="h-8 w-8 transition-transform duration-300 ease-in-out transform rotate-180" />
               ) : (
-                <Menu className="block h-6 w-6" />
+                <Menu className="h-8 w-8 transition-transform duration-300 ease-in-out" />
               )}
             </button>
           </div>
         </div>
       </div>
-
-      {isOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+      <div
+        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+          isOpen ? "max-h-65 opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        {/* Barra layout mobile */}
+        <div className="max-w-5xl mx-auto backdrop-blur-sm bg-black/20 dark:bg-gray-600/90 rounded-b-lg shadow-lg">
+          <div className="py-2 space-y-2 items-center">
             <Link
               href="/"
-              className="text-gray-700 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium"
+              className="block py-2 px-4 hover:bg-gray-600 rounded"
             >
-              Home
+              Serviços
             </Link>
             <Link
               href="/about"
-              className="text-gray-700 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium"
+              className="block py-2 px-4 hover:bg-gray-600 rounded"
             >
-              About
+              Projetos
             </Link>
             <Link
               href="/services"
-              className="text-gray-700 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium"
+              className="block py-2 px-4 hover:bg-gray-600 rounded"
             >
-              Services
+              Habilidades
             </Link>
             <Link
               href="/contact"
-              className="text-gray-700 hover:text-indigo-600 block px-3 py-2 rounded-md text-base font-medium"
+              className="block py-2 px-4 hover:bg-gray-600 rounded"
             >
-              Contact
+              Resumo
             </Link>
             <Link
-              href="/curriculo"
-              className="bg-indigo-600 text-white hover:bg-indigo-700 block px-3 py-2 rounded-md text-base font-medium"
+              href="/contact"
+              className="block py-2 px-4 hover:bg-gray-600 rounded"
+            >
+              Contato
+            </Link>
+            <Link
+              href="/CurriculoJoaoPedro.pdf"
+              className="block py-2 px-4 hover:bg-gray-600 rounded"
             >
               Currículo
             </Link>
           </div>
         </div>
-      )}
+      </div>
     </nav>
   );
 };
 
-export default Navbarteste;
+export default NavbarMainTeste;
