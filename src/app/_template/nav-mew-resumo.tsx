@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, Terminal, X } from "lucide-react";
-import { Button } from "../../components/ui/button";
 
 const NavbarNewResumo = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +14,7 @@ const NavbarNewResumo = () => {
   return (
     <nav className="z-20 fixed top-4 left-4 right-4">
       {/* Barra layout desktop */}
-      <div className="max-w-3xl mx-auto rounded-lg shadow-lg p-3 backdrop-blur-sm bg-black/20 dark:bg-gray-600/90">
+      <div className="max-w-2xl mx-auto rounded-lg shadow-lg p-3 backdrop-blur-sm bg-black/20 dark:bg-gray-600/90">
         <div className="container mx-auto flex justify-between items-center">
           <Link href="/" className="text-xl font-bold">
             <Terminal className="h-9 w-9 hover:scale-110 transition-all" />
@@ -47,25 +46,9 @@ const NavbarNewResumo = () => {
             >
               Contato
             </Link>
-            <Link
-              href="/page"
-              className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300"
-            >
-              Contato
-            </Link>
           </div>
 
-          {/* 
-          <div className="hidden md:block">
-            <Button
-              asChild
-              className="text-lg text-white rounded-lg bg-orange-500 hover:bg-orange-600"
-            >
-              <Link target="_blank" href="/curriculojoaopedro.pdf">
-                Curriculo
-              </Link>
-            </Button>
-          </div> */}
+          {/* script para barra mobile */}
 
           <div className="md:hidden">
             <button onClick={toggleMenu} className="focus:outline-none">
@@ -87,22 +70,19 @@ const NavbarNewResumo = () => {
         <div className="max-w-5xl mx-auto backdrop-blur-sm bg-black/20 dark:bg-gray-600/90 rounded-b-lg shadow-lg">
           <div className="py-2 space-y-2 items-center">
             <Link href="/" className="block py-2 px-4 rounded">
-              Serviços
+              Home
             </Link>
-            <Link href="/about" className="block py-2 px-4 rounded">
-              Projetos
+            <Link href="/page" className="block py-2 px-4 rounded">
+              Propósito
             </Link>
-            <Link href="/services" className="block py-2 px-4 rounded">
-              Habilidades
+            <Link href="/page" className="block py-2 px-4 rounded">
+              Teste
             </Link>
-            <Link href="/contact" className="block py-2 px-4 rounded">
-              Resumo
-            </Link>
-            <Link href="/contact" className="block py-2 px-4 rounded">
+            <Link href="/page" className="block py-2 px-4 rounded">
               Contato
             </Link>
             <Link
-              href="/CurriculoJoaoPedro.pdf"
+              href="/curriculoJoaoPedro.pdf"
               className="block py-2 px-4 rounded"
             >
               Currículo
