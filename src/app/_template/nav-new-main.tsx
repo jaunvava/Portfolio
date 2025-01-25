@@ -81,23 +81,23 @@ const NavbarNewMain = () => {
         {/* Barra layout mobile */}
         <div className="max-w-5xl mx-auto backdrop-blur-sm bg-black/20 dark:bg-gray-600/90 rounded-b-lg shadow-lg">
           <div className="py-2 space-y-2 items-center">
-            <Link href="/" className="block py-2 px-4 rounded">
+            <Link href="/services" className="block py-2 px-4 rounded">
               Serviços
             </Link>
-            <Link href="/about" className="block py-2 px-4 rounded">
+            <Link href="#projects" className="block py-2 px-4 rounded">
               Projetos
             </Link>
-            <Link href="/services" className="block py-2 px-4 rounded">
+            <Link href="#skills" className="block py-2 px-4 rounded">
               Habilidades
             </Link>
-            <Link href="/contact" className="block py-2 px-4 rounded">
+            <Link href="/resumo" className="block py-2 px-4 rounded">
               Resumo
             </Link>
-            <Link href="/contact" className="block py-2 px-4 rounded">
+            <Link href="/page" className="block py-2 px-4 rounded">
               Contato
             </Link>
             <Link
-              href="/CurriculoJoaoPedro.pdf"
+              href="/curriculojoaopedro.pdf"
               className="block py-2 px-4 rounded"
             >
               Currículo
