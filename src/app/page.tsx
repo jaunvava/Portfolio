@@ -1,11 +1,10 @@
 import TechStack from "@/components/main-page-components/sessao-habilidades";
 import FreelanceServices from "@/components/main-page-components/sessao-freela-servicos";
 import FooterMain from "@/app/_template/rodape-main";
-import NavbarMinimain from "@/app/_template/navbar-mini-main";
 import Projectamost from "@/components/projects-components/page";
 import ScrollArrowSectionApresentation from "@/components/main-page-components/sessao-arrow-apresentacao";
 import FeaturesSection from "@/components/main-page-components/sessao-info";
-import NavbarMainTeste from "@/components/nav-mini-teste";
+import NavbarMainTeste from "@/app/_template/nav-new-main";
 
 export default function LandingPage() {
   return (

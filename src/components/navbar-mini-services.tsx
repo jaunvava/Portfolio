@@ -3,12 +3,11 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, TerminalIcon } from "lucide-react";
-
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { ModeToggle } from "../_providers/toggle-mode";
+import { ModeToggle } from "../app/_providers/toggle-mode";
 
-export default function NavbarMinisobremim() {
+export default function NavbarMiniservices() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -17,24 +16,31 @@ export default function NavbarMinisobremim() {
     <>
       <Link
         href="/"
-        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600 hover:scale-105 duration-300  "
+        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600 hover:scale-105 duration-300"
         onClick={toggleMenu}
       >
         Home
       </Link>
       <Link
-        href="#"
+        href="#feedbackclientes"
         className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600 hover:scale-105 duration-300"
         onClick={toggleMenu}
       >
-        Meu Propósito
+        FeedBack
       </Link>
       <Link
-        href="#"
+        href="#cta"
         className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600 hover:scale-105 duration-300"
         onClick={toggleMenu}
       >
-        Teste
+        Clientes
+      </Link>
+      <Link
+        href="#duvidas"
+        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600 hover:scale-105 duration-300"
+        onClick={toggleMenu}
+      >
+        Dúvidas
       </Link>
       <Link
         href="/contact"
@@ -69,11 +75,14 @@ export default function NavbarMinisobremim() {
                 <span className="sr-only">Toggle menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="top" className="bg-gray-100 dark:bg-gray-600">
-              <nav className="flex flex-col space-y-6 mt-4 text-black dark:text-white ">
+            <SheetContent
+              side="top"
+              className="bg-gray-100 dark:bg-gray-600 text-white"
+            >
+              <nav className="flex flex-col space-y-6 mt-4  dark:text-white ">
                 <NavLinks />
                 <ModeToggle />
-                <Button className=" md:inline-flex bg-orange-600  hover:bg-orange-500 hover:scale-105 transition duration-600 dark:text-white rounded-full">
+                <Button className="md:inline-flex bg-orange-600  hover:bg-orange-500 hover:scale-105 transition duration-600 rounded-full dark:text-white">
                   Currículo
                 </Button>
               </nav>

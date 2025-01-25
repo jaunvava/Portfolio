@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function FeaturesSection() {
   return (
-    <div className="min-h-screen bg-zinc-500 dark:bg-zinc-800 text-white">
+    <div className="bg-zinc-500 dark:bg-blue-800 text-white">
       <div className="max-w-7xl mx-auto px-4 py-10">
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">

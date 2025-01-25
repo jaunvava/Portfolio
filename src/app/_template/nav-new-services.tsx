@@ -1,13 +1,10 @@
-// * esse componente está sendo utilizado apenas para teste !!!
-
 "use client";
 
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, Terminal, X } from "lucide-react";
-import { Button } from "./ui/button";
 
-const NavbarMainTeste = () => {
+const NavbarNewServices = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -17,44 +14,48 @@ const NavbarMainTeste = () => {
   return (
     <nav className="z-20 fixed top-4 left-4 right-4">
       {/* Barra layout desktop */}
-      <div className="max-w-5xl mx-auto rounded-lg shadow-lg p-3 backdrop-blur-sm bg-black/20 dark:bg-gray-600/90">
+      <div className="max-w-3xl mx-auto rounded-lg shadow-lg p-3 backdrop-blur-sm bg-black/20 dark:bg-gray-600/90">
+        {/* links + botão currículo */}
         <div className="container mx-auto flex justify-between items-center">
           <Link href="/" className="text-xl font-bold">
-            <Terminal className="h-9 w-9" />
+            <Terminal className="h-9 w-9 hover:scale-110 transition-all" />
           </Link>
+
+          {/* Links */}
           <div className="hidden md:flex space-x-4 absolute left-1/2 transform -translate-x-1/2 gap-4">
             <Link
-              href="/services"
+              href="/"
               className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300"
             >
-              Serviços
+              Home
             </Link>
             <Link
-              href="#projects"
+              href="#feedbackclientes"
               className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300"
             >
-              Projetos
+              FeedBack
             </Link>
             <Link
-              href="#skills"
+              href="#cta"
               className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300"
             >
-              Habilidades
+              Clientes
             </Link>
             <Link
-              href="/resumo"
+              href="#duvidas"
               className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300"
             >
-              Resumo
+              Dúvidas
             </Link>
             <Link
-              href="/contact"
+              href="/page"
               className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300"
             >
               Contato
             </Link>
           </div>
-          <div className="hidden md:block">
+
+          {/* <div className="hidden md:block">
             <Button
               asChild
               className="text-lg text-white rounded-lg bg-orange-500 hover:bg-orange-600"
@@ -63,7 +64,8 @@ const NavbarMainTeste = () => {
                 Curriculo
               </Link>
             </Button>
-          </div>
+          </div> */}
+
           <div className="md:hidden">
             <button onClick={toggleMenu} className="focus:outline-none">
               {isOpen ? (
@@ -83,39 +85,24 @@ const NavbarMainTeste = () => {
         {/* Barra layout mobile */}
         <div className="max-w-5xl mx-auto backdrop-blur-sm bg-black/20 dark:bg-gray-600/90 rounded-b-lg shadow-lg">
           <div className="py-2 space-y-2 items-center">
-            <Link
-              href="/"
-              className="block py-2 px-4 hover:bg-gray-600 rounded"
-            >
-              Serviços
+            <Link href="/" className="block py-2 px-4 rounded">
+              Home
             </Link>
-            <Link
-              href="/about"
-              className="block py-2 px-4 hover:bg-gray-600 rounded"
-            >
-              Projetos
+            <Link href="#feedbackclientes" className="block py-2 px-4 rounded">
+              FeedBack
             </Link>
-            <Link
-              href="/services"
-              className="block py-2 px-4 hover:bg-gray-600 rounded"
-            >
-              Habilidades
+            <Link href="#cta" className="block py-2 px-4 rounded">
+              Clientes
             </Link>
-            <Link
-              href="/contact"
-              className="block py-2 px-4 hover:bg-gray-600 rounded"
-            >
-              Resumo
+            <Link href="#duvidas" className="block py-2 px-4 rounded">
+              Dúvidas
             </Link>
-            <Link
-              href="/contact"
-              className="block py-2 px-4 hover:bg-gray-600 rounded"
-            >
+            <Link href="/page" className="block py-2 px-4 rounded">
               Contato
             </Link>
             <Link
               href="/CurriculoJoaoPedro.pdf"
-              className="block py-2 px-4 hover:bg-gray-600 rounded"
+              className="block py-2 px-4 rounded"
             >
               Currículo
             </Link>
@@ -126,4 +113,4 @@ const NavbarMainTeste = () => {
   );
 };
 
-export default NavbarMainTeste;
+export default NavbarNewServices;

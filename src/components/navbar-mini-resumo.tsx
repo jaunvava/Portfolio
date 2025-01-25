@@ -5,9 +5,8 @@ import Link from "next/link";
 import { Menu, TerminalIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { ModeToggle } from "../_providers/toggle-mode";
 
-export default function NavbarMinimain() {
+export default function NavbarMinisobremim() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -15,32 +14,25 @@ export default function NavbarMinimain() {
   const NavLinks = () => (
     <>
       <Link
-        href="/services"
-        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600 hover:scale-105 duration-300"
+        href="/"
+        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600 hover:scale-105 duration-300  "
         onClick={toggleMenu}
       >
-        Serviços
+        Home
       </Link>
       <Link
-        href="#projects"
+        href="#"
         className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600 hover:scale-105 duration-300"
         onClick={toggleMenu}
       >
-        Projetos
+        Meu Propósito
       </Link>
       <Link
-        href="#skills"
+        href="#"
         className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600 hover:scale-105 duration-300"
         onClick={toggleMenu}
       >
-        Habilidades
-      </Link>
-      <Link
-        href="/resumo"
-        className="text-lg font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-orange-600 dark:hover:text-orange-600 hover:scale-105 duration-300"
-        onClick={toggleMenu}
-      >
-        Resumo
+        Teste
       </Link>
       <Link
         href="/contact"
@@ -53,13 +45,12 @@ export default function NavbarMinimain() {
   );
 
   return (
-    // navegação
     <nav className="z-20 fixed w-full flex justify-center mt-4">
-      <div className="fixed top-4 w-11/12 md:w-4/5 lg:w-3/4 xl:w-1/2 backdrop-blur-sm bg-black/20 dark:bg-gray-600/90 rounded-full shadow-lg p-2 md:">
+      <div className="fixed top-4 w-11/12 md:w-4/5 lg:w-3/4 xl:w-1/3 backdrop-blur-sm bg-black/20 dark:bg-gray-600/90 rounded-full shadow-lg p-2">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <Link href="/">
-              <TerminalIcon className="h-10 w-10 ml-3" />
+              <TerminalIcon className="h-8 w-8 ml-3" />
             </Link>
           </div>
 
@@ -79,7 +70,6 @@ export default function NavbarMinimain() {
             <SheetContent side="top" className="bg-gray-100 dark:bg-gray-600">
               <nav className="flex flex-col space-y-6 mt-4 text-black dark:text-white ">
                 <NavLinks />
-                <ModeToggle />
                 <Button className=" md:inline-flex bg-orange-600  hover:bg-orange-500 hover:scale-105 transition duration-600 dark:text-white rounded-full">
                   Currículo
                 </Button>
@@ -87,9 +77,7 @@ export default function NavbarMinimain() {
             </SheetContent>
           </Sheet>
 
-          <Button className="hidden md:inline-flex bg-orange-600 dark:text-white hover:bg-orange-500 hover:scale-105 transition duration-600 rounded-full">
-            Currículo
-          </Button>
+          <Button variant={null} className="hidden md:inline-flex"></Button>
         </div>
       </div>
     </nav>

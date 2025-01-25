@@ -1,13 +1,13 @@
 import SobreMIm from "@/components/sobremim-components/sessao-sobre-mim";
 import Footerlayout from "@/app/_template/rodape-layout-paginas";
-import NavbarMinisobremim from "@/app/_template/navbar-mini-resumo";
+import NavbarNewResumo from "../_template/nav-mew-resumo";
 
 export default function SobreMin() {
   return (
     <>
       {/* Cabeçalho */}
       <section>
-        <NavbarMinisobremim />
+        <NavbarNewResumo />
       </section>
 
       {/* Sessão apresentação */}

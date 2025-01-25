@@ -1,4 +1,3 @@
-import { Smartphone } from "lucide-react";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -86,16 +85,6 @@ const config: Config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-      },
-      screens: {
-        smartphone: "420px",
-        // => @media (min-width: 640px) { ... }
-
-        tablet: "940px",
-        // => @media (min-width: 1024px) { ... }
-
-        desktop: "1280px",
-        // => @media (min-width: 1280px) { ... }
       },
     },
   },

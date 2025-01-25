@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function PortfolioLanding() {
   return (
     <section className="min-h-screen w-full dark:bg-zinc-800 bg-zinc-500 text-white p-6 md:p-12 lg:p-16 flex flex-col md:flex-row items-center justify-between relative overflow-hidden">
-      <div className="min-h-screen max-w-8xl w-full text-white p-6 md:p-12 lg:p-16 flex flex-col md:flex-row items-center justify-center relative overflow-hidden sm:my-10">
+      <div className="text-center sm:text-left mt-48 min-h-screen max-w-8xl w-full text-white p-6 md:p-12 lg:p-16 flex flex-col md:flex-row items-center justify-center relative overflow-hidden sm:my-10">
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#FF6B00]/20 via-transparent to-transparent pointer-events-none" />
         <div className="space-y-8 md:w-1/2 z-10">
           <div className="space-y-4">
@@ -20,7 +20,7 @@ export default function PortfolioLanding() {
           </div>
 
           {/* Redes sociais */}
-          <div className="flex gap-4">
+          <div className="flex gap-4 items-center sm:justify-start">
             <a
               href="#"
               target="

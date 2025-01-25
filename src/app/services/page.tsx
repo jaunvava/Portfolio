@@ -2,16 +2,16 @@ import ClientCarousel from "@/components/servicos-components/sessao-client-loop"
 import ProgrammerServices from "@/components/servicos-components/sessao-meus-servicos";
 import Differentiators from "@/components/servicos-components/sessao-retencao-cliente";
 import Footerlayout from "../_template/rodape-layout-paginas";
-import NavbarMiniservices from "@/app/_template/navbar-mini-services";
 import FAQ from "@/components/servicos-components/faq";
 import ServicePresentation from "@/components/servicos-components/sessao-apresentacao";
+import NavbarNewServices from "../_template/nav-new-services";
 
 export default function Pageservice() {
   return (
     <>
       {/* Cabeçalho */}
       <header id="inicioservices">
-        <NavbarMiniservices />
+        <NavbarNewServices />
       </header>
 
       {/* Sessão de apresentação */}
