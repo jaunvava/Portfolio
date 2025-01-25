@@ -55,17 +55,6 @@ const NavbarNewServices = () => {
             </Link>
           </div>
 
-          {/* <div className="hidden md:block">
-            <Button
-              asChild
-              className="text-lg text-white rounded-lg bg-orange-500 hover:bg-orange-600"
-            >
-              <Link target="_blank" href="/curriculojoaopedro.pdf">
-                Curriculo
-              </Link>
-            </Button>
-          </div> */}
-
           <div className="md:hidden">
             <button onClick={toggleMenu} className="focus:outline-none">
               {isOpen ? (

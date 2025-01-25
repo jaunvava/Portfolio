@@ -52,14 +52,14 @@ export default function PortfolioLanding() {
             <Button
               asChild
               size="lg"
-              className="bg-orange-500 hover:bg-orange-600 text-white"
+              className="bg-orange-500 hover:bg-orange-600 text-white hover:scale-105 duration-300 transition-all"
             >
               <Link href="/resumo">Saiba Mais</Link>
             </Button>
             <Button
               asChild
               size="lg"
-              className="text-gray-800 border-gray-400 hover:text-gray-800 hover:border-white"
+              className="text-gray-800 border-gray-400 hover:text-gray-800 hover:border-white hover:scale-105 duration-300 transition-all"
             >
               <Link target="_blank" href="/curriculojoaopedro.pdf">
                 Visualizar CV
@@ -67,6 +67,7 @@ export default function PortfolioLanding() {
             </Button>
           </div>
 
+          {/* expereciencia */}
           <div className="flex gap-8 mt-12">
             <div className="space-y-2">
               <p className="text-orange-600 text-3xl font-bold">+3</p>
@@ -83,7 +84,7 @@ export default function PortfolioLanding() {
           </div>
         </div>
 
-        <div className="mt-12 md:mt-0 md:w-1/2 flex justify-center md:justify-end relative z-10">
+        <div className="mt-12 md:mt-0 md:w-1/2 flex justify-center md:justify-end relative z-10 ">
           <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden bg-zinc-800">
             <Image
               src="/perfil.jpg"

@@ -52,16 +52,20 @@ const NavbarNewMain = () => {
               Contato
             </Link>
           </div>
+
+          {/* botão currículo */}
           <div className="hidden md:block">
             <Button
               asChild
-              className="text-lg text-white rounded-lg bg-orange-500 hover:bg-orange-600"
+              className="text-lg text-white rounded-lg bg-orange-500 hover:bg-orange-600 hover:scale-105 duration-300 transition-all"
             >
               <Link target="_blank" href="/curriculojoaopedro.pdf">
                 Curriculo
               </Link>
             </Button>
           </div>
+
+          {/* script para aba mobile */}
           <div className="md:hidden">
             <button onClick={toggleMenu} className="focus:outline-none">
               {isOpen ? (
