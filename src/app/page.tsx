@@ -1,55 +1,34 @@
-import TechStack from "@/components/main-page-components/sessao-habilidades";
-import FreelanceServices from "@/components/main-page-components/sessao-freela-servicos";
-import FooterMain from "@/app/_template/rodape-main";
-import Projectamost from "@/components/projects-components/page";
-import ScrollArrowSectionApresentation from "@/components/main-page-components/sessao-arrow-apresentacao";
-import FeaturesSection from "@/components/main-page-components/sessao-info";
-import NavbarMainTeste from "@/app/_template/nav-new-main";
+import Experience from "./_globalComponents/Experiencia";
+import Education from "./_globalComponents/Educacao";
+import NavbarNewMain from "./_template/nav-new-main";
+import CTA from "../components/cta";
+import Skills from "./_globalComponents/habilidades";
+import FloatingNav from "./_globalComponents/floating-nav";
+import HeroMain from "./_globalComponents/Hero-main";
+import ResumeSection from "../components/sobre-eu";
+import FooterMain from "./_template/rodape-main";
 
-export default function LandingPage() {
+export default function Home() {
   return (
-    <>
-      {/* Barra de navegação */}
-      <header>
-        <NavbarMainTeste />
-        {/* <NavbarMinimain /> */}
-      </header>
+    <div className="relative min-h-screen">
+      {/* Background gradientes */}
+      <div className="pointer-events-none fixed inset-0">
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
+        <div className="absolute right-0 top-0 h-[500px] w-[500px] bg-blue-600/10 blur-[100px]" />
+        <div className="absolute bottom-0 left-0 h-[500px] w-[500px] bg-purple-600/10 blur-[100px]" />
+      </div>
 
-      {/* Sessão de Apresentação e trajetoria */}
-      <section id="presentation">
-        <ScrollArrowSectionApresentation />
-      </section>
-
-      {/* Sessão de Informações */}
-      <section>
-        <FeaturesSection />
-      </section>
-
-      {/* Sessão Projetos */}
-      <section id="projects">
-        <Projectamost />
-      </section>
-
-      {/* Sessão habilidades Tech Stack*/}
-      <section id="skills">
-        <TechStack />
-      </section>
-
-      {/* Sessão redirecionando para a página de serviços*/}
-      <section id="services">
-        <FreelanceServices />
-      </section>
-
-      {/* Sessão mensagem filosófica */}
-      <section></section>
-
-      {/* Sessão de Email */}
-      <section></section>
-
-      {/* Sessão rodapé é contato */}
-      <footer id="contact">
+      <div className="relative z-10">
+        <FloatingNav />
+        <NavbarNewMain />
+        <HeroMain />
+        <ResumeSection />
+        <Skills />
+        <Experience />
+        <Education />
+        <CTA />
         <FooterMain />
-      </footer>
-    </>
+      </div>
+    </div>
   );
 }
