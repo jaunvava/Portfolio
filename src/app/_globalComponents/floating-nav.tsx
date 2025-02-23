@@ -9,7 +9,7 @@ const sections = [
   { id: "projetos", label: "Projetos" },
   { id: "skills", label: "habilidades" },
   { id: "experience", label: "Experiência" },
-  { id: "education", label: "Educação" },
+  { id: "educacao", label: "Educação" },
   { id: "cta", label: "CTA" },
   { id: "contato", label: "Contato" },
 ];

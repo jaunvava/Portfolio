@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Instagram, Linkedin, Github } from "lucide-react";
+import { Linkedin, Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,7 +9,7 @@ export default function HeroMain1() {
       id="home"
       className=" mt-10 mb-10 p-6 md:p-12 lg:p-16 flex flex-col md:flex-row items-center justify-between relative overflow-hidden"
     >
-      <div className="text-center sm:text-left max-w-[98rem] min-w-64 text-white p-6 md:p-12 lg:p-16 flex flex-col md:flex-row items-center relative sm:my-10">
+      <div className="flex items-center justify-center text-center sm:text-left p-8 md:p-12 lg:p-16 flex-col md:flex-row md:justify-center relative sm:my-10">
         <div className="space-y-8 md:w-1/2 z-10">
           <div className="space-y-4">
             <p className="text-xl">Olá, eu sou</p>
@@ -19,69 +19,61 @@ export default function HeroMain1() {
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#FF6B00]">
               Desenvolvedor Full Stack
             </h2>
-          </div>
 
-          {/* Redes sociais */}
-          <div className="flex gap-4 items-center justify-center md:justify-start">
-            <a
-              href="#"
-              target="
-              _blank"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              <Instagram className="w-6 h-6" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/joaopedrosouzs/
+            {/* Redes sociais */}
+            <div className="flex gap-4 items-center justify-center md:justify-start">
+              <a
+                href="https://www.linkedin.com/in/joaopedrosouzs/
 
 "
-              target="_blank"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              <Linkedin className="w-6 h-6" />
-            </a>
-            <a
-              href="https://github.com/jaunvava"
-              target="_blank"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              <Github className="w-6 h-6" />
-            </a>
-          </div>
-
-          {/* Links botões */}
-          <div className="flex gap-4">
-            <Button
-              asChild
-              size="lg"
-              className="bg-orange-500 hover:bg-orange-600 text-white hover:scale-105 duration-300 transition-all"
-            >
-              <Link href="/resumo">Saiba Mais</Link>
-            </Button>
-            <Button
-              asChild
-              size="lg"
-              className="text-gray-800 border-gray-400 hover:text-gray-800 hover:border-white hover:scale-105 duration-300 transition-all"
-            >
-              <Link target="_blank" href="/curriculojoaopedro.pdf">
-                Visualizar CV
-              </Link>
-            </Button>
-          </div>
-
-          {/* expereciencia */}
-          <div className="flex gap-8 mt-12">
-            <div className="space-y-2">
-              <p className="text-orange-600 text-3xl font-bold">+3</p>
-              <p className="text-sm text-gray-400">Experiencia</p>
+                target="_blank"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                <Linkedin className="w-6 h-6" />
+              </a>
+              <a
+                href="https://github.com/jaunvava"
+                target="_blank"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                <Github className="w-6 h-6" />
+              </a>
             </div>
-            <div className="space-y-2">
-              <p className="text-orange-600 text-3xl font-bold">+10</p>
-              <p className="text-sm text-gray-400">Projetos</p>
+
+            {/* Links botões */}
+            <div className="flex gap-4">
+              <Button
+                asChild
+                size="lg"
+                className="bg-orange-500 hover:bg-orange-500 text-white hover:scale-105 duration-300 transition-all"
+              >
+                <Link href="/resumo">Saiba Mais</Link>
+              </Button>
+              <Button
+                asChild
+                size="lg"
+                className="text-gray-800 border-gray-400 hover:text-gray-800 hover:border-white hover:scale-105 duration-300 transition-all"
+              >
+                <Link target="_blank" href="/curriculojoaopedro.pdf">
+                  Visualizar CV
+                </Link>
+              </Button>
             </div>
-            <div className="space-y-2">
-              <p className="text-orange-600 text-3xl font-bold">+5</p>
-              <p className="text-sm text-gray-400">Clientes Satisfeitos</p>
+
+            {/* expereciencia */}
+            <div className="flex gap-8 mt-12">
+              <div className="space-y-2">
+                <p className="text-orange-600 text-3xl font-bold">+3</p>
+                <p className="text-sm text-gray-400">Experiencia</p>
+              </div>
+              <div className="space-y-2">
+                <p className="text-orange-600 text-3xl font-bold">+10</p>
+                <p className="text-sm text-gray-400">Projetos</p>
+              </div>
+              <div className="space-y-2">
+                <p className="text-orange-600 text-3xl font-bold">+5</p>
+                <p className="text-sm text-gray-400">Clientes Satisfeitos</p>
+              </div>
             </div>
           </div>
         </div>

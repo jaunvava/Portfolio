@@ -22,7 +22,7 @@ const NavbarNewMain = () => {
           </Link>
           <div className="hidden md:flex space-x-4 absolute left-1/2 transform -translate-x-1/2 gap-4">
             <Link
-              href="/services"
+              href="/dev"
               className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300 antialiased"
             >
               Serviços
@@ -40,13 +40,13 @@ const NavbarNewMain = () => {
               Habilidades
             </Link>
             <Link
-              href="/resumo"
+              href="/dev"
               className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300 antialiased"
             >
               Resumo
             </Link>
             <Link
-              href="/page"
+              href="#contato"
               className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300 antialiased"
             >
               Contato
