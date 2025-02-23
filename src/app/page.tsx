@@ -4,9 +4,9 @@ import NavbarNewMain from "./_template/nav-new-main";
 import CTA from "../components/cta";
 import Skills from "./_globalComponents/habilidades";
 import FloatingNav from "./_globalComponents/floating-nav";
-import HeroMain from "./_globalComponents/Hero-main";
 import ResumeSection from "../components/sobre-eu";
 import FooterMain from "./_template/rodape-main";
+import HeroMain1 from "./_globalComponents/Apresentacao";
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
       <div className="relative z-10">
         <FloatingNav />
         <NavbarNewMain />
-        <HeroMain />
+        <HeroMain1 />
         <ResumeSection />
         <Skills />
         <Experience />

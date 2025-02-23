@@ -7,31 +7,15 @@ import AnimatedSectionHeader from "./AnimatedSectionHeader";
 export default function Experience() {
   const experiences = [
     {
-      empresa: "Freelance",
-      local: "Remote",
-      funcao: "Colaborador",
-      periodo: "2024 - Present",
-      cargo: "MERN Stack Developer",
-      responsibilities: [
-        "Developing custom web applications for international clients",
-        "Building responsive and scalable frontend interfaces with React",
-        "Implementing secure backend systems with Node.js and Express",
-        "Creating RESTful APIs and managing MongoDB databases",
-        "Collaborating with clients to deliver high-quality solutions",
-      ],
-    },
-    {
       empresa: "Ap2 Soluções",
       local: "Paraíba, Brasil (Remoto)",
       funcao: "Colaborador",
       periodo: "2024 - Ao momento",
-      cargo: "Análista de Sistemas",
+      cargo: "Análista é Desenvolvedor de Sistemas Web",
       responsibilities: [
-        "Developed full-fledged ERP system using MERN stack",
-        "Designed and implemented RESTful APIs",
-        "Created responsive interfaces with React.js and Redux",
-        "Implemented secure authentication systems",
-        "Utilized WebSockets for real-time features",
+        "Desenvolvimento de aplicações web personalizadas para a empresa",
+        "Suporte técnico de sistema",
+        "Comunicação com clientes para entrega de soluções de alta qualidade",
       ],
     },
     {
@@ -65,7 +49,7 @@ export default function Experience() {
               className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl relative overflow-hidden group"
             >
               <div
-                className="absolute top-0 right-0 w-32 h-32 bg-blue-200 dark:bg-orange-500 rounded-bl-full z-0 opacity-50 
+                className="absolute top-0 right-0 w-32 h-32 bg-blue-200 dark:bg-orange-500 rounded-bl-full z-0 opacity-70 
                 transition-transform duration-300 group-hover:scale-110"
               ></div>
               <div className="relative z-10">
