@@ -4,12 +4,13 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const sections = [
-  { id: "hero", label: "Home" },
+  { id: "home", label: "Home" },
   { id: "sobre", label: "Sobre" },
-  { id: "experience", label: "Experiência" },
+  { id: "projetos", label: "Projetos" },
   { id: "skills", label: "habilidades" },
-  { id: "services", label: "Serviços" },
+  { id: "experience", label: "Experiência" },
   { id: "education", label: "Educação" },
+  { id: "cta", label: "CTA" },
   { id: "contato", label: "Contato" },
 ];
 

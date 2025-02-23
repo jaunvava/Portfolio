@@ -13,6 +13,7 @@ import {
   Workflow,
 } from "lucide-react";
 import AnimatedSectionHeader from "./AnimatedSectionHeader";
+import TechStack from "./sessao-habilidades";
 
 const SkillIcon = ({ icon: Icon, color }: { icon: any; color: string }) => (
   <div className={`p-2 rounded-full bg-white dark:bg-gray-700 shadow-lg`}>
@@ -99,7 +100,7 @@ export default function Skills() {
   return (
     <section id="skills" className="py-20 relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-20">
-        <AnimatedSectionHeader title="Habilidades e Tecnologias" />
+        <AnimatedSectionHeader title="Habilidades" />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skills.map((skill, index) => (
             <motion.div
@@ -109,7 +110,7 @@ export default function Skills() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group">
+              <div className="dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group">
                 <div className="flex items-center mb-4">
                   <SkillIcon icon={skill.icon} color={skill.color} />
                   <div className="ml-4">
@@ -128,6 +129,10 @@ export default function Skills() {
             </motion.div>
           ))}
         </div>
+      </div>
+      {/* tecnologias */}
+      <div>
+        <TechStack />
       </div>
     </section>
   );

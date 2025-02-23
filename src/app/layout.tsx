@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import type React from "react";
 import { Inter, Montserrat, Oxanium, Courgette } from "next/font/google";
 import { ThemeProvider } from "./_providers/theme-provider";
-import MouseMoveEffect from "../components/mouse-move-effect";
+import MouseMoveEffect from "./_globalComponents/mouse-move-effect";
 
 export const metadata: Metadata = {
   title: "João Pedro | Portifólio",

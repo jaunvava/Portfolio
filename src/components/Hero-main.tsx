@@ -1,3 +1,4 @@
+// ! esse componente não está sendo utilizado no projeto no momento
 "use client";
 
 import Image from "next/image";
@@ -10,12 +11,9 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 
-export default function HeroMain() {
+export default function HeroMain2() {
   return (
-    <section
-      id="hero"
-      className="min-h-screen relative overflow-hidden bg-gradient-to-br mt-8"
-    >
+    <section className="min-h-screen relative overflow-hidden bg-gradient-to-br mt-8">
       {/* Programming-themed Background */}
       <div className="absolute inset-0 z-0">
         {/* <Image src="/perfil.jpg" alt="jp" width={100} height={200} /> */}
