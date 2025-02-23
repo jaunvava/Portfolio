@@ -1,54 +1,46 @@
-import ClientCarousel from "@/components/servicos-components/sessao-client-loop";
-import ProgrammerServices from "@/components/servicos-components/sessao-meus-servicos";
-import Differentiators from "@/components/servicos-components/sessao-retencao-cliente";
-import Footerlayout from "../_template/rodape-layout-paginas";
-import FAQ from "@/components/servicos-components/faq";
-import ServicePresentation from "@/components/servicos-components/sessao-apresentacao";
-import NavbarNewServices from "../_template/nav-new-services";
+import Footer from "../_template/footer";
+import NavbarNewMain from "../_template/nav-new-main";
+import TestimonialSection from "./_components/Feedback";
+import HeroService from "./_components/hero-service";
+import Services from "./_components/Services";
+import ClientCarousel from "./_components/sessao-client-loop";
+import Solucoes from "./_components/solucoes";
 
 export default function Pageservice() {
   return (
     <>
-      {/* Cabeçalho */}
-      <header id="inicioservices">
-        <NavbarNewServices />
-      </header>
+      <div className="relative min-h-screen">
+        {/* Background gradientes */}
+        <div className="pointer-events-none fixed inset-0">
+          <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
+          <div className="absolute right-0 top-0 h-[500px] w-[500px] bg-blue-600/10 blur-[100px]" />
+          <div className="absolute bottom-0 left-0 h-[500px] w-[500px] bg-purple-600/10 blur-[100px]" />
+        </div>
 
-      {/* Sessão de apresentação */}
-      <section>
-        <ServicePresentation />
-      </section>
+        {/* Cabeçalho */}
+        <NavbarNewMain />
 
-      {/* Carrosel de Clientes */}
-      <section id="carroselclienteservices">
+        {/* Sessão de apresentação */}
+        <HeroService />
+
+        {/* Carrosel de Clientes */}
         <ClientCarousel />
-      </section>
 
-      {/* Meus serviços */}
-      <section id="servicos">
-        <ProgrammerServices />
-      </section>
+        {/* Meus serviços */}
+        <TestimonialSection />
 
-      {/* Feedback Clientes */}
-      <section id="feedbackclientes"></section>
+        {/* Feedback Clientes */}
+        <Services />
 
-      {/* Meus Diferenciais */}
-      <section id="diferenciais">
-        <Differentiators />
-      </section>
+        {/* Meus Diferenciais */}
 
-      {/* Sessão Preços */}
-      <section id="precos"></section>
+        {/* Sessão Preços */}
+        <Solucoes />
+        {/* Sessão FAQ */}
 
-      {/* Sessão FAQ */}
-      <section id="duvidas">
-        <FAQ />
-      </section>
-
-      {/* Rodapé */}
-      <footer id="contatorodapeservicos">
-        <Footerlayout />
-      </footer>
+        {/* Rodapé */}
+        <Footer />
+      </div>
     </>
   );
 }

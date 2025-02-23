@@ -13,9 +13,9 @@ const NavbarNewMain = () => {
   };
 
   return (
-    <nav className="z-20 fixed top-4 left-4 right-4">
+    <nav className="z-30 fixed top-4 left-4 right-4">
       {/* Barra layout desktop */}
-      <div className="max-w-5xl mx-auto rounded-lg shadow-lg p-3 backdrop-blur-sm bg-black/20 dark:bg-gray-600/90">
+      <div className="max-w-5xl mx-auto rounded-lg shadow-lg p-3 outline-blue-500 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto flex justify-between items-center">
           <Link href="/" className="text-xl font-bold">
             <Terminal className="h-9 w-9 hover:scale-110 transition-all" />
@@ -23,31 +23,31 @@ const NavbarNewMain = () => {
           <div className="hidden md:flex space-x-4 absolute left-1/2 transform -translate-x-1/2 gap-4">
             <Link
               href="/services"
-              className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300"
+              className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300 antialiased"
             >
               Serviços
             </Link>
             <Link
               href="#projects"
-              className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300"
+              className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300 antialiased"
             >
               Projetos
             </Link>
             <Link
               href="#skills"
-              className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300"
+              className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300 antialiased"
             >
               Habilidades
             </Link>
             <Link
               href="/resumo"
-              className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300"
+              className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300 antialiased"
             >
               Resumo
             </Link>
             <Link
               href="/page"
-              className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300"
+              className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300 antialiased"
             >
               Contato
             </Link>
@@ -57,7 +57,7 @@ const NavbarNewMain = () => {
           <div className="hidden md:block">
             <Button
               asChild
-              className="text-lg text-white rounded-lg bg-orange-500 hover:bg-orange-600 hover:scale-105 duration-300 transition-all"
+              className="text-white bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-orange-300 dark:focus:ring-orange-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2"
             >
               <Link target="_blank" href="/curriculojoaopedro.pdf">
                 Curriculo
@@ -83,7 +83,7 @@ const NavbarNewMain = () => {
         }`}
       >
         {/* Barra layout mobile */}
-        <div className="max-w-5xl mx-auto backdrop-blur-sm bg-black/20 dark:bg-gray-600/90 rounded-b-lg shadow-lg">
+        <div className="max-w-5xl mx-auto backdrop-blur-sm bg-black/20 rounded-b-lg shadow-lg">
           <div className="py-2 space-y-2 items-center">
             <Link href="/services" className="block py-2 px-4 rounded">
               Serviços
