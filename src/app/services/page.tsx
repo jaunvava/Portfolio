@@ -1,9 +1,9 @@
-import NavbarNewMain from "../_template/nav-new-main";
 import FooterMain from "../_template/rodape-main";
 import TestimonialSection from "./_components/Feedback";
 import HeroService from "./_components/sessao-hero";
 import Services from "./_components/Services";
 import ClientCarousel from "./_components/sessao-client-loop";
+import NavbarService from "./_components/Navbar-services";
 
 export default function Pageservice() {
   return (
@@ -18,7 +18,7 @@ export default function Pageservice() {
 
         <div className="relative z-10">
           {/* Cabeçalho */}
-          <NavbarNewMain />
+          <NavbarService />
 
           {/* Sessão de apresentação */}
           <HeroService />

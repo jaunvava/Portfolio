@@ -9,7 +9,7 @@ const technologies = [
   { name: "Java", icon: "/icons-java-96.svg" },
   { name: "SpringBot", icon: "/icons-spring-boot.svg" },
   { name: "Nodejs", icon: "/icons-nodejs.svg" },
-  { name: "Python", icon: "/icons8-python.svg" },
+  { name: "Python", icon: "/icons-python.svg" },
   { name: "Angular", icon: "/icons-angular-96.svg" },
   { name: "React", icon: "/icons-react-96.svg" },
   { name: "Nextjs", icon: "icons-nextjs.svg" },

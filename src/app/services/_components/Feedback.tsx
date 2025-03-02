@@ -35,7 +35,7 @@ const testimonials = [
 
 export default function TestimonialSection() {
   return (
-    <section className="py-16 px-4 md:px-8">
+    <section id="feedback" className="py-16 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         <motion.div
           className="text-center mb-12"

@@ -22,7 +22,7 @@ export default function HeroService() {
           os meu serviços
         </h1>
         <p className="relative z-20 mx-auto max-w-[42rem] text-sm leading-normal text-muted-foreground sm:text-base md:text-lg">
-          ECapacitando empresas com soluções de software de ponta. De análises
+          Capacitando empresas com soluções de software de ponta. De análises
           orientadas por IA a integrações de nuvem perfeitas, estamos moldando o
           futuro da tecnologia.
         </p>

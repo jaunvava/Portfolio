@@ -15,17 +15,17 @@ const projects = [
     id: 1,
     title: "Portfólio Pessoal",
     description:
-      "A full-stack e-commerce solution with product management, cart functionality, and payment processing.",
+      "Meu site pessoal onde mostro todas minhas conquistas e projetos.",
     technologies: ["Typescript", "Next.js", "Motion", "TailwindCss", "Shadcn"],
-    deployUrl: "#",
-    codeUrl: "#",
+    deployUrl: "/",
+    codeUrl: "https://github.com/jaunvava/Portfolio",
     private: false,
   },
   {
     id: 2,
     title: "Ap2 Soluções",
     description:
-      "A Kanban-style task management application with drag-and-drop functionality and team collaboration.",
+      "Um site com foco em apresentação da empresa é todas as suas soluções para alcançar mais clientes.",
     technologies: [
       "Typescript",
       "Next.js",
@@ -97,11 +97,11 @@ export default function ProjectShowcase() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-8xl mx-auto">
             {projects.map((project) => (
               <Card
                 key={project.id}
-                className="overflow-hidden transition-all duration-200 hover:shadow-lg"
+                className="overflow-hidden transition-all duration-200 hover:shadow-lg bg-gray-800"
               >
                 <CardHeader>
                   <div className="flex justify-between items-start">
@@ -146,7 +146,11 @@ export default function ProjectShowcase() {
                       <span>Código</span>
                     </a>
                   </Button>
-                  <Button size="sm" className="gap-1" asChild>
+                  <Button
+                    size="sm"
+                    className="gap-1 hover:bg-orange-600 transition-colors duration-300"
+                    asChild
+                  >
                     <a
                       href={project.deployUrl}
                       target="_blank"
