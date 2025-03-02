@@ -21,7 +21,7 @@ export default function ResumeSection() {
                 Um <span className="italic">breve resumo</span> sobre mim
               </h2>
               <h3 className="text-2xl md:text-3xl font-semibold mb-4">
-                Me chamo João Pedro é sou um desenvolvedor Fullstack
+                Me chamo João Pedro e sou um desenvolvedor Fullstack
               </h3>
               <p className="text-gray-400">
                 Sou um estudante, sou um desenvolvedor de software apaixonado
