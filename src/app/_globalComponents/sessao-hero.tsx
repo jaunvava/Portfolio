@@ -53,7 +53,7 @@ export default function HeroMain() {
                 size="lg"
                 className="bg-orange-500 hover:bg-orange-500 text-white hover:scale-105 duration-300 transition-all"
               >
-                <Link href="/resumo">Saiba Mais</Link>
+                <Link href="/services">Saiba Mais</Link>
               </Button>
               <Button
                 asChild

@@ -102,7 +102,7 @@ const NavbarNewMain = () => {
             <Link href="/services" className="block py-2 px-4 rounded">
               Serviços
             </Link>
-            <Link href="#projects" className="block py-2 px-4 rounded">
+            <Link href="#projetos" className="block py-2 px-4 rounded">
               Projetos
             </Link>
             <Link href="#skills" className="block py-2 px-4 rounded">
@@ -111,7 +111,7 @@ const NavbarNewMain = () => {
             <Link href="/resumo" className="block py-2 px-4 rounded">
               Resumo
             </Link>
-            <Link href="/page" className="block py-2 px-4 rounded">
+            <Link href="#contato" className="block py-2 px-4 rounded">
               Contato
             </Link>
             <Link

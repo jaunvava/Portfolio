@@ -95,17 +95,17 @@ const NavbarService = () => {
         {/* Barra layout mobile */}
         <div className="max-w-5xl mx-auto backdrop-blur-sm bg-black/20 rounded-b-lg shadow-lg">
           <div className="py-2 space-y-2 items-center">
-            <Link href="/services" className="block py-2 px-4 rounded">
+            <Link href="/" className="block py-2 px-4 rounded">
+              Home
+            </Link>
+            <Link href="#services" className="block py-2 px-4 rounded">
               Serviços
             </Link>
-            <Link href="#projects" className="block py-2 px-4 rounded">
+            <Link href="#feedback" className="block py-2 px-4 rounded">
+              Feedback
+            </Link>
+            <Link href="/#projetos" className="block py-2 px-4 rounded">
               Projetos
-            </Link>
-            <Link href="#skills" className="block py-2 px-4 rounded">
-              Habilidades
-            </Link>
-            <Link href="/resumo" className="block py-2 px-4 rounded">
-              Resumo
             </Link>
             <Link href="/page" className="block py-2 px-4 rounded">
               Contato
