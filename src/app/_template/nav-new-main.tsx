@@ -41,7 +41,7 @@ const NavbarNewMain = () => {
               Serviços
             </Link>
             <Link
-              href="#projects"
+              href="#projetos"
               className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300 antialiased"
             >
               Projetos

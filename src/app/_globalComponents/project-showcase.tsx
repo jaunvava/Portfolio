@@ -1,108 +1,92 @@
+import { CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Code2, Rocket } from "lucide-react";
+import { Code2, Rocket, Lock, GithubIcon } from "lucide-react";
 
 // Sample project data
 const projects = [
   {
     id: 1,
-    title: "E-commerce Platform",
+    title: "Portfólio Pessoal",
     description:
       "A full-stack e-commerce solution with product management, cart functionality, and payment processing.",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+    technologies: ["Typescript", "Next.js", "Motion", "TailwindCss", "Shadcn"],
     deployUrl: "#",
     codeUrl: "#",
+    private: false,
   },
   {
     id: 2,
-    title: "Task Management App",
+    title: "Ap2 Soluções",
     description:
       "A Kanban-style task management application with drag-and-drop functionality and team collaboration.",
-    technologies: ["Vue.js", "Express", "PostgreSQL", "Socket.io"],
+    technologies: [
+      "Typescript",
+      "Next.js",
+      "TailwindCss",
+      "Docker",
+      "Mui",
+      "Motion",
+    ],
     deployUrl: "#",
     codeUrl: "#",
+    private: true,
   },
   {
     id: 3,
-    title: "Weather Dashboard",
+    title: "Em desenvolvimento",
     description:
-      "Real-time weather information dashboard with location search, forecasts, and interactive maps.",
-    technologies: ["React", "OpenWeather API", "Mapbox", "Tailwind CSS"],
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nesciunt, quidem a, corrupti repellendus repudiandae maxime pariatur sapiente laudantium doloribus natus saepe repellat? Minima, sapiente odio necessitatibus vel repellat dolores..",
+    technologies: ["React.js", "Vite.js", "Java", "TailwindCss"],
     deployUrl: "#",
     codeUrl: "#",
+    private: true,
   },
   {
     id: 4,
-    title: "Social Media Analytics",
+    title: "Em desenvolvimento",
     description:
-      "Analytics dashboard for tracking social media performance across multiple platforms.",
-    technologies: ["Angular", "Firebase", "Chart.js", "Social APIs"],
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae incidunt minus est nostrum doloremque, quidem eos nihil commodi hic, ipsam quisquam laboriosam explicabo, a soluta ducimus praesentium provident ratione nisi?.",
+    technologies: ["Angular", "Python", "Sass", "Javascript"],
     deployUrl: "#",
     codeUrl: "#",
-  },
-  {
-    id: 5,
-    title: "AI Image Generator",
-    description:
-      "Web application that generates images based on text prompts using machine learning models.",
-    technologies: ["Next.js", "Python", "TensorFlow", "OpenAI API"],
-    deployUrl: "#",
-    codeUrl: "#",
-  },
-  {
-    id: 6,
-    title: "Blockchain Explorer",
-    description:
-      "Tool for exploring and visualizing blockchain transactions and smart contracts.",
-    technologies: ["React", "Ethereum", "Web3.js", "GraphQL"],
-    deployUrl: "#",
-    codeUrl: "#",
+    private: true,
   },
 ];
 
-// Technology icon mapping
-const getTechIcon = (tech: string) => {
-  const techIcons: Record<string, string> = {
-    React: "bg-blue-100 text-blue-800",
-    "Node.js": "bg-green-100 text-green-800",
-    MongoDB: "bg-green-100 text-green-800",
-    Stripe: "bg-purple-100 text-purple-800",
-    "Vue.js": "bg-emerald-100 text-emerald-800",
-    Express: "bg-gray-100 text-gray-800",
-    PostgreSQL: "bg-blue-100 text-blue-800",
-    "Socket.io": "bg-gray-100 text-gray-800",
-    "OpenWeather API": "bg-orange-100 text-orange-800",
-    Mapbox: "bg-indigo-100 text-indigo-800",
-    "Tailwind CSS": "bg-sky-100 text-sky-800",
-    Angular: "bg-red-100 text-red-800",
-    Firebase: "bg-amber-100 text-amber-800",
-    "Chart.js": "bg-pink-100 text-pink-800",
-    "Social APIs": "bg-blue-100 text-blue-800",
-    "Next.js": "bg-black bg-opacity-10 text-gray-800",
-    Python: "bg-yellow-100 text-yellow-800",
-    TensorFlow: "bg-orange-100 text-orange-800",
-    "OpenAI API": "bg-teal-100 text-teal-800",
-    Ethereum: "bg-purple-100 text-purple-800",
-    "Web3.js": "bg-indigo-100 text-indigo-800",
-    GraphQL: "bg-pink-100 text-pink-800",
+const getTechLogo = (tech: string) => {
+  const techLogos: Record<string, string> = {
+    Javascript: "/icons-javascript.svg?height=24&width=24",
+    Typescript: "/icons-typescript.svg?height=24&width=24",
+    "Next.js": "/icons-nextjs.svg?height=24&width=24",
+    "React.js": "/icons-react-96.svg?height=24&width=24",
+    "Vite.js": "/icons-vite.svg?height=24&width=24",
+    Angular: "/icons-angular-96.svg?height=24&width=24",
+    Java: "/icons-java-96.svg?height=24&width=24",
+    Springbot: "/icons-spring-boot.svg?height=24&width=24",
+    Python: "/icons-python.svg?height=24&width=24",
+    Sass: "/icons-sass.svg?height=24&width=24",
+    TailwindCss: "/icons-tailwind-css.svg?height=24&width=24",
+    Docker: "/icons-docker.svg?height=24&width=24",
+    Motion: "/framer.svg?height=24&width=24",
+    Mui: "/mui.png?height=24&width=24",
+    Shadcn: "/shadcn.svg?height=24&width=24",
   };
 
-  return techIcons[tech] || "bg-gray-100 text-gray-800";
+  return techLogos[tech] || "/placeholder.svg?height=24&width=24";
 };
 
 export default function ProjectShowcase() {
   return (
-    <section id="projetos" className="w-full py-12 mt-10 ">
-      <div className="flex items-center justify-center">
-        <div className="flex-col container px-4 md:px-6">
+    <section id="projetos" className="w-full py-12">
+      <div className="flex justify-center items-center">
+        <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
               Meus Projetos
@@ -112,28 +96,42 @@ export default function ProjectShowcase() {
               tecnologias
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {projects.map((project) => (
               <Card
                 key={project.id}
                 className="overflow-hidden transition-all duration-200 hover:shadow-lg"
               >
                 <CardHeader>
-                  <CardTitle className="text-xl">{project.title}</CardTitle>
+                  <div className="flex justify-between items-start">
+                    <CardTitle className="text-xl">{project.title}</CardTitle>
+                    {project.private && (
+                      <span title="Projeto Privado">
+                        <Lock className="h-5 w-5 text-gray-500" />
+                      </span>
+                    )}
+                  </div>
                   <CardDescription className="line-clamp-2 h-10">
                     {project.description}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="flex flex-wrap gap-2 mb-4">
+                  <div className="flex flex-wrap gap-3 mb-4">
                     {project.technologies.map((tech) => (
-                      <Badge
-                        key={tech}
-                        variant="secondary"
-                        className={`${getTechIcon(tech)}`}
-                      >
-                        {tech}
-                      </Badge>
+                      <div key={tech} className="flex flex-col items-center">
+                        <img
+                          src={getTechLogo(tech) || "/placeholder.svg"}
+                          alt={tech}
+                          className="h-8 w-8 object-contain"
+                          title={tech}
+                        />
+                        <span className="text-xs mt-1">
+                          {tech.length > 8
+                            ? `${tech.substring(0, 6)}...`
+                            : tech}
+                        </span>
+                      </div>
                     ))}
                   </div>
                 </CardContent>
@@ -144,7 +142,7 @@ export default function ProjectShowcase() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <Code2 className="h-4 w-4" />
+                      <GithubIcon className="h-4 w-4" />
                       <span>Código</span>
                     </a>
                   </Button>
