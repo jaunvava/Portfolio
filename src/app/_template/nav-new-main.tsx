@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, Terminal, X } from "lucide-react";
 import { Button } from "../../components/ui/button";
+import { motion } from "framer-motion";
 
 const NavbarNewMain = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,13 @@ const NavbarNewMain = () => {
   };
 
   return (
-    <nav className="z-30 fixed top-4 left-4 right-4">
+    <motion.nav
+      className="z-30 fixed top-4 left-4 right-4"
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -100 }}
+      transition={{ duration: 0.5 }}
+    >
       {/* Barra layout desktop */}
       <div className="max-w-5xl mx-auto rounded-lg shadow-lg p-3 outline-blue-500 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto flex justify-between items-center">
@@ -22,7 +29,13 @@ const NavbarNewMain = () => {
           </Link>
           <div className="hidden md:flex space-x-4 absolute left-1/2 transform -translate-x-1/2 gap-4">
             <Link
-              href="/dev"
+              href="/"
+              className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300 antialiased"
+            >
+              Home
+            </Link>
+            <Link
+              href="/services"
               className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300 antialiased"
             >
               Serviços
@@ -77,6 +90,7 @@ const NavbarNewMain = () => {
           </div>
         </div>
       </div>
+
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
           isOpen ? "max-h-65 opacity-100" : "max-h-0 opacity-0"
@@ -109,7 +123,7 @@ const NavbarNewMain = () => {
           </div>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 

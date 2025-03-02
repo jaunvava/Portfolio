@@ -12,10 +12,10 @@ const technologies = [
   { name: "Python", icon: "/icons8-python.svg" },
   { name: "Angular", icon: "/icons-angular-96.svg" },
   { name: "React", icon: "/icons-react-96.svg" },
+  { name: "Nextjs", icon: "icons-nextjs.svg" },
+  { name: "Vite", icon: "/icons-vite.svg" },
   { name: "Sass", icon: "/icons-sass.svg" },
   { name: "TailwindCSS", icon: "/icons-tailwind-css.svg" },
-  { name: "CSS3", icon: "/icons-css.svg" },
-  { name: "HTML5", icon: "/icons-html.svg" },
 ];
 
 export default function TechStack() {
@@ -24,9 +24,9 @@ export default function TechStack() {
       <div className="-z-10 container mx-auto px-4">
         <AnimatedSectionHeader title="Tecnologias" />
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 0, x: -100, y: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.5 }}
         >
           <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">

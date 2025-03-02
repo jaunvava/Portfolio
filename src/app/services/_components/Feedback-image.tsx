@@ -18,7 +18,7 @@ export function Testimonial({
       <p className="text-gray-300 mb-4 flex-grow">{quote}</p>
       <div className="flex items-center">
         <Image
-          src={image || "/placeholder.svg"}
+          src={"/icons-nextjs.svg"}
           alt={name}
           width={40}
           height={40}

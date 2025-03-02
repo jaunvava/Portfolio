@@ -5,7 +5,7 @@ export default function HeroService() {
   return (
     <section
       id="home"
-      className="container flex min-h-[calc(100vh-3.5rem)] max-w-screen-2xl flex-col items-center justify-center space-y-8 py-12 md:py-24 text-center"
+      className="flex min-h-[calc(100vh-10.5rem)] flex-col items-center justify-center space-y-8 py-12 md:py-24 text-center"
     >
       <div className="space-y-4">
         <h1 className="relative z-20 bg-gradient-to-br from-foreground from-30% via-foreground/90 to-foreground/70 bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-4xl md:text-5xl lg:text-6xl">

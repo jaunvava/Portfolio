@@ -1,3 +1,5 @@
+// ! esse componente não está sendo utilizado no projeto no momento
+
 import Image from "next/image";
 
 export default function ResumeSection() {

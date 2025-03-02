@@ -14,7 +14,10 @@ import { ModeToggle } from "../_providers/toggle-mode";
 
 export default function FooterMain() {
   return (
-    <footer id="contato" className="text-gray-300 dark:text-gray-300 border-t">
+    <footer
+      id="contato"
+      className="z-20 text-gray-300 dark:text-gray-300 border-t"
+    >
       <div className="container mx-auto px-6 py-12 md:py-16 max-w-7xl gap-8">
         {/* div englobando o conteudo */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">

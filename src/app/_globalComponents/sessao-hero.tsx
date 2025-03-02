@@ -3,11 +3,11 @@ import { Linkedin, Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function HeroMain1() {
+export default function HeroMain() {
   return (
     <section
       id="home"
-      className=" mt-10 mb-10 p-6 md:p-12 lg:p-16 flex flex-col md:flex-row items-center justify-between relative overflow-hidden"
+      className="min-h-[660px] mt-10 mb-10 p-6 md:p-12 lg:p-16 flex flex-col md:flex-row items-center justify-between relative overflow-hidden"
     >
       <div className="flex items-center justify-center text-center sm:text-left p-8 md:p-12 lg:p-16 flex-col md:flex-row md:justify-center relative sm:my-10">
         <div className="space-y-8 md:w-1/2 z-10">

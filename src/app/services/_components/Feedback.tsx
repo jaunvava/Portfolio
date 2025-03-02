@@ -47,16 +47,16 @@ const testimonials = [
 
 export default function TestimonialSection() {
   return (
-    <section className="text-white py-16 px-4 md:px-8">
+    <section className="py-16 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <span className="inline-block bg-gray-800 text-white text-sm font-semibold px-4 py-2 rounded-lg mb-4 relative z-20">
             Feedback
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            There's a reason people
+          <h2 className="z-20 text-4xl md:text-5xl font-bold mb-4 text-white">
+            Há uma razão pela qual as pessoas
             <br />
-            are <span className="italic">raving</span> about us.
+            estão <span className="italic">falando</span> muito bem sobre nós.
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-20">
@@ -64,7 +64,6 @@ export default function TestimonialSection() {
             <Testimonial key={index} {...testimonial} />
           ))}
         </div>
-        <div className="text-center mt-12"></div>
       </div>
     </section>
   );

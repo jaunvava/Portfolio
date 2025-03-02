@@ -1,10 +1,9 @@
-import Footer from "../_template/footer";
 import NavbarNewMain from "../_template/nav-new-main";
+import FooterMain from "../_template/rodape-main";
 import TestimonialSection from "./_components/Feedback";
 import HeroService from "./_components/hero-service";
 import Services from "./_components/Services";
 import ClientCarousel from "./_components/sessao-client-loop";
-import Solucoes from "./_components/solucoes";
 
 export default function Pageservice() {
   return (
@@ -17,29 +16,29 @@ export default function Pageservice() {
           <div className="absolute bottom-0 left-0 h-[500px] w-[500px] bg-purple-600/10 blur-[100px]" />
         </div>
 
-        {/* Cabeçalho */}
-        <NavbarNewMain />
+        <div className="relative z-10">
+          {/* Cabeçalho */}
+          <NavbarNewMain />
 
-        {/* Sessão de apresentação */}
-        <HeroService />
+          {/* Sessão de apresentação */}
+          <HeroService />
 
-        {/* Carrosel de Clientes */}
-        <ClientCarousel />
+          {/* Carrosel de Clientes */}
+          <ClientCarousel />
 
-        {/* Meus serviços */}
-        <TestimonialSection />
+          {/* Meus serviços */}
+          <TestimonialSection />
 
-        {/* Feedback Clientes */}
-        <Services />
+          {/* Feedback Clientes */}
+          <Services />
 
-        {/* Meus Diferenciais */}
+          {/* Meus Diferenciais */}
 
-        {/* Sessão Preços */}
-        <Solucoes />
-        {/* Sessão FAQ */}
+          {/* Sessão FAQ */}
 
-        {/* Rodapé */}
-        <Footer />
+          {/* Rodapé */}
+          <FooterMain />
+        </div>
       </div>
     </>
   );
