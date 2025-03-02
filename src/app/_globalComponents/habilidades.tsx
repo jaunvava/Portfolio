@@ -13,7 +13,7 @@ import {
   Workflow,
 } from "lucide-react";
 import AnimatedSectionHeader from "./AnimatedSectionHeader";
-import TechStack from "./sessao-habilidades";
+import TechStack from "./sessao-techstack";
 
 const SkillIcon = ({ icon: Icon, color }: { icon: any; color: string }) => (
   <div className={`p-2 rounded-full bg-white dark:bg-gray-700 shadow-lg`}>

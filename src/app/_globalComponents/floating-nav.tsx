@@ -7,7 +7,7 @@ const sections = [
   { id: "home", label: "Home" },
   { id: "sobre", label: "Sobre" },
   { id: "projetos", label: "Projetos" },
-  { id: "skills", label: "habilidades" },
+  { id: "skills", label: "Habilidades" },
   { id: "experience", label: "Experiência" },
   { id: "educacao", label: "Educação" },
   { id: "cta", label: "CTA" },
@@ -42,7 +42,7 @@ export default function FloatingNav() {
       className="fixed right-4 top-1/2 transform -translate-y-1/2 z-50"
       initial={{ opacity: 0, x: 20 }}
       animate={{ opacity: 1, x: 0 }}
-      transition={{ delay: 1 }}
+      transition={{ duration: 0.5 }}
     >
       <div className="flex flex-col gap-3">
         {sections.map(({ id, label }) => (

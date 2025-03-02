@@ -21,37 +21,28 @@ export default function ResumeSection() {
                 Um <span className="italic">breve resumo</span> sobre mim
               </h2>
               <h3 className="text-2xl md:text-3xl font-semibold mb-4">
-                We&apos;re certified experts in what we do
+                Me chamo João Pedro é sou um desenvolvedor Fullstack
               </h3>
               <p className="text-gray-400">
-                With years of experience, our team at Conversion is made up of
-                certified professionals in digital marketing and web design. We
-                stay up-to-date on the latest trends and best practices to
-                ensure our clients get the most cutting-edge solutions.
+                Sou um estudante, sou um desenvolvedor de software apaixonado
+                pela criação de aplicações bonitas e funcionais, com foco em
+                usabilidade, trabalho para desenvolver sistemas é aplicativos
+                proporcionarem uma experiência excepcional ao usuário, sempre
+                aprendendo novas tecnologias é lançamentos do mercado.
               </p>
             </div>
 
             <div>
               <h3 className="text-2xl md:text-3xl font-semibold mb-4">
-                Quality is our priority
+                Busco sempre a excelência
               </h3>
               <p className="text-gray-400">
-                We pride ourselves on delivering nothing short of excellence.
-                Every project we take on is handled with meticulous attention to
-                detail to ensure it not only looks great but performs
-                exceptionally.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-2xl md:text-3xl font-semibold mb-4">
-                We&apos;re results-driven
-              </h3>
-              <p className="text-gray-400">
-                At Conversion, everything we do is focused on one
-                thing—delivering measurable results. We create custom strategies
-                designed to help our clients grow their business and achieve
-                their goals.
+                Para mim, isso significa estar constantemente me desafiando a
+                melhorar, a aprender e a entregar o melhor resultado possível,
+                seja no trabalho, nos estudos ou nas minhas relações. Acredito
+                que a busca pela excelência não é um destino, mas sim um
+                processo contínuo de crescimento, onde sempre há espaço para
+                evoluir e me superar.
               </p>
             </div>
           </div>

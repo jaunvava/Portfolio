@@ -3,10 +3,11 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Menu, Terminal, X } from "lucide-react";
-import { Button } from "../../components/ui/button";
-import { motion } from "framer-motion";
 
-const NavbarNewMain = () => {
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+
+const NavbarService = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -35,29 +36,24 @@ const NavbarNewMain = () => {
               Home
             </Link>
             <Link
-              href="/services"
+              href="#feedback"
+              className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300 antialiased"
+            >
+              Feedback
+            </Link>
+            <Link
+              href="#services"
               className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300 antialiased"
             >
               Serviços
             </Link>
             <Link
-              href="#projetos"
+              href="/#projetos"
               className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300 antialiased"
             >
               Projetos
             </Link>
-            <Link
-              href="#skills"
-              className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300 antialiased"
-            >
-              Habilidades
-            </Link>
-            <Link
-              href="/dev"
-              className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300 antialiased"
-            >
-              Resumo
-            </Link>
+
             <Link
               href="#contato"
               className="hover:text-orange-500 text-xl transition-colors ease-in-out duration-300 antialiased"
@@ -99,19 +95,19 @@ const NavbarNewMain = () => {
         {/* Barra layout mobile */}
         <div className="max-w-5xl mx-auto backdrop-blur-sm bg-black/20 rounded-b-lg shadow-lg">
           <div className="py-2 space-y-2 items-center">
-            <Link href="/services" className="block py-2 px-4 rounded">
+            <Link href="/" className="block py-2 px-4 rounded">
+              Home
+            </Link>
+            <Link href="#services" className="block py-2 px-4 rounded">
               Serviços
             </Link>
-            <Link href="#projetos" className="block py-2 px-4 rounded">
+            <Link href="#feedback" className="block py-2 px-4 rounded">
+              Feedback
+            </Link>
+            <Link href="/#projetos" className="block py-2 px-4 rounded">
               Projetos
             </Link>
-            <Link href="#skills" className="block py-2 px-4 rounded">
-              Habilidades
-            </Link>
-            <Link href="/resumo" className="block py-2 px-4 rounded">
-              Resumo
-            </Link>
-            <Link href="#contato" className="block py-2 px-4 rounded">
+            <Link href="/page" className="block py-2 px-4 rounded">
               Contato
             </Link>
             <Link
@@ -127,4 +123,4 @@ const NavbarNewMain = () => {
   );
 };
 
-export default NavbarNewMain;
+export default NavbarService;

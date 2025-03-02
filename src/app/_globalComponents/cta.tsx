@@ -1,9 +1,9 @@
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 
 export default function CTA() {
   return (
     <section id="cta" className=" border-t">
-      <div className="container flex flex-col items-center gap-4 py-16 md:py-24 text-center">
+      <div className="min-h-[500px] flex flex-col items-center gap-4 py-16 md:py-24 text-center">
         <h2 className="font-bold text-2xl leading-[1.1] sm:text-3xl md:text-4xl">
           Pronto para revolucionar o seu negócio?
         </h2>

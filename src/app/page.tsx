@@ -1,12 +1,13 @@
 import Experience from "./_globalComponents/Experiencia";
 import Education from "./_globalComponents/Educacao";
 import NavbarNewMain from "./_template/nav-new-main";
-import CTA from "../components/cta";
+import CTA from "./_globalComponents/cta";
 import Skills from "./_globalComponents/habilidades";
 import FloatingNav from "./_globalComponents/floating-nav";
-import ResumeSection from "../components/sobre-eu";
+import ResumeSection from "./_globalComponents/sobre-eu";
 import FooterMain from "./_template/rodape-main";
-import HeroMain1 from "./_globalComponents/Apresentacao";
+import HeroMain from "./_globalComponents/sessao-hero";
+import ProjectShowcase from "./_globalComponents/project-showcase";
 
 export default function Home() {
   return (
@@ -21,8 +22,9 @@ export default function Home() {
       <div className="relative z-10">
         <FloatingNav />
         <NavbarNewMain />
-        <HeroMain1 />
+        <HeroMain />
         <ResumeSection />
+        <ProjectShowcase />
         <Skills />
         <Experience />
         <Education />

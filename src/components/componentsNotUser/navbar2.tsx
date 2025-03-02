@@ -1,3 +1,5 @@
+// ! esse componente não está sendo utilizado no projeto no momento
+
 "use client";
 
 import Link from "next/link";

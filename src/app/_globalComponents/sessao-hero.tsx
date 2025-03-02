@@ -1,16 +1,24 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { Linkedin, Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
-export default function HeroMain1() {
+export default function HeroMain() {
   return (
     <section
       id="home"
-      className=" mt-10 mb-10 p-6 md:p-12 lg:p-16 flex flex-col md:flex-row items-center justify-between relative overflow-hidden"
+      className="mt-10 mb-10 p-6 md:p-12 lg:p-16 relative overflow-hidden"
     >
-      <div className="flex items-center justify-center text-center sm:text-left p-8 md:p-12 lg:p-16 flex-col md:flex-row md:justify-center relative sm:my-10">
-        <div className="space-y-8 md:w-1/2 z-10">
+      <div className="flex items-center justify-center text-center max-w-[1920px] sm:text-left p-8 md:p-12 lg:p-16 flex-col md:flex-row md:justify-center relative sm:my-10">
+        <motion.div
+          className="space-y-8 md:w-1/2 z-10"
+          initial={{ opacity: 0, x: -100, y: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, y: 20 }}
+          transition={{ duration: 0.5 }}
+        >
           <div className="space-y-4">
             <p className="text-xl">Olá, eu sou</p>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold">
@@ -23,9 +31,7 @@ export default function HeroMain1() {
             {/* Redes sociais */}
             <div className="flex gap-4 items-center justify-center md:justify-start">
               <a
-                href="https://www.linkedin.com/in/joaopedrosouzs/
-
-"
+                href="https://www.linkedin.com/in/joaopedrosouzs/"
                 target="_blank"
                 className="text-gray-400 hover:text-white transition-colors"
               >
@@ -47,7 +53,7 @@ export default function HeroMain1() {
                 size="lg"
                 className="bg-orange-500 hover:bg-orange-500 text-white hover:scale-105 duration-300 transition-all"
               >
-                <Link href="/resumo">Saiba Mais</Link>
+                <Link href="/services">Saiba Mais</Link>
               </Button>
               <Button
                 asChild
@@ -76,9 +82,15 @@ export default function HeroMain1() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="md:w-1/2 flex justify-center md:justify-end relative z-10 ">
+        <motion.div
+          className="md:w-1/2 flex justify-center md:justify-end relative z-10"
+          initial={{ opacity: 0, x: 100, y: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, y: 20 }}
+          transition={{ duration: 0.5 }}
+        >
           <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden bg-zinc-800">
             <Image
               src="/perfil.jpg"
@@ -88,7 +100,7 @@ export default function HeroMain1() {
               priority
             />
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

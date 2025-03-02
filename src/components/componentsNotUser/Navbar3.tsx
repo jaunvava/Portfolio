@@ -1,3 +1,4 @@
+// ! esse componente não está sendo utilizado no projeto no momento
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
