@@ -1,46 +1,34 @@
+"use client";
+import { motion } from "framer-motion";
 import { Testimonial } from "./Feedback-image";
 
 const testimonials = [
   {
     quote:
-      "Conversion transformed our business overnight. From stale organic growth to explosive growth with Google Ads and it's scaling everyday.",
-    name: "Jonathan Day",
-    position: "Co-founder of Monday",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget  ante  tincidunt  luctus Nullam.",
+    name: "Aurélio",
+    position: "Fundador da Ap2 Solucões",
     image: "/placeholder.svg?height=40&width=40",
   },
   {
     quote:
-      "We never realised the power of paid advertising until we found Conversion. It's doubled our revenue in just a few months, absolutely incredible.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget  ante  tincidunt  luctus Nullam.",
     name: "Melissa Reid",
     position: "Founder of Tuesday",
     image: "/placeholder.svg?height=40&width=40",
   },
   {
     quote:
-      "Conversion turned our marketing game around! With their paid advertising strategies, we saw a remarkable boost in sales that we never thought possible.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget  ante  tincidunt  luctus Nullam.",
     name: "Chris Wright",
     position: "CEO of Wednesday",
     image: "/placeholder.svg?height=40&width=40",
   },
   {
     quote:
-      "Before discovering Conversion, we were hesitant about investing in paid advertising, but the team proved us wrong with their incredible results.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget  ante  tincidunt  luctus Nullam.",
     name: "Terri Williams",
     position: "Founder of Thursday",
-    image: "/placeholder.svg?height=40&width=40",
-  },
-  {
-    quote:
-      "Conversion exceeded our expectations! Their approach to paid advertising is unparalleled, resulting in a substantial growth in our revenue stream.",
-    name: "Belinda Meyers",
-    position: "COO of Friday",
-    image: "/placeholder.svg?height=40&width=40",
-  },
-  {
-    quote:
-      "Thanks to Conversion, our business experienced a remarkable turnaround. Their expertise in paid advertising tripled our revenue in record time.",
-    name: "Sarah Yanna",
-    position: "Director of Saturday",
     image: "/placeholder.svg?height=40&width=40",
   },
 ];
@@ -49,21 +37,39 @@ export default function TestimonialSection() {
   return (
     <section className="py-16 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
-          <span className="inline-block bg-gray-800 text-white text-sm font-semibold px-4 py-2 rounded-lg mb-4 relative z-20">
+        <motion.div
+          className="text-center mb-12"
+          initial={{ opacity: 0, x: -100, y: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, y: 20 }}
+          transition={{ duration: 0.5 }}
+        >
+          <motion.span
+            className="inline-block bg-gray-800 text-white text-sm font-semibold px-4 py-2 rounded-lg mb-4 relative z-20"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+          >
             Feedback
-          </span>
+          </motion.span>
           <h2 className="z-20 text-4xl md:text-5xl font-bold mb-4 text-white">
             Há uma razão pela qual as pessoas
             <br />
-            estão <span className="italic">falando</span> muito bem sobre nós.
+            estão <span className="italic">falando</span> muito bem sobre mim.
           </h2>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-20">
+        </motion.div>
+
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-20"
+          initial={{ opacity: 0, x: 100, y: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, y: 20 }}
+          transition={{ duration: 0.5 }}
+        >
           {testimonials.map((testimonial, index) => (
             <Testimonial key={index} {...testimonial} />
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

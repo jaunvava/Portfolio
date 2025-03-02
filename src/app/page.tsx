@@ -4,7 +4,7 @@ import NavbarNewMain from "./_template/nav-new-main";
 import CTA from "./_globalComponents/cta";
 import Skills from "./_globalComponents/habilidades";
 import FloatingNav from "./_globalComponents/floating-nav";
-import ResumeSection from "../components/componentsNotUser/sobre-eu";
+import ResumeSection from "./_globalComponents/sobre-eu";
 import FooterMain from "./_template/rodape-main";
 import HeroMain from "./_globalComponents/sessao-hero";
 import ProjectShowcase from "./_globalComponents/project-showcase";

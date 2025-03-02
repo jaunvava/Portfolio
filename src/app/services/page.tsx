@@ -1,7 +1,7 @@
 import NavbarNewMain from "../_template/nav-new-main";
 import FooterMain from "../_template/rodape-main";
 import TestimonialSection from "./_components/Feedback";
-import HeroService from "./_components/hero-service";
+import HeroService from "./_components/sessao-hero";
 import Services from "./_components/Services";
 import ClientCarousel from "./_components/sessao-client-loop";
 

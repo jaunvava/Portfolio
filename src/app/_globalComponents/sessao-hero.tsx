@@ -7,9 +7,9 @@ export default function HeroMain() {
   return (
     <section
       id="home"
-      className="min-h-[660px] mt-10 mb-10 p-6 md:p-12 lg:p-16 flex flex-col md:flex-row items-center justify-between relative overflow-hidden"
+      className="mt-10 mb-10 p-6 md:p-12 lg:p-16 relative overflow-hidden"
     >
-      <div className="flex items-center justify-center text-center sm:text-left p-8 md:p-12 lg:p-16 flex-col md:flex-row md:justify-center relative sm:my-10">
+      <div className="flex items-center justify-center text-center max-w-[1920px] sm:text-left p-8 md:p-12 lg:p-16 flex-col md:flex-row md:justify-center relative sm:my-10">
         <div className="space-y-8 md:w-1/2 z-10">
           <div className="space-y-4">
             <p className="text-xl">Olá, eu sou</p>
@@ -23,9 +23,7 @@ export default function HeroMain() {
             {/* Redes sociais */}
             <div className="flex gap-4 items-center justify-center md:justify-start">
               <a
-                href="https://www.linkedin.com/in/joaopedrosouzs/
-
-"
+                href="https://www.linkedin.com/in/joaopedrosouzs/"
                 target="_blank"
                 className="text-gray-400 hover:text-white transition-colors"
               >
@@ -78,7 +76,7 @@ export default function HeroMain() {
           </div>
         </div>
 
-        <div className="md:w-1/2 flex justify-center md:justify-end relative z-10 ">
+        <div className="md:w-1/2 flex justify-center md:justify-end relative z-10">
           <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden bg-zinc-800">
             <Image
               src="/perfil.jpg"

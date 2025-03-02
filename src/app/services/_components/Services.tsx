@@ -8,27 +8,27 @@ export default function Services() {
   const services = [
     {
       icon: <Layout className="w-12 h-12 text-blue-500" />,
-      title: "Web Application Development",
+      title: "Desenvolvimento de aplicações web",
       description:
-        "Custom web applications built with React and Next.js, focusing on performance and user experience.",
+        "Aplicativos web personalizados desenvolvidos com React e Next.js, com foco em desempenho e experiência do usuário.",
     },
     {
       icon: <Server className="w-12 h-12 text-green-500" />,
-      title: "Backend Development",
+      title: "Desenvolvimento Backend",
       description:
-        "Robust and scalable server-side solutions using Node.js, Express, and Fastify.",
+        "Soluções robustas e escaláveis ​​do lado do servidor usando Node.js, Java, Python.",
     },
     {
       icon: <Code className="w-12 h-12 text-purple-500" />,
-      title: "API Development",
+      title: "Desenvolvimento de API",
       description:
-        "RESTful and GraphQL API design and implementation for seamless data flow between client and server.",
+        "Design e implementação de API RESTful para fluxo de dados perfeito entre cliente e servidor.",
     },
     {
       icon: <Smartphone className="w-12 h-12 text-yellow-500" />,
-      title: "Responsive Design",
+      title: "Design responsivo",
       description:
-        "Mobile-first, responsive web designs that work flawlessly across all devices and screen sizes.",
+        "Designs web responsivos e voltados para dispositivos móveis que funcionam perfeitamente em todos os dispositivos e tamanhos de tela.",
     },
   ];
 
@@ -42,10 +42,11 @@ export default function Services() {
           className="z-10 text-4xl font-bold mb-12 text-center dark:text-white"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 20 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          My Services
+          Meus Serviços
         </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {services.map((service, index) => (
@@ -54,6 +55,7 @@ export default function Services() {
               className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
