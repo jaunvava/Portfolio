@@ -9,7 +9,7 @@ import FooterMain from "./_template/rodape-main";
 import HeroMain from "./_globalComponents/sessao-hero";
 import ProjectShowcase from "./_globalComponents/project-showcase";
 
-export default function Home() {
+export default function Home() {	
   return (
     <div className="relative min-h-screen">
       {/* Background gradientes */}
@@ -28,7 +28,6 @@ export default function Home() {
         <Skills />
         <Experience />
         <Education />
-        <CTA />
         <FooterMain />
       </div>
     </div>

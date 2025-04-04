@@ -72,7 +72,7 @@ const NavbarNewMain = () => {
               asChild
               className="text-white bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-orange-300 dark:focus:ring-orange-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2"
             >
-              <Link target="_blank" href="/curriculojoaopedro.pdf">
+              <Link target="_blank" href="/cvjp.pdf">
                 Curriculo
               </Link>
             </Button>
@@ -114,10 +114,7 @@ const NavbarNewMain = () => {
             <Link href="#contato" className="block py-2 px-4 rounded">
               Contato
             </Link>
-            <Link
-              href="/curriculojoaopedro.pdf"
-              className="block py-2 px-4 rounded"
-            >
+            <Link href="/cvjp.pdf" className="block py-2 px-4 rounded">
               Currículo
             </Link>
           </div>

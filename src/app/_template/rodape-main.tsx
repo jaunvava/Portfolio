@@ -6,6 +6,8 @@ import {
   Info,
   MapPin,
   Copy,
+  Mail,
+  Phone,
 } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
@@ -100,14 +102,6 @@ export default function FooterMain() {
                   Sobre Mim
                 </a>
               </li>
-              <li className="flex gap-2">
-                <a
-                  href="#"
-                  className="text-sm hover:text-orange-600 duration-300"
-                >
-                  Ajuda
-                </a>
-              </li>
             </ul>
           </div>
 
@@ -116,22 +110,13 @@ export default function FooterMain() {
             <h3 className="text-lg font-semibold mb-4">Contato</h3>
             <ul className="space-y-2">
               <li className="flex gap-2">
-                <Info className="h-4 w-4" />
-                <a
-                  href="/services#duvidas"
-                  className="text-sm hover:text-orange-600 duration-300"
-                >
-                  Dúvidas
-                </a>
-              </li>
-              <li className="flex gap-2">
                 <MapPin className="h-4 w-4" />
                 <a className="text-sm hover:text-orange-600 duration-300">
                   Brasil
                 </a>
               </li>
               <li className="flex gap-2">
-                <Copy className="h-4 w-4" />
+                <Mail className="h-4 w-4" />
                 <a
                   href="jpdevcontato@gmail.com"
                   className="text-sm hover:text-orange-600 duration-300 "
@@ -140,12 +125,12 @@ export default function FooterMain() {
                 </a>
               </li>
               <li className="flex gap-2">
-                <Copy className="h-4 w-4" />
+                <Phone className="h-4 w-4" />
                 <a
                   href="#"
                   className="text-sm hover:text-orange-600 duration-300"
                 >
-                  (83)99345-0000
+                  (83) 9 9345-7484
                 </a>
               </li>
             </ul>
@@ -173,9 +158,8 @@ export default function FooterMain() {
               <Github className="h-6 w-6 hover:scale-105 transition-all duration-300 ease-in-out" />
               <span className="sr-only">GitHub</span>
             </a>
-            <ModeToggle />
           </div>
-          <p className="text-sm text-gray-300 dark:text-gray-300 sm:text-center">
+          <p className="text-sm text-gray-300 dark:text-gray-300 text-center">
             &copy; {new Date().getFullYear()} João Pedro Cruz. Todos os direitos
             reservados.
           </p>
