@@ -2,6 +2,7 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "../../../components/ui/button";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function HeroService() {
   return (
@@ -35,12 +36,8 @@ export default function HeroService() {
         exit={{ opacity: 0, y: 20 }}
         transition={{ duration: 0.5 }}
       >
-        <Button size="lg">
-          Explore as soluções
-          <ArrowRight className="ml-2 h-4 w-4" />
-        </Button>
         <Button variant="outline" size="lg" className="relative z-20">
-          Entre em contato
+          <Link href="#contato">Entre em contato</Link>
         </Button>
       </motion.div>
     </section>

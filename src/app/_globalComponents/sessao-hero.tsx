@@ -60,14 +60,14 @@ export default function HeroMain() {
                 size="lg"
                 className="text-gray-800 border-gray-400 hover:text-gray-800 hover:border-white hover:scale-105 duration-300 transition-all"
               >
-                <Link target="_blank" href="/curriculojoaopedro.pdf">
+                <Link target="_blank" href="/cvjp.pdf">
                   Visualizar CV
                 </Link>
               </Button>
             </div>
 
             {/* expereciencia */}
-            <div className="flex gap-8 mt-12">
+            {/* <div className="flex gap-8 mt-12">
               <div className="space-y-2">
                 <p className="text-orange-600 text-3xl font-bold">+3</p>
                 <p className="text-sm text-gray-400">Experiencia</p>
@@ -80,7 +80,7 @@ export default function HeroMain() {
                 <p className="text-orange-600 text-3xl font-bold">+5</p>
                 <p className="text-sm text-gray-400">Clientes Satisfeitos</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </motion.div>
 
